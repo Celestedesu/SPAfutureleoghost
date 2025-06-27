@@ -1,4 +1,4 @@
------Leonardo-----
+﻿-----Leonardo-----
 
 
 Este es el ghost/ukagaka de Leonarde del Futuro, basado en la serie de TV y película El Ascenso de las Tortugas Ninja de Nickelodeon. ADVERTENCIA - esta cosa está llena de headcanons y con una escritura mediocre por lo que podría parecer fuera del personaje para algunos. Leonardo es bastante buena gente, usando el tiempo que pasa atrapado en tu ordenador cómo descanso de su deber. No le importa darte compañía o responder a tus preguntas, pero se puede disgustar dependiendo de lo que le preguntes...
@@ -16,7 +16,7 @@ Puedes hacer preguntas a Leonardo, darle algo cada día, preguntar sobre su fami
 
 Puedes acariciarle la cabeza moviendo ligeramente el ratón sobre ella. Que no te sorprenda si le da vergüenza que lo hagas.
 
-Cuanto más hables con él y cuanto más le conozcas, más llegará a saber de ti. A medida que pase el tiempo, puede empezar a decir cosas nuevas, y, dependiendo de lo que revele, dará respuestas nuevas a las preguntas que le hagas. Puedes mirar su estado de ánimo en el menú de estado desde el menú principal, y también puedes reiniciarlo si quieres que se desvanezca todo lo que sabe sobre ti. 
+Cuanto más hables con él y cuanto más le conozcas, más llegará a saber sobre ti. A medida que pase el tiempo, puede empezar a decir cosas nuevas, y dependiendo de lo que revele, dará respuestas nuevas a las preguntas que le hagas. Puedes mirar su estado de ánimo en el menú de estado desde el menú principal, y también puedes reiniciarlo si quieres que se desvanezca todo lo que sabe sobre ti. 
 
 Se consciente de que algunas cosas no pueden ser totalmente eliminadas...
 
