@@ -21,7 +21,7 @@ OnFileDrop2
 		{
 			Wallpaperfile = reference0
 			
-			"\0\s[0]Veamos\w2.\w2.\w2. %(_filename)%(_fileext).\w8\0\s[20] ¿Nuevo fondo de pantalla? \w8¿Cómo quieres que lo ajuste?\n\n[half]/
+			"\0\s[0]Veamos\w2.\w2.\w2. %(_filename)%(_fileext).\w8\0\s[20] ¿Un nuevo fondo de pantalla? \w8¿Cómo quieres que lo ajuste?\n\n[half]/
 			\![*]\q[Centro,SetWallpaper_0]\n/
 			\![*]\q[Mosaico,SetWallpaper_1]\n/
 			\![*]\q[Expandir,SetWallpaper_2]\n\n[half]/
@@ -42,19 +42,19 @@ OnFileDrop2
 
 Select.SetWallpaper_0
 {
-	"\![set,wallpaper,%(Wallpaperfile),center]\0\s[0]Ahí lo tienes, \w5bien centrado.\e"
+	"\![set,wallpaper,%(Wallpaperfile),center]\0\s[0]Ahí lo tienes, \w5bien centradito.\e"
 }
 Select.SetWallpaper_1
 {
-	"\![set,wallpaper,%(Wallpaperfile),tile]\0\s[0]Pues ya estaría, \w5a cachos, \w5\s[19]justo como estuvo mi brazo.\e"
+	"\![set,wallpaper,%(Wallpaperfile),tile]\0\s[0]Pues ya estaría, \w5hecho piezas, \w5\s[19]justo como se quedó mi brazo.\e"
 }
 Select.SetWallpaper_2
 {
-	"\![set,wallpaper,%(Wallpaperfile),stretch]\0\s[0]Aquí tienes, \w5bien largo y ancho.\e"
+	"\![set,wallpaper,%(Wallpaperfile),stretch]\0\s[0]Aquí lo tienes, \w5en todo su esplendor.\e"
 }
 Select.SetWallpaper_Cancel
 {
-	"\0\s[0]Oh, \w3no pasa nada. \w8\w4\s[22]Yo también estoy acostumbrado a este.\e"
+	"\0\s[0]Oh, \w3no pasa nada. \w8\w4\s[22]Yo también me he acostumbrado a este.\e"
 }
 
 
@@ -63,7 +63,7 @@ Select.SetWallpaper_Cancel
  
 OnInstallBegin
  {
-	"\0\s[38]Instalando\w3.\w3.\w3. \w8\w4Oh, mira, \w4un archivo install.txt.\e"
+	"\0\s[38]Instalando\w3.\w3.\w3. \w8\w4Vaya, mira, \w4un archivo install.txt.\e"
  }
 
  //---- OnInstallComplete -------------------------------------------------------
@@ -87,7 +87,7 @@ OnInstallComplete
 		}
 		else //For any other shell they may install.
 		{
-		"\s[24]\i[6]Tengo una nueva shell. Se llama  %(reference1).\e"
+		"\s[24]\i[6]Tengo un nuevo shell. Se llama  %(reference1).\e"
 		//%(reference1) here would be the name of the shell they installed. Replace if needed.
 		}
  	}
@@ -98,12 +98,12 @@ OnInstallComplete
  	}
 	elseif reference0 == "balloon" //if the type of file is a balloon
  	{
-		"\s[20]Nuevo balloon instalado. \w8\w4%(reference1)? \w8\w4Excelente.\e"
+		"\s[20]Nuevo balloon instalado. \w8\w4%(reference1)? \w8\w4Perfecto.\e"
 		//Reference1 here would be the name of the balloon. Replace as needed.
  	}
 	elseif reference0 == "plugin" //if the type of file is a plug-in, like a saori of some kind.
  	{
-		"\s[20]Se ha instalado un plug-in. \w8\w4%(reference1), \w3o lo que sea que sea esto.\e"
+		"\s[20]Se ha instalado un plug-in. \w8\w4%(reference1), \w3o lo que sea esto.\e"
 		//Reference1 here would be the name of the plug-in. Replace as needed.
  	}
 	elseif reference0 == "calendar skin" //if the type of file is a calendar skin
@@ -140,7 +140,7 @@ OnInstallFailure
  
 OnInstallRefuse
  {
-	"\0\s[17]No puedo instalar esto, \w3perdón. \w8\w4\s[16]Pero puedes intentar %(reference0), en su lugar.\e"
+	"\0\s[17]Lo siento, \w3no puedo instalar esto. \w8\w4\s[16]Pero a cambio, puedes intentar %(reference0).\e"
 	
 	//reference0 in this function refers to the ghost this file is associated with, probably the name of the ghost listed in its install.txt file. You would see this if you dropped a shell made for a different ghost on your current ghost, for example. They can't install a shell for themselves they can't use, right? Anyway, replace this with what you wish, you can use the reference0 envelope or not if you want.
  }
@@ -155,7 +155,7 @@ OnInstallRefuse
 
 OnVanishSelecting
 {
-	"\0\s[26]Oh, \w4¿es esto la despedida?\e"
+	"\0\s[26]Oh, \w4¿ha llegado el momento de decir adiós?\e"
 }
 
 //OnVanishSelected
@@ -163,7 +163,7 @@ OnVanishSelecting
 
 OnVanishSelected
 {
-	"\0\s[26]En\w4 ese caso\w3.\w3.\w3. \w8\s[23]Me alegro de haberte conocido, %(username). \w8\w4\s[22]Gracias por brindarme tu paz. \w8\w4Ganaremos la guerra, \w4lo prometo. \w8\w4Te veré en el otro lado.\w9\w9\e"
+	"\0\s[26]En ese caso\w3.\w3.\w3. \w8\s[23]Me alegro de haberte conocido, %(username). \w8\w4\s[22]Gracias por brindarme paz. \w8\w4Ganaremos la guerra, \w4lo prometo.\n\n[half]\w8\w4Te veré en el otro lado.\w9\w9\e"
 }
 
 
@@ -172,7 +172,7 @@ OnVanishSelected
 
 OnVanishCancel
 {
-	"\0\s[0]\i[6]Uf. \w8\w4\s[28]Me habías asustado por un segundo.\e"
+	"\0\s[0]\i[6]Menos mal. \w8\w4\s[28]Me habías asustado por un segundo.\e"
 }
 
 //--OnVanishButtonHold
@@ -180,7 +180,7 @@ OnVanishCancel
 
 OnVanishButtonHold
 {
-	"\0\s[26]Oh, \w3¿has cambiado de parecer? \w8\w4\s[0]Pues vaya, \w2me he emocionado para nada.\e"
+	"\0\s[26]Eh, \w3¿has cambiado de parecer? \w8\w4\s[0]Pues vaya, \w2me he puesto todo emotivo para nada.\e"
 }
 
 
@@ -213,7 +213,7 @@ OnVanished
  
 OnBIFFBegin
  {
-	"\0\s[38]Echemos un vistazo a tu correo super personal\w3.\w3.\w3.\e"
+	"\0\s[38]Echemos un vistazo a tu correo super privado\w3.\w3.\w3.\e"
 	
  }
 
@@ -267,7 +267,7 @@ OnBIFFFailure
 	}
  	else //if there's some other kind of error.
 	{
-		"\0\s[17]No puedo conectarme a la cuenta. \w8\w4El error que he recibido es '%(reference[0])'. \w8\w4\s[2]Todo este rollo de la tecnología siempre fue cosa de mi gemelo, \w3de todos modos\w3.\w3.\w3.\e"
+		"\0\s[17]No puedo conectarme a la cuenta. \w8\w4El error que he recibido es '%(reference[0])'. \n\n[half]\w8\w4\s[2]En cualquier caso,\w3 todo este rollo de la tecnología siempre fue cosa de mi gemelo\w3.\w3.\w3.\e"
 		
 		//reference0 here stores the error message the email server would have given the ghost, hopefully.
  	}
@@ -285,7 +285,7 @@ OnBIFFFailure
  
 OnUpdateBegin
  {
-	"\0\s[38]Comprobar actualizaciones, recibido. \w8\w4Veamos si hay algo nuevo\w3.\w3.\w3.\w8\e"
+	"\0\s[38]Recibido,\w3 comprobando actualizaciones. \n\n[half]\w8\w4Veamos si hay algo nuevo\w3.\w3.\w3.\w8\e"
 	
 	//"\1\s[10]Another message for starting the update process.\w8\0\s[0]Hope you read the directions properly.\w8\e"
  }
@@ -319,7 +319,7 @@ OnUpdateComplete
 	}
  	else //if the ghost has updated successfully
 	{
-		"\0\s[19]Actualización completada. \w8\w4¡Espero que mole!\e"
+		"\0\s[19]Actualización completada. \n\n[half]\w8\w4¡Espero que sea algo genial!\e"
  	}
 }
 
@@ -330,7 +330,7 @@ OnUpdateFailure
  {
 	if reference0 == "timeout" //if the connection times out
  	{
- 		"\0\s[17]El tiempo de conexión de la actualización se ha agotado. \w8\w4Pues vaya.\e"
+ 		"\0\s[17]El tiempo de conexión para la actualización se ha agotado. \n\n[half]\w8\w4Pues vaya.\e"
 	}
  	elseif reference0 == "md5 miss" //This is the final message displayed when you've run into an md5 error below at some point.
 	{
@@ -338,7 +338,7 @@ OnUpdateFailure
  	}
 	else //for other errors
  	{
- 		"\0\s[17]No se ha podido finalizar la actualización. \w8\w4\0\s[16]El error es '%(reference0)'. \w8\w4Maldita sea.\e"
+ 		"\0\s[17]No se ha podido finalizar la actualización. \w8\w4\0\s[16]El error es '%(reference0)'. \n\n[half]\w8\w4Maldita sea.\e"
 	}
  }
 
@@ -427,12 +427,12 @@ OnHeadlinesense.OnFind
  	if reference2 == "First" || reference2 == "Next"
 	{
  		//---- Bottom buttons
-		"\![*]\q[Siguiente,] - \![*]\q[Detener,Headline_Cancel]\e"
+		"\![*]\q[Siguiente,] - \![*]\q[Cerrar,Headline_Cancel]\e"
  	}
 	else
  	{
 		//---- Bottom buttons
- 		"\![*]\q[Detener,Headline_Cancel]\e"
+ 		"\![*]\q[Cerrar,Headline_Cancel]\e"
  	}
 	
 }
@@ -440,7 +440,7 @@ OnHeadlinesense.OnFind
 
 Select.Headline_Cancel
 {
-	"\0\s[20]Visualización de los titulares finalizada.\e"
+	"\0\s[20]Visualización terminada.\e"
 	//Actually I take that back, you can change this line of dialogue here for when you're done looking at a headline to something else if you want.
 }
 
@@ -462,15 +462,15 @@ OnHeadlinesenseFailure
  	--
 	if reference0 == "can't download" //if they can't download the rss feed for some reason
  	{
-		"No se puede descargar."
+		"No se ha podido descargar."
  	}
 	elseif reference0 == "can't analyze" //if they can't read the file for some reason
  	{
-		"No se puede analizar."
+		"No se ha podido analizar."
  	}
 	else //other errors
  	{
-		"\0\s[60]No tengo ni idea. \w8\w4\s[2]El informático no soy yo..."
+		"\0\s[60]No tengo ni idea. \n\n[half]\w8\w4\s[2]El informático no soy yo..."
  	}
 	--
  	"\e" //And here is the final /e, so you don't need to include it in the if statements above. Another one of the very rare cases this occurs.
@@ -542,12 +542,12 @@ OnSNTPCompare
 	--
  	if reference3 == 0 //if your clock is already accurate.
 	{
- 		"\0\s[20]Tu reloj está en hora. \w8\w4Eso está bien\w3\s[100] - cada milisegundo cuenta.\e" //replace this with whatever message you like.
+ 		"\0\s[20]Tu reloj está en hora. \n\n[half]\w8\w4Muy bien,\w3 \s[100]cada milisegundo cuenta.\e" //replace this with whatever message you like.
 	}
  	else //if your clock doesn't match
 	{
 	//you can redo this top line up to the \n\n[half] part, but leave the \q options alone.
- 		"\0\s[34]Tu reloj no concuerda.\w8\n¿Quieres que lo ponga en hora?\n\n[half]/
+ 		"\0\s[34]Tu reloj no está en hora.\w8\n¿Quieres que lo arregle?\n\n[half]/
 		\![*]\q[Arréglalo,OnSNTPEXECUTE]\n/
  		\![*]\q[Déjalo como está,OnSNTPCANCEL]\e"
 	}
@@ -558,7 +558,7 @@ OnSNTPCompare
  
 OnSNTPEXECUTE
  {
-	"\0\s[20]Arréglado. \w8\w4De nada.\6\e"
+	"\0\s[20]Ya está. \w8\w4De nada.\6\e"
  }
 
  //----　OnSNTPCANCEL ------------------------------------------------------------------
@@ -566,7 +566,7 @@ OnSNTPEXECUTE
  
 OnSNTPCANCEL
  {
-	"\0\s[0]¿No? \w8\w4Está bien. \w8\w4Pero recuerda\w3\s[19] - el tiempo es oro.\e"
+	"\0\s[0]¿No? \w8\w4Está bien. \w8\w4Pero recuerda,\w3\s[19] el tiempo es oro.\e"
  }
 
  //----　OnSNTPFailure ------------------------------------------------------------------
@@ -641,7 +641,7 @@ OnApplicationFileOpen
  
 OnBatteryLow
  {
-	"\0\s[17]Batería baja en el portátil. \w8\0\s[15]Solo queda %(reference0) de batería.\e"
+	"\0\s[17]Batería baja en el portátil. \w8\0\s[15]Solo queda %(reference0)% de batería.\e"
 	//reference0 here is the amount of battery power. Replace as you like.
  }
  
@@ -650,7 +650,7 @@ OnBatteryLow
  
 OnBatteryCritical
 {
-	"\0\s[26]La batería del portátil está realmente baja. \w8\w4¿Seguro que vas bien?\e"
+	"\0\s[26]La batería del portátil está realmente baja. \n\n[half]\w8\w4¿Seguro que vas bien?\e"
 }
  
 //--OnBatteryNotify--------------------------------------------------------------------
@@ -683,7 +683,7 @@ OnShellScaling
 	}
 	elseif reference0 == 100 //this is 100%
 	{
-		"\0\s[0]De vuelta a formato Leo.\e"
+		"\0\s[0]De vuelta al formato Leo.\e"
 	}
 	elseif reference0 == 50 //this is 50%. You can add any percentage that's listed under shell scaling if you want using more elseifs.
 	{

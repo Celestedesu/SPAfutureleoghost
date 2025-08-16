@@ -35,7 +35,7 @@ On_homeurl
 
 On_recommendrootbutton.caption
 {
-	"Sitios del Creador"
+	"Sitios del creador"
 }
 
 
@@ -49,7 +49,7 @@ On_sakura.recommendsites
 	"%ASC(1)https://venelona.tumblr.com/%ASC(2)"
 	--
 	
-	"Tumblr sobre las Tortugas de Venelona"
+	"Tumblr sobre las tortugas de Venelona"
 	--
 	"%ASC(1)https://www.tumblr.com/venelona-turtle-den/%ASC(2)"
 	--
@@ -77,7 +77,7 @@ On_sakura.recommendsites
 
 On_portalrootbutton.caption
  {
-	"Inspiración del Ghost y Tutorial"
+	"Inspiración y tutorial"
  }
 
  //---- Websites in the Second Option --------------------------------------------------
@@ -85,7 +85,7 @@ On_portalrootbutton.caption
  
 On_sakura.portalsites
  {
- 	"Guía plantilla para Ghosts"
+ 	"Guía base para ghosts"
 	--
 	"%ASC(1)http://www.ashido.com/ukagaka/%ASC(2)"
 	--
@@ -136,15 +136,15 @@ On_kero.recommendsites
  
 On_updatebutton.caption
  {
-	"Menú Actualización"
+	"Actualizar"
 }
 
-//---- Dress-up Menu Caption ----------------------------------------------------------
-//What it will say on the menu for Dress-Up.
-
-On_dressuprootbutton.caption
-{
-	"Dress-Up"
+//---- Uninstall Caption -----------------------------------------------------
+//This is the caption for the option to uninstall them.
+ 
+On_vanishbutton.caption
+ {
+	"Desinstalar"
 }
 
 //---- Headlines and RSS Feeds ---------------------------------------------------------
@@ -155,38 +155,231 @@ On_headlinesenserootbutton.caption
 	"Titulares + Feeds RSS"
 }
 
- //---- Readme Caption -------------------------------------------------------
- //What the menu displays for the readme file link under Information.
- 
-On_readmebutton.caption
- {
-	"READ ME"
-	"readme.txt"
-	"Manual"
- }
-
- //---- Uninstall Caption -----------------------------------------------------
- //This is the caption for the option to uninstall them.
- 
-On_vanishbutton.caption
- {
-	"Desinstalar"
+//---- Check mail -----------
+//What it will say on the menu for Check mail
+On_biffbutton.caption
+{
+	"Mirar correo"
 }
 
-//---- Shell Caption -----------------------------------------------------
- //This is the caption for the option to change shells.
- 
-On_shellrootbutton.caption
- {
-	"Cambiar Shell"
+//--- Shell scaling ------
+//Change the size of the ghost on the screen.
+On_shellscalerootbutton.caption
+{
+	"Ampliar/reducir shell"
+}
+
+//---- Other percentage shell ----
+//When you want to change the shell size to something different from the list.
+On_shellscaleotherbutton.caption
+{
+	"Otro porcentaje..."
+}
+
+//--- Balloon scaling -----
+//Change the balloon size.
+On_balloonscalerootbutton.caption
+{
+	"Ampliar/reducir balloon"
+}
+
+//--- Other percentage balloon ----
+//If you want to change the size of your balloon to something more specific.
+On_balloonscaleotherbutton.caption
+{
+	"Otro porcentaje..."
+}
+
+//--- Utilities ----
+//The main button for the utilities.
+On_utilityrootbutton.caption
+{
+	"Funciones"
+}
+
+//--- Calendar ---
+//This option opens the calendar. It is located inside Utilities.
+On_calendarbutton.caption
+{
+	"Calendario"
+}
+
+//--- NTP time sync ---
+//This option will check with the internet if your system clock is correct.
+On_sntpbutton.caption
+{
+	"Sincronizar hora"
+}
+
+//--- Explorer ---
+//This will open the folder where all your ghosts are located.
+On_ghostexplorerbutton.caption
+{
+	"Explorador de ghosts"
+}
+
+//--- Check for SSP updates ----
+//This will check of there are new updates available for SSP
+On_updateplatformbutton.caption
+{
+	"Buscar actualizaciones para SSP"
+}
+
+//--- Speech recognition ---
+
+
+
+
+
+//--- Voice synthesis ----
+On_texttospeechbutton.caption
+{
+	"Síntesis de voz"
+}
+
+//--- Address bar ----
+On_addressbarbutton.caption
+{
+	"Barra de direcciones"
+}
+
+//--- Open file ----
+
+
+
+
+
+
+//--- Open folder ----
+
+
+
+
+
+//--- Script log ---
+On_scriptlogbutton.caption
+{
+	"Registro de script"
+}
+
+//--- Development interface  ----
+On_duibutton.caption
+{
+	"Interfaz de desarrollo"
+}
+
+//--- Purge ghost cache -----
+On_purgeghostcachebutton.caption
+{
+	"Limpiar caché del ghost"
+}
+
+//--- FMO update ----
+On_updatefmobutton.caption
+{
+	"Actualización FMO"
+}
+
+//--- Reload all folders ----
+On_reloadinfobutton.caption
+{
+	"Cargar todas las carpetas de nuevo"
+}
+
+//--- Reload ghost
+On_switchreloadbutton.caption
+{
+	"Cargar ghost de nuevo"
+}
+
+//--- Reset passive mode ----
+On_leavepassivebutton.caption
+{
+	"Restablecer modo pasivo"
+}
+
+//--- Keep temporary ghost ----
+On_switchreloadtempghostbutton.caption
+{
+	"Mantener ghost temporal"
+}
+
+//--- Reset shell position ---
+On_switchmovetodefaultpositionbutton.caption
+{
+	"Restablecer posición del shell"
+}
+
+//--- Reset balloon position ---
+//Self explanatory. This option is inside of the Utilities menu.
+On_resetballoonpositionbutton.caption
+{
+	"Restablecer posición del balloon"
+}
+
+//--- Hide all balloon ---
+//This option is located right under Reset balloon position ----
+On_closeballoonbutton.caption
+{
+	"Ocultar todos los balloons"
+}
+
+//--- Options ----
+//The main button for options.
+On_configurationrootbutton.caption
+{
+	"Opciones"
+}
+
+
+//---- Preferences ----
+
+
+
+
+
+
+//--- Ghost preferences ----
+
+
+
+
+
+//--- Enable proxy ---
+On_switchproxybutton.caption
+{
+	"Habilitar proxy"
+}
+
+//--- Set default charset ----
+On_charsetbutton.caption
+{
+	"Establecer charset por defecto"
+}
+
+//--- Compatibility ------
+
+
+
+
+//--- Raise AI talk from SHIORI -----
+On_switchtalkghostbutton.caption
+{
+	"Activar IA del habla desde SHOIRI"
+}
+
+//--- Old specification support ---
+On_switchcompatiblemodebutton.caption
+{
+	"Antiguo soporte de compatibilidad"
 }
 
 //---- Change Ghost Caption -----------------------------------------------------
- //This is the caption for the option to change ghosts.
+ //This is the caption for changing ghosts.
  
 On_ghostrootbutton.caption
  {
-	"Cambiar Ghost"
+	"Cambiar ghost"
 }
 
 //---- Call Ghosts Caption -----------------------------------------------------
@@ -194,7 +387,117 @@ On_ghostrootbutton.caption
  
 On_callghostrootbutton.caption
  {
-	"Llamar Ghost"
+	"Llamar ghost"
+}
+
+//---- Shell Caption -----------------------------------------------------
+ //This is the caption for the option to change shells.
+ 
+On_shellrootbutton.caption
+ {
+	"Cambiar shell"
+}
+
+//---- Dress-up Menu Caption ----------------------------------------------------------
+//What it will say on the menu for Dress-Up.
+
+On_dressuprootbutton.caption
+{
+	"Dress-Up"
+}
+
+//---- History -----
+//The main button where you can check the history of your last calls and changes.
+On_historyrootbutton.caption
+ {
+	"Historial"
+}
+
+//--- Change ghost ---
+//Change to a recently used ghosts
+On_ghosthistorybutton.caption
+ {
+	"Cambiar ghost"
+}
+
+//--- Call ghost ---
+//Call a recently used ghost
+On_callghosthistorybutton.caption
+ {
+	"Llamar ghost"
+}
+
+//--- Headline ---
+//Recently used headline
+On_headlinesensehistorybutton.caption
+ {
+	"Abrir titular"
+}
+
+//---- Information ----
+//Button where you can check things like the SSP version or read the ghost's readme file.
+On_inforootbutton.caption
+ {
+	"Información"
+}
+
+//--- About SSP ----
+//Tells you the software version
+On_firststaffbutton.caption
+ {
+	"Sobre SSP..."
+}
+
+//---- Readme Caption -------------------------------------------------------
+//What the menu displays for the readme file link under Information.
+ 
+On_readmebutton.caption
+ {
+	"Léeme"
+}
+
+//--- Terms of this ghost... ----
+On_termsbutton.caption
+ {
+	"Términos y condiciones del ghost"
+}
+
+//--- Help ---
+On_helpbutton.caption
+ {
+	"Ayuda"
+}
+
+//--- AI Graph ----
+On_aistatebutton.caption
+ {
+	"Gráfico IA"
+}
+
+//--- Ghost usage statistics ----
+On_rateofusebutton.caption
+ {
+	"Estadísticas de uso del ghost"
+}
+
+//--- Output system information ----
+On_systeminfobutton.caption
+ {
+	"Generar información del sistema"
+}
+
+//---- Iconify ----
+//You can minimize your ghost with this button.
+On_hidebutton.caption
+ {
+	"Minimizar"
+}
+
+//----- Close ----
+//This is use when you have multiple ghosts on scree. If you click this option, only one ghost will quit.
+On_closebutton.caption
+ {
+	"Cerrar"
 }
 
 //---- Quit Caption -----------------------------------------------------

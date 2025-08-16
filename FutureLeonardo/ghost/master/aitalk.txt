@@ -71,9 +71,9 @@ RandomTalk : nonoverlap
 		//You can also put in multiple ifs checking for the same thing to vary the responses. In this case, it's checking to see if they're wearing another shell. You don't need to use elseifs for this! Just an if is fine.
 		if nowshell == "Chin Stripes"
 		{
-			"\0\s[34]Te gustan las bananas de mi barbilla, \w3¿eh? \w8\w4\s[53]¿Me hacen ver más viejo?\e"
+			"\0\s[34]Te gustan las bananas de mi barbilla, \w3¿eh? \w8\w4\s[53]¿Me hacen más mayor?\e"
 		
-			"\0\s[2]\i[5]*Le oyes murmurar algo.\s[2]\n\n[half]\f[sub,true]...necesito más vendajes\w4.\w4.\w4.\f[sub,false]\e"
+			"\0\s[2]\i[5]*Le oyes murmurar.\s[2]\n\n[half]\f[sub,true]... Necesito más vendajes\w4.\w4.\w4.\f[sub,false]\e"
 		
 			"\0\s[12]\i[5]*Se rasca la barbilla.\s[12]\e"
 		
@@ -85,11 +85,11 @@ RandomTalk : nonoverlap
 		
 			"\0\s[15]Tengo que vaciarme los bolsillos\w3.\w3.\w3.\e"
 		
-			"\0\s[2]\i[5]*Le oyes murmurar algo.\s[2]\n\n[half]\f[sub,true]...necesito más vendajes\w4.\w4.\w4.\f[sub,false]\e"
+			"\0\s[2]\i[5]*Le oyes murmurar.\s[2]\n\n[half]\f[sub,true]... Necesito más vendajes\w4.\w4.\w4.\f[sub,false]\e"
 		}
 		if nowshell == "Taileo"
 		{
-			"\0\s[34]¿Por qué sigues mirando mi cola?\w8\w4.\e"
+			"\0\s[34]¿Por qué sigues mirándome la cola?\w8\w4.\e"
 		
 			//"\0\s[15]I need to clean up my pockets\w3.\w3.\w3.\e"
 		
@@ -98,7 +98,7 @@ RandomTalk : nonoverlap
 			{
 				"\0\s[23]\i[5]*Contonea la cola.\e"
 				"\0\s[52]\i[5]*Menea la cola.\s[52]\e"
-				"\0\s[96]\i[5]*Mueve la cola contento.\s[96]\e"
+				"\0\s[96]\i[5]*Mueve la cola alegremente.\s[96]\e"
 			}
 		}
 	
@@ -111,9 +111,9 @@ RandomTalk : nonoverlap
 		//food n supplies
 		if bigmood >= 0 && raphchain == 0 && donchain == 0 && splinterchain == 0 && pizzagot == 1
 		{
-			"\0\s[0]\i[5]*Él huele a la pizza que le has dado.\s[0]\e"
+			"\0\s[0]\i[5]*Leo huele a la pizza que le has dado.\s[0]\e"
 		
-			"\0\s[23]Gracias otra vez por la pizza. \w8\w4\s[0]Te prometo que nos lo comeremos todo. \w8\w4\s[19]Sí, \w3incluso la caja.\e"
+			"\0\s[23]Gracias otra vez por la pizza. \w8\w4\s[0]Te prometo que nos lo comeremos todo. \n\n[half]\w8\w4\s[19]Sí, \w3incluso la caja.\e"
 		
 			"\0\s[35]\i[5]*Está pensando en la pizza que le has dado.\s[35]\e"
 			
@@ -122,9 +122,9 @@ RandomTalk : nonoverlap
 	
 		if bigmood >= 0 && raphchain == 0 && donchain == 0 && splinterchain == 0 && supgot == 1
 		{
-			"\0\s[119]\i[6]*Está comprobando que la bolsa que le has dado sigue ahí.\e"
+			"\0\s[119]\i[6]*Está comprobando si la bolsa que le has dado sigue ahí.\e"
 		
-			"\0\s[19]Gracias por los suministros. \w8\w3\s[0]Tienen un valor incalculable para nosotros, \w3\s[23]cada pequeña cosa cuenta.\e"
+			"\0\s[19]Gracias por los suministros. \w8\w3\s[0]Tienen un valor incalculable para nosotros, \w3\s[23]cada cosita cuenta.\e"
 		
 			"\0\s[2]\i[5]*Se pregunta que le has puesto en la bolsa de suministros que le has dado.\s[2]\e"
 		
@@ -133,13 +133,13 @@ RandomTalk : nonoverlap
 	
 		if bigmood >= 0 && raphchain == 0 && donchain == 0 && splinterchain == 0 && supgot == 1 && pizzagot == 1
 		{
-			"\0\s[119]\i[6]*Está comprobando que las cosas que le has dado siguen ahí.\e"
+			"\0\s[119]\i[6]*Está comprobando si las cosas que le has dado siguen ahí.\e"
 		
-			"\0\s[74]No tienes por qué darme nada mientras estoy aquí, \w3\s[72]lo sabes, ¿verdad? \w8\w4\s[79]Pero\w3.\w3.\w3. \w3\s[97]gracias.\e"
+			"\0\s[74]No tienes por qué darme nada mientras estoy aquí, \w3\s[72]lo sabes, ¿verdad? \n\n[half]\w8\w4\s[79]Pero\w3.\w3.\w3. \w3\s[97]te lo agradezco.\e"
 		
-			"\0\s[14]\i[5]*Se pregunta cómo le has podido dar cosas si está dentro de tu ordenador.\s[14]\e"
+			"\0\s[14]\i[5]*Se pregunta cómo le has podido dar las cosas si está dentro de tu ordenador.\s[14]\e"
 		
-			"\0\s[0]\i[5]\i[6]*Está imaginándose cómo reaccionará la gente de la Resistencia cuando lleve las cosas que le has dado.\e"
+			"\0\s[0]\i[5]\i[6]*Se está imaginando como reaccionará la gente de la Resistencia cuando lleve las cosas que le has dado.\e"
 		}
 			
 		//Pets stuff
@@ -151,17 +151,17 @@ RandomTalk : nonoverlap
 		
 			"\0\s[2]\i[5]*Se pregunta cuándo le volverás a acariciar.\s[2]\e"
 		
-			"\0\s[56]\i[5]*Se está preguntando si le acariciarás de nuevo.\s[56]\e"
+			"\0\s[56]\i[5]*Se pregunta si le acariciarás de nuevo.\s[56]\e"
 		}
 		//More pets
 		if petadd > 100 && bigmood > 0 && raphchain == 0 && donchain == 0 && splinterchain == 0
 		{
-			"\0\s[50]\i[5]*Le oyes murmurar algo. \n\n[half]\f[sub,true]\s[50]\w8\w6.\w3.\w3.\w3.\w3 ¿Más \w4ca\w3ri\w3cias?\w3.\w3.\w3.\w3.\f[sub,false]\e"
+			"\0\s[50]\i[5]*Le oyes murmurar. \n\n[half]\f[sub,true]\s[50]\w8\w6.\w3.\w3.\w3 ¿Más \w4ca\w3ri\w3cias?\w3.\w3.\w3.\f[sub,false]\e"
 		}
 		//500 PETS!!!
 		if petadd >= 500 && bigmood > 0 && raphchain == 0 && donchain == 0 && splinterchain == 0
 		{
-			"\0\s[0]No me puedo creer que me hayas acariciado, \w3como unas, \w3quinientas veces. \w8\w4De verdad. \w8\w4\s[19]Madre mía. \w8\w4\s[57]¿Supongo que \w3gracias? \w8\w4\s[19]Ven aquí, \w3te voy a acariciar la cabeza también. \w8\w4\s[23]Buen trabajo.\e"
+			"\0\s[0]No me puedo creer que me hayas acariciado, \w3como unas, \w3quinientas veces. \w8\w4De verdad. \w8\w4\s[19]Madre mía. \n\n[half]\w8\w4\s[57]¿Supongo que \w3debo darte las gracias? \w8\w4\s[19]Ven aquí, \w3yo también te voy a acariciar la cabeza. \n\n[half]\w8\w4\s[23]Bien hecho.\e"
 		}
 	
 	
@@ -177,57 +177,57 @@ RandomTalk : nonoverlap
 		//"\0\s[0]I am pausing \w4for dramatic \w6emphasis. \w8P\w6 - \w6A - \w6U - \w6S - \w6E.\e"
 	
 	
-		"\0\s[27]\i[5]Te clava la mirada. Bueno, tanto como puede con esas pupilas de pixel que tiene.\w3\0\s[26]\n\n[half]¿Eh?\e"
+		"\0\s[27]\i[5]*Te observa con atención. \w6Bueno,\w4 tanto como puede con esas pupilas de píxeles que tiene.\w3\0\s[26]\n\n[half]¿Eh?\e"
 	
-		"\0\s[21]Nunca pensé que echaría de menos los árboles verdes\w4.\w4.\w4. \w8y los árboles naranjas\w4.\w4.\w4. \w8y los árboles púrpuras\w4.\w4.\w4.\e"
+		"\0\s[21]Nunca pensé que echaría de menos los árboles verdes\w4.\w4.\w4. \w8y los árboles naranjas\w4.\w4.\w4. \w8y los árboles morados\w4.\w4.\w4.\e"
 	
-		"\0\s[100]\i[5]*Parece estar escuchando con atención. \w8\w8\w8\w8\s[20]\n\n[half]¿Oh? Perdona, pensaba que había oido a un enemigo acercarse. \n\w8\s[0]Había olvidado donde estaba por un segundo.\e"
+		"\0\s[100]\i[5]*Parece estar escuchando algo con atención. \w8\w8\w8\w8\s[20]\n\n[half]¿Qué?\w4 Oh, perdona, pensaba que había oído a un enemigo acercándose. \n\n[half]\w8\s[0]Había olvidado donde estaba por un momento.\e"
 	
-		"\0\s[18]Me pregunto si puedo traer a más gente aquí\w5.\w5.\w5.\e"
+		"\0\s[18]Me pregunto si puedo traer aquí a más gente\w5.\w5.\w5.\e"
 	
-		"\0\s[2]\i[5]*Le oyes murmurar algo.\s[2]\n\n[half]\f[sub,true]...tengo que contarle a Casey cómo eran los ordenadores de la antigua escuela\w4.\w4.\w4.\f[sub,false]\e"
+		"\0\s[2]\i[5]*Le oyes murmurar.\s[2]\n\n[half]\f[sub,true]... Tengo que contarle a Casey como eran los ordenadores de la vieja escuela\w4.\w4.\w4.\f[sub,false]\e"
 	
-		"\0\s[2]\i[5]*Le oyes murmurar algo.\s[2]\n\n[half]\f[sub,true]...tengo que enseñarle a Casey esta llave\w4.\w4.\w4.\f[sub,false]\e"
+		"\0\s[2]\i[5]*Le oyes murmurar.\s[2]\n\n[half]\f[sub,true]... Tengo que enseñar a Casey esta llave\w4.\w4.\w4.\f[sub,false]\e"
 	
-		"\0\s[2]\i[5]*Le oyes murmurar algo.\s[2]\n\n[half]\f[sub,true]...tengo que ver cómo está Mikey\w4.\w4.\w4.\f[sub,false]\e"
+		"\0\s[2]\i[5]*Le oyes murmurar.\s[2]\n\n[half]\f[sub,true]... Tengo que ver cómo está Mikey\w4.\w4.\w4.\f[sub,false]\e"
 	
-		"\0\s[2]\i[5]*Le oyes murmurar algo.\s[2]\n\n[half]\f[sub,true]...mi turno de pulir los caparazones\w4.\w4.\w4.\f[sub,false]\e"
+		"\0\s[2]\i[5]*Le oyes murmurar.\s[2]\n\n[half]\f[sub,true]... Mi turno de pulir los caparazones\w4.\w4.\w4.\f[sub,false]\e"
 	
-		"\0\s[2]\i[5]*Le oyes murmurar algo.\s[2]\n\n[half]\f[sub,true]...qué haría Rafa\w4.\w4.\w4.\f[sub,false]\e"
+		"\0\s[2]\i[5]*Le oyes murmurar.\s[2]\n\n[half]\f[sub,true]... Qué haría Rafa\w4.\w4.\w4.\f[sub,false]\e"
 	
-		"\0\s[2]\i[5]*Le oyes murmurar algo.\s[2]\n\n[half]\f[sub,true]...a papá le gustaría esto\w4.\w4.\w4.\f[sub,false]\e"
+		"\0\s[2]\i[5]*Le oyes murmurar.\s[2]\n\n[half]\f[sub,true]... A papá le gustaría esto\w4.\w4.\w4.\f[sub,false]\e"
 	
-		"\0\s[2]\i[5]*Le oyes murmurar algo.\s[2]\n\n[half]\f[sub,true]...Resistencia\w4.\w4.\w4.\f[sub,false]\e"
+		"\0\s[2]\i[5]*Le oyes murmurar.\s[2]\n\n[half]\f[sub,true]... Resistencia\w4.\w4.\w4.\f[sub,false]\e"
 	
-		"\0\s[2]\i[5]*Le oyes murmurar algo.\s[2]\n\n[half]\f[sub,true]...Krang\w4.\w4.\w4.\f[sub,false]\e"
+		"\0\s[2]\i[5]*Le oyes murmurar.\s[2]\n\n[half]\f[sub,true]... Krang\w4.\w4.\w4.\f[sub,false]\e"
 	
-		"\0\s[2]\i[5]*Le oyes murmurar algo.\s[2]\n\n[half]\f[sub,true]...es culpa mía\w4.\w4.\w4.\f[sub,false]\e"
+		"\0\s[2]\i[5]*Le oyes murmurar.\s[2]\n\n[half]\f[sub,true]... Es mi culpa\w4.\w4.\w4.\f[sub,false]\e"
 	
-		"\0\s[2]\i[5]*Le oyes murmurar algo.\s[2]\n\n[half]\f[sub,true]...sabe tanto sobre mi mundo\w4.\w4.\w4. sobre mi pasado\w4.\w4.\w4.\f[sub,false]\e"
+		"\0\s[2]\i[5]*Le oyes murmurar.\s[2]\n\n[half]\f[sub,true]... Sabe tanto sobre mi mundo\w4.\w4.\w4. sobre mi pasado\w4.\w4.\w4.\f[sub,false]\e"
 	
-		"\0\s[2]\i[5]*Le oyes murmurar algo.\s[2]\n\n[half]\f[sub,true]...me creerían los chicos sobre esto\w4.\w4.\w4.\f[sub,false]\e"
+		"\0\s[2]\i[5]*Le oyes murmurar.\s[2]\n\n[half]\f[sub,true]... Me creerían los chicos sobre esto\w4.\w4.\w4.\f[sub,false]\e"
 	
-		"\0\s[2]\i[5]*Le oyes murmurar algo.\s[2]\n\n[half]\f[sub,true]...el escuadrón 17 aún no ha dado informe\w4.\w4.\w4.\f[sub,false]\e"
+		"\0\s[2]\i[5]*Le oyes murmurar.\s[2]\n\n[half]\f[sub,true]... El escuadrón 17 aún no han informado\w4.\w4.\w4.\f[sub,false]\e"
 	
-		"\0\s[2]\i[5]*Le oyes murmurar algo.\s[2]\n\n[half]\f[sub,true]...espero que estén bien sin mí\w4.\w4.\w4.\f[sub,false]\e"
+		"\0\s[2]\i[5]*Le oyes murmurar.\s[2]\n\n[half]\f[sub,true]... Espero que les esté yendo bien sin mí\w4.\w4.\w4.\f[sub,false]\e"
 	
 		//"\0\s[2]\i[5]*You hear him mumble something to himself.\s[2]\n\n[half]\f[sub,true]...\w4.\w4.\w4.\f[sub,false]\e"
 	
-		"\0\s[2]\i[5]*Le oyes murmurar algo.\s[2]\n\n[half]\f[sub,true]...¿acabé dándole a Drax sus órdenes?\w4.\w4.\w4.\f[sub,false]\e"
+		"\0\s[2]\i[5]*Le oyes murmurar.\s[2]\n\n[half]\f[sub,true]... ¿Le acabé dando sus órdenes a Drax?\w4.\w4.\w4.\f[sub,false]\e"
 	
-		"\0\s[2]Espero que se estén apañando todos en la Resistencia\w4.\w4.\w4.\e"
+		"\0\s[2]Espero que se estén apañando todos en\nla Resistencia\w4.\w4.\w4.\e"
 	
-		"\0\s[2]\i[5]*Le oyes murmurar algo.\s[2]\n\n[half]\f[sub,true].\w3.\w3.\w3tengo que administrar nuestros recursos\w4.\w4.\w4.\f[sub,false]\e"
+		"\0\s[2]\i[5]*Le oyes murmurar.\s[2]\n\n[half]\f[sub,true].\w3.\w3.\w3 Tengo que administrar nuestros recursos\w4.\w4.\w4.\f[sub,false]\e"
 	
 		"\0\s[18]Creo que he vuelto a confundir el escuadrón 6 con el escuadrón 9\w3.\w3.\w3.\e"
 	
-		"\0\s[2]\i[5]*Le oyes murmurar algo.\s[2]\n\n[half]\f[sub,true].\w3.\w3.\w3espero que Casey no esté demasiado preocupado por mí\w4.\w4.\w4.\f[sub,false]\e"
+		"\0\s[2]\i[5]*Le oyes murmurar.\s[2]\n\n[half]\f[sub,true].\w3.\w3.\w3 Espero que Casey no esté demasiado preocupado por mí\w4.\w4.\w4.\f[sub,false]\e"
 	
-		"\0\s[2]\i[5]*Le oyes murmurar algo.\s[2]\n\n[half]\f[sub,true]Qué\w3 haría\w3 Lou\w3 Jitsu\w4.\w4.\w4.\f[sub,false]\e"
+		"\0\s[2]\i[5]*Le oyes murmurar.\s[2]\n\n[half]\f[sub,true]Qué\w3 haría\w3 Lou\w3 Jitsu\w4.\w4.\w4.\f[sub,false]\e"
 	
 		//"\0\s[1]%(username)!! Quickly!! BEHIND YOU! TURN AROUND!!! AAAAAAA- \[s0]Ha! \w3Gotcha! \w3Gosh, It'd been forever since I could saythis as a joke.\s[2]\n\n[half]*You tell Leo you didn't turn around.\s[0]\n\n[half]Your mistake, %(username), you really should be more careful.\e"
 	
-		"\0\s[2]\i[5]*Oyes como tararea una canción.\s[2]\n\n[half].\w3.\w3.\w3debería de organizar otra noche de karaoke\w5.\w5.\w5.\e"
+		"\0\s[2]\i[5]*Oyes como tararea una canción.\s[2]\n\n[half].\w3.\w3.\w3 Debería de organizar otra noche de karaoke\w5.\w5.\w5.\e"
 	
 		"\0\s[100]\i[5]*Mira a su alrededor.\e"
 	
@@ -237,19 +237,19 @@ RandomTalk : nonoverlap
 	
 		"\0\s[48]\i[5]*Está meditando.\e"
 		
-		"\0\s[15]¿Apagué el horno antes de meterme aquí?\i[5]\w5.\w5.\w5. \w8\s[20]Eh, supongo.\e"
+		"\0\s[15]¿Apagué el horno antes de meterme aquí?\i[5]\n\w5.\w5.\w5.\w8\s[20] Eh, supongo.\e"
 	
-		"\0\s[15]¿Apagué el horno antes de meterme aquí?\i[5]\w5.\w5.\w5.\w5.\w5.\w5. \w8\w4\s[14]Uy.\e"
+		"\0\s[15]¿Apagué el horno antes de meterme aquí?\i[5]\n\w5.\w5.\w5.\w5.\w5.\w5. \w8\w4\s[14]Uy.\e"
 	
-		"\0\s[0]¿Te importa si entreno aquí? \w8\w4Hay mucho espacio donde asesta- \w4\s[26]a\w3a\w3r\w3 Quiero decir, \s[0]\w6para practicar. \w8\w8\w5\s[28]\f[sub,true]Buenísima.\f[sub,false]\e"
+		"\0\s[0]¿Te importa si entreno aquí? \w8\w4Hay mucho espacio donde asesta- \n\n[half]\w4\s[26]A\w3a\w3a\w3h\w3...\w3 Quiero decir, \s[0]\w6para practicar. \w8\w8\w5\s[28]\f[sub,true]Buenísima salvada.\f[sub,false]\e"
 	
-		"\0\s[11]¿Por cuánto tiempo he estado aquí? \w8\w4No estoy seguro si el tiempo va mucho más despacio o increíblemente deprisa\w2.\w2.\w2.\e"
+		"\0\s[11]¿Cuánto tiempo llevo aquí? \w8\w4No estoy seguro si el tiempo va mucho más despacio o increíblemente deprisa\w2.\w2.\w2.\e"
 	
-		"\0\s[2]%(username)\w3.\w3.\w3. \w8\w4Qué nombre más raro\w3.\w3.\w3.\e"
+		"\0\s[2]%(username)\w3.\w3.\w3. \w8\w4Qué nombre más extraño\w3.\w3.\w3.\e"
 	
-		"\0\s[15]¿Tiene este ordenador algo de místico? \n\w8\w4A parte del hecho de ser muy arcaico.\e"
+		"\0\s[15]¿Este ordenador tiene algo de místico? \n\w8\w4A parte del hecho de ser muy arcaico.\e"
 	
-		"\0\s[0]Espero que haya un buen clima ahí fuera. \w8\w4Aunque, \w3hoy en día, \w3de donde soy, \w2\s[21]la lluvia es mucho más preferible.\e"
+		"\0\s[0]Espero que ahí fuera estés teniendo un buen clima. \n\w8\w4Aunque, \w3de donde soy yo, \w3hoy en día, \w2\s[21]la lluvia es mucho más preferible.\e"
 	
 		"\0\s[29]\i[5]*Se aprieta la bandana.\e"
 	
@@ -261,40 +261,40 @@ RandomTalk : nonoverlap
 	
 		"\0\s[0]\i[6]\i[5]*Está soñando despierto.\e"
 	
-		"\0\s[2]\i[5]*Suspira. \w8Puedes ver cómo le ha afectado el paso de los años\w3.\w3.\w3.\s[2]\e"
+		"\0\s[2]\i[5]*Suspira. \w8Puedes ver como le ha afectado el paso de los años\w3.\w3.\w3.\s[2]\e"
 	
-		"\0\s[2]\i[5]*Está tarareando una canción pegadiza. \w8Parece ser el opening de la serie\w3.\w3.\w3.\s[2]\e"
+		"\0\s[2]\i[5]*Está tarareando una canción pegadiza. \w8Parece ser el intro de la serie\w3.\w3.\w3.\s[2]\e"
 	
 		"\0\s[2]Espero no llegar tarde a la misión\w3.\w3.\w3.\e"
 	
-		"\0\s[2]\i[5]*Está pensando en algo. \w6\w6Probablemente en Rafa.\s[2]\e"
+		"\0\s[2]\i[5]*Está pensando en algo. \w6\w6En Rafa, probablemente.\s[2]\e"
 	
-		"\0\s[2]\i[5]*Está pensando en algo. \w6\w6Probablemente en Mikey.\s[2]\e"
+		"\0\s[2]\i[5]*Está pensando en algo. \w6\w6En Mikey, probablemente.\s[2]\e"
 	
-		"\0\s[2]\i[5]*Está pensando en algo. \w6\w6Probablemente en Donnie.\s[2]\e"
+		"\0\s[2]\i[5]*Está pensando en algo. \w6\w6En Donnie, probablemente.\s[2]\e"
 	
-		"\0\s[2]\i[5]*Está pensando en algo. \w6\w6Probablemente en Abril.\s[2]\e"
+		"\0\s[2]\i[5]*Está pensando en algo. \w6\w6En Abril, probablemente.\s[2]\e"
 	
-		"\0\s[2]\i[5]*Está pensando en algo. \w6\w6Probablemente en Splinter.\s[2]\e"
+		"\0\s[2]\i[5]*Está pensando en algo. \w6\w6En Splinter, probablemente.\s[2]\e"
 	
-		"\0\s[2]\i[5]*Está pensando en algo. \w6\w6Probablemente en Casey Jr.\s[2]\e"
+		"\0\s[2]\i[5]*Está pensando en algo. \w6\w6En Casey Jr., probablemente\s[2]\e"
 	
-		"\0\s[2]\i[5]*Está pensando en algo. \w6\w6Probablemente en la Resistencia.\s[2]\e"
+		"\0\s[2]\i[5]*Está pensando en algo. \w6\w6En la Resistencia, probablemente.\s[2]\e"
 	
-		"\0\s[2]\i[5]*Está pensando en algo. \w6\w6Probablemente en los Krang.\s[2]\e"
+		"\0\s[2]\i[5]*Está pensando en algo. \w6\w6En los Krang, probablemente\s[2]\e"
 	
-		"\0\s[2]\i[5]*Está tarareando una melodía. \w6\w6\s[2]\f[sub,true]\n\n[half].\w3.\w3.\w3dabudi dabudai\w3.\w3.\w3.\f[sub,false]"
+		"\0\s[2]\i[5]*Está tarareando una melodía. \w6\w6\s[2]\f[sub,true]\n\n[half].\w3.\w3.\w3 Dabudi dabudai\w3.\w3.\w3.\f[sub,false]"
 	
 		"\0\s[2]\i[5]*Está pensando en algo. \w6\w6\s[30]\i[5]En ti, \w3¿puede?\w8\w8\w6\s[2]\e"
 
-		"\0\s[0]Le dije a Cass que hoy entrenaríamos juntos\w3.\w3.\w3. \s[35]Espero que no se enfade demasiado.\e"
+		"\0\s[0]Le dije a Cass que hoy entrenaríamos juntos\w3.\w3.\w3.\n\w8\w4\s[35]Espero que no se enfade demasiado.\e"
 		
 		//"\0\s[0].\e"
 		if month >= 12 && raphchain == 0 && donchain == 0 && splinterchain == 0
 		{
 			//"\0\s[0]This is dialogue for December.\w8\1\s[18]A cold month?\e"
 		
-			"\0\s[0]Diciembre, \w3¿eh? \w8\w4\i[6]Con razón he estado somnoliento últimamente\w3.\w3.\w3.\e"
+			"\0\s[0]Diciembre, \w3¿eh? \w8\w4\i[6]Con razón me he sentido somnoliento últimamente\w3.\w3.\w3.\e"
 		}
 	
 		//So you can use these to check for any number of situations. I think this feature is really neat, so I'm going to set up some quick default responses for the months, days, and time of day. If you don't want to do these, you can just delete this whole set of ifs down to the //--Double Envelopes section below.
@@ -304,7 +304,7 @@ RandomTalk : nonoverlap
 		{
 			//"\0\s[0]This is dialogue for January.\w8\1\s[10]Yup.\e"
 		
-			"\0\s[0]Feliz año nuevo. \w8\w2Que los aliens nunca ataquen tu dimensión.\e"
+			"\0\s[0]Feliz año nuevo. \w8\w2Qué los aliens nunca ataquen tu dimensión.\e"
 		}
 		if month == 2 && raphchain == 0 && donchain == 0 && splinterchain == 0
 		{
@@ -316,7 +316,7 @@ RandomTalk : nonoverlap
 		{
 			//"\0\s[0]This is dialogue for March.\w8\1\s[10]Yup.\e"
 		
-			"\0\s[0]Conque marzo, \w3¿no es así? \w8La primavera no\w3.\w3.\w3. \w6es muy diferente de otras estaciones donde yo vivo.\e"
+			"\0\s[0]Conque estamos en marzo, \w3¿cierto? \n\w8Donde yo vivo, la primavera no\w3.\w3.\w3. \w6es muy diferente de las otras estaciones.\e"
 		}
 		if month == 4 && raphchain == 0 && donchain == 0 && splinterchain == 0
 		{
@@ -328,7 +328,7 @@ RandomTalk : nonoverlap
 		{
 			//"\0\s[0]This is dialogue for May.\w8\1\s[10]Yup.\e"
 		
-			"\0\s[23]¿Puedo preguntar en qué mes \f[italic,true]mayo\f[italic,false]?"
+			"\0\s[23]¿Puedo preguntar en qué mes \w4\f[italic,true]mayo\f[italic,false]?"
 		}
 		if month == 6 && raphchain == 0 && donchain == 0 && splinterchain == 0
 		{
@@ -340,7 +340,7 @@ RandomTalk : nonoverlap
 		{
 		//"\0\s[0]This is dialogue for July.\w8\1\s[10]Yup.\e"
 		
-			"\0\s[0]Ah, \w3julio, \w3mi mes favorito. \w8\w2\s[17]Bueno, solía serlo. \w8\w2Ahora todos los meses se sienten más o menos igual. \w8\w8\s[19]Aún así, \w3julio está bastante bien.\e"
+			"\0\s[0]Ah, \w3julio, \w3mi mes favorito.\n\n[half]\w8\w2\s[17]Bueno, solía serlo. \w8\w2Ahora todos los meses se sienten más o menos igual. \w8\w8\s[19]Aún así, \w3julio está bastante bien.\e"
 		}
 		if month == 8 && raphchain == 0 && donchain == 0 && splinterchain == 0
 		{
@@ -352,7 +352,7 @@ RandomTalk : nonoverlap
 		{
 		//"\0\s[0]This is dialogue for September.\w8\1\s[10]Yup.\e"
 		
-			"\0\s[0]De niño, \w3\s[19]siempre odiaba septiembre. \w8\w2Y de adolescente, \w2también. \n\w8\w2\s[79]Ahora\w3.\w3.\w3. \w6\s[2]el invierno es mucho peor.\e"
+			"\0\s[0]De niño, \w3\s[19]siempre odiaba septiembre. \w8\w2Y de adolescente,\w2también. \n\w8\w2\s[79]Ahora\w3.\w3.\w3. \w6\s[2]el invierno es mucho peor.\e"
 		
 			"\0\s[2]No recuerdo\w3.\w3.\w3. \w8\w5qué ocurrió en septiembre\w3.\w3.\w3.\e"
 		}
@@ -360,7 +360,7 @@ RandomTalk : nonoverlap
 		{
 			//"\0\s[0]This is dialogue for October.\w8\1\s[10]Yup.\e"
 		
-			"\0\s[19]Octubre mola. \w8\w2Halloween siempre ha sido una pasada. \w8\w2Espero que lo disfrutes.\e"
+			"\0\s[19]Octubre está genial. \w8\w2Halloween siempre ha sido una pasada. \w8\w2Espero que lo disfrutes.\e"
 		
 			"\0\s[20]¿Buscando un disfraz para Halloween? \w8\w2\s[19]Podría sugerir el de un apuesto maestro tortuga ninja.\e"
 		}
@@ -369,7 +369,7 @@ RandomTalk : nonoverlap
 			//"\0\s[0]This is dialogue for November.\w8\1\s[10]Yup.\e"
 		
 			//its about my birthday LMAO listen month dialogue was hard to come up with
-			"\0\s[0]Hay alguien que cumple años en noviembre\w3.\w3.\w3. \w8\w2\s[30]Feliz cumpleaños, \w3colega\w3.\w3.\w3.\e"
+			"\0\s[0]Hay alguien que cumple años en noviembre\w3.\w3.\w3. \n\n[half]\w8\w2\s[30]Feliz cumpleaños, \w3colega\w3.\w3.\w3.\e"
 		}
 		//These ifs check what day of the week it is.
 		if weekday == 1 && raphchain == 0 && donchain == 0 && splinterchain == 0
@@ -384,13 +384,13 @@ RandomTalk : nonoverlap
 		{
 			//"\0\s[0]This is dialogue for Tuesday.\w8\1\s[10]Yup.\e"
 		
-			"\0\s[0]Hoy es martes, \w3¿cierto? \w8\w3\s[19]Es mi turno de patrullar.\e"
+			"\0\s[0]Hoy es martes, \w3¿cierto? \w8\w3\s[19]Es mi turno de salir a patrullar.\e"
 		}
 		if weekday == 3 && raphchain == 0 && donchain == 0 && splinterchain == 0
 		{
 			//"\0\s[0]This is dialogue for Wednesday.\w8\1\s[10]Yup.\e"
 		
-			"\0\s[100]Espero no perderme mi entrenamiento de los miércoles\w3.\w3.\w3.\e"
+			"\0\s[100]Espero no perderme el entrenamiento de los miércoles\w3.\w3.\w3.\e"
 		}
 		if weekday == 4 && raphchain == 0 && donchain == 0 && splinterchain == 0
 		{
@@ -404,13 +404,13 @@ RandomTalk : nonoverlap
 		
 			"\0\s[0]Es viernes y ya sabes lo que significa, \w3¿no es así? \w8\s[24]\i[6]\w3Noche de karaoke, \s[25]all evening 'till midnight!\e"
 		
-			"\0\s[0]Ya solo falta el fin de semana, \w3¿verdad, \w3compadre? \w8\w3\s[23]Espero que puedes descansar un poco.\e"
+			"\0\s[0]Ya solo falta el fin de semana, \w3¿verdad, \w3buddy? \w8\w3\s[23]Espero que puedes descansar un poco.\e"
 		}
 		if weekday == 6 && raphchain == 0 && donchain == 0 && splinterchain == 0
 		{
 			//"\0\s[0]This is dialogue for Saturday.\w8\1\s[10]Yup.\e"
 		
-			"\0\s[0]Sábado\w3.\w3.\w3. \w8\w3día de descanso. \w8\w3También conocido como: El día en el que tengo más horas de sueño. \w8\w6Dos horas enteritas.\i[6]\e"
+			"\0\s[0]Sábado\w3.\w3.\w3. \w8\w3día de descanso. \w8\w3También conocido como\n«el día en el que consigo más horas de sueño.» \n\n[half]\w8\w6Dos horas enteritas.\i[6]\e"
 		}
 		if weekday == 7 && raphchain == 0 && donchain == 0 && splinterchain == 0
 		{
@@ -421,13 +421,13 @@ RandomTalk : nonoverlap
 		
 		if timeslot == "earlymorning" && raphchain == 0 && donchain == 0 && splinterchain == 0
 		{
-			"\0\s[22]Dios, \w3qué temprano\w3.\w3.\w3. \w8\w4\s[0]Bueno, \w4\s[19]como se suele decir, \w4\s[23]el que madruga, \w3rata que captura.\e"
+			"\0\s[22]Dios, \w3qué temprano\w3.\w3.\w3. \n\w8\w4\s[0]Bueno, \w4\s[19]como se suele decir, \w4\s[23]el que madruga, \w3rata que captura.\e"
 		
-			"\0\s[27]¿Por qué estás despiert%(spaform('o','a','e')) tán temprano, \w3%(username)? \w8\w3\s[26]¿Es una emergencia? \w8\w3¿Necesitas ayuda?\e"
+			"\0\s[27]¿Por qué estás despiert%(spaform('o','a','e')) tan temprano, \w3%(username)? \n\n[half]\w8\w3\s[26]¿Es una emergencia? \w8\w3¿Necesitas ayuda?\e"
 		}
 		if timeslot == "morning" && raphchain == 0 && donchain == 0 && splinterchain == 0
 		{
-			"\0\s[0]¿List%(spaform('o','a','e')) para un día productivo? \w8\w4\s[23]No te preocupes, \w4yo tampoco."
+			"\0\s[0]¿List%(spaform('o','a','e')) para un día productivo? \n\n[half]\w8\w4\s[23]No te preocupes, \w4yo tampoco."
 		
 			//"\0\s[0]This is more dialogue for the morning.\w8\1\s[10]That it is.\e"
 		}
@@ -435,7 +435,7 @@ RandomTalk : nonoverlap
 		{
 			"\0\s[20]¿Ya has almorzado?\e"
 		
-			"\0\s[18]¿Hoy es mi turno de poder almorzar?\w3.\w3.\e"
+			"\0\s[18]¿Hoy es mi turno de poder almorzar?\w3.\w3.\w3.\e"
 		}
 		if timeslot == "afternoon" && raphchain == 0 && donchain == 0 && splinterchain == 0
 		{
@@ -453,11 +453,11 @@ RandomTalk : nonoverlap
 		{
 			"\0\s[0]Se está haciendo tarde, \w3¿no crees?\e"
 		
-			"\0\s[100]Está oscureciendo. \w8\w3Mantente alerta, \w3compadre.\e"
+			"\0\s[100]Está oscureciendo. \w8\w3Mantente alerta, \w3buddy.\e"
 		}
 		if timeslot == "midnight" && raphchain == 0 && donchain == 0 && splinterchain == 0
 		{
-			"\0\s[0]Son pasadas las doce. \w8\w4\s[19]De donde soy, \w3a estas horas ya deberías de estar de vuelta en la Resistencia, \w3al menos que estés en una misión\w3.\w3.\w3. \w8\w4\s[57]O atrapado en el ordenador de alguien.\e"
+			"\0\s[0]Son pasadas las doce. \n\w8\w4\s[19]De donde soy yo, \w3a estas horas ya deberías de estar de vuelta en la Resistencia, \w4a no ser que estés en una misión\w3.\w3.\w3. \n\n[half]\w8\w4\s[57]O atrapado en el ordenador de alguien.\e"
 		
 			"\0\s[100]Empieza el toque de queda.\e"
 		
@@ -468,7 +468,7 @@ RandomTalk : nonoverlap
 	//post ded reveal
 	if raphchain == 3 || donchain == 3 || splinterchain == 3 && leowatch == 0
 	{
-		"\0\s[82]\i[5]*Le puedes oír suspirar.\s[82]\e"
+		"\0\s[82]\i[5]*Le oyes suspirar.\s[82]\e"
 		
 		"\0\s[85]\i[5]*Está mirando la foto de nuevo.\s[85]\e"
 		
@@ -500,13 +500,13 @@ RandomTalk : nonoverlap
 			"\0\s[126]*Te mira de reojo.\e"
 			"\0\s[126]*Está mirando tu cara.\e"
 			"\0\s[124]*Preguntas a Leo si se está aburriendo. \w8\w4\n\n[half]\s[126]¿Hum? \w8\w6Nop.\e"
-			"\0\s[124]*Disfruta mirando tu pantalla.\e"
+			"\0\s[124]*Disfruta mirando la pantalla.\e"
 			"\0\s[124]*Preguntas a Leo si le gusta lo que está viendo. \n\n[half]\s[123]Ajá.\e"
 			"\0\s[124]*Preguntas a Leo si le gusta lo que está viendo. \n\n[half]\s[123]¿Podemos ver algo con más acción?\e"
 			"\0\s[124]*Está relajado.\e"
 			"\0\s[126]Tienes la pantalla hecha unos zorros, \w3¿lo sabías?\e"
 			"\0\s[124]*Se pregunta que está pasando.\e"
-			"\0\s[127]*Disfruta pasar el tiempo contigo.e"
+			"\0\s[127]*Disfruta pasar el rato contigo.\e"
 		}
 		elseif watchleomusic == 1
 		{
@@ -515,30 +515,30 @@ RandomTalk : nonoverlap
 			"\0\s[128]¿Para la siguiente, podemos escuchar esa canción?\e"
 			"\0\s[123]Está es un temazo.\e"
 			"\0\s[123]Está es pegadiza.\e"
-			"\0\s[125]Ahora la voy a tener metida en la cabeza durante días\w3.\w3.\w3.\e"
+			"\0\s[125]Ahora la voy a tener metida en la cabeza días\w3.\w3.\w3.\e"
 			"\0\s[126]*Te mira de reojo.\e"
 			"\0\s[124]*Preguntas a Leo si le gusta esta canción. \w8\w4\n\n[half]\s[123]Está bien.\e"
-			"\0\s[124]*Preguntas a Leo si le gusta esta canción. \w8\w4\n\n[half]\s[123]Mola.\e"
-			"\0\s[124]*Preguntas a Leo si le gusta esta canción. \w8\w4\n\n[half]\s[127]¡Me gusta! \w8\w4\s[123]Me imagino acuchillando a los Krang con esta de fondo.\e"
+			"\0\s[124]*Preguntas a Leo si le gusta esta canción. \w8\w4\n\n[half]\s[123]Está genial.\e"
+			"\0\s[124]*Preguntas a Leo si le gusta esta canción. \w8\w4\n\n[half]\s[127]¡Me gusta! \w8\w4\s[123]Me imagino rebanando a los Krang con esta de fondo.\e"
 			"\0\s[124]*Disfruta escuchando la música.\e"
 			"\0\s[124]*Está pensando en tu lista de reproducción.\e"
-			"\0\s[124]*Está pensando sobre esta canción.\e"
-			"\0\s[124]*Está pensando sobre la melodía.\e"
+			"\0\s[124]*Está pensando en esta canción.\e"
+			"\0\s[124]*Está pensando en la melodía.\e"
 			"\0\s[124]*Está pensando en la letra.\e"
 			"\0\s[126]¿Cómo se llamaba esta canción?\e"
 			"\0\s[124]*Está tarareando al ritmo de la canción.\e"
 			"\0\s[124]*Está relajado.\e"
 			"\0\s[123]Hum\w3.\w3.\w3.\e"
-			"\0\s[127]Me gusta esta.\e"
+			"\0\s[127]Esta me gusta.\e"
 			"\0\s[124]*Se pregunta cuántos años tiene esta canción.\e"
 			"\0\s[124]*Está metido en sus pensamientos.\e"
-			"\0\s[127]*Disfruta pasar el tiempo contigo.\e"
+			"\0\s[127]*Disfruta pasar el rato contigo.\e"
 			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[125]Esta letra\w5.\w5.\w5.\e"
-			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[125]¿Qué es esta canción?\w3.\w3.\e"
+			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[125]¿Qué es esta canción?\w3.\w3.\w3.\e"
 			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[126]Tu lista de reproducción.\e"
 			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[125]Tu gusto musical.\e"
 			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[127]En la próxima noche de karaoke.\e"
-			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[126]Solo me meneo al ritmo de la canción.\e"
+			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[126]Solo me estoy meneando al ritmo de la música.\e"
 			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[123]A Rafa le gustaría esta\w3.\w3.\w3.\e"
 			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[123]A Donnie le gustaría esta\w3.\w3.\w3.\e"
 			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[123]A Mikey le gustaría esta\w3.\w3.\w3.\e"
@@ -551,16 +551,16 @@ RandomTalk : nonoverlap
 			//"\0\s[124].\e"
 			"\0\s[124]*Está mirando la pantalla con atención.\e"
 			"\0\s[128]Te has saltado un trozo.\e"
-			"\0\s[127]¡No te olvides de tomarte un respiro!\e"
+			"\0\s[127]¡No te olvides de tomarte un descanso!\e"
 			"\0\s[126]*Te mira de reojo.\e"
-			"\0\s[126]\w8\w8\w8\s[124]\w8\w4*Le preguntas si quiere algo.\n\n[half]\w8\w4\s[126]¿Oh? \w8\w4No, \w3\s[127]pones una cara graciosa cuando dibujas.\e"
+			"\0\s[126]\w8\w8\w8\s[124]\w8\w4*Le preguntas si quiere algo.\n\n[half]\w8\w4\s[126]¿Oh? \w8\w4No, \w3\s[127]solo que pones una cara graciosa cuando dibujas.\e"
 			"\0\s[124]*Preguntas a Leo si se está aburriendo. \w8\w4\n\n[half]\s[123]No, \w3no, \w3en realidad, \w3esto es bastante relajante.\e"
 			"\0\s[124]*Preguntas a Leo si se está aburriendo. \w8\w4\n\n[half]\s[123]No, \w3esto es como meditar.\e"
-			"\0\s[124]*Disfruta viéndote dibujar.\e"
-			"\0\s[124]*Está mirando el lienzo.\e"
+			"\0\s[124]*Disfruta verte dibujar.\e"
+			"\0\s[124]*Está mirando al lienzo.\e"
 			"\0\s[124]*Está pensando en lo que estás dibujando.\e"
 			"\0\s[126]¿Qué es lo que estás dibujando?\e"
-			"\0\s[123]Ese color es bonito.\e"
+			"\0\s[123]Qué color más bonito.\e"
 			"\0\s[123]¿Y si añades algo de azul?\e"
 			"\0\s[124]*Está relajado.\e"
 			"\0\s[123]Hum\w3.\w3.\w3.\e"
@@ -569,25 +569,25 @@ RandomTalk : nonoverlap
 			"\0\s[124]*Se pregunta desde cuándo llevas dibujando.\e"
 			"\0\s[124]*Está metido en sus pensamientos.\e"
 			"\0\s[124]*Está inmerso en el lienzo.\e"
-			"\0\s[127]*Disfruta pasar el tiempo contigo.\e"
+			"\0\s[127]*Disfruta pasar el rato contigo.\e"
 			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[126]A esto le vendría bien algo más de azul.\e"
 			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[126]En el arte de Mikey.\e"
 			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[123]La cantidad de pinceles que tienes\w3.\w3.\w3.\e"
 			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[123]A Mikey le gustaría esto\w3.\w3.\w3.\e"
 			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[123]Esto es relajante.\e"
-			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[126]Solo estoy admirando tu técnica.\e"
+			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[126]Solo estoy apreciando tu técnica.\e"
 		}
 		elseif watchleogames == 1
 		{
 			//"\0\s[124].\e"
 			"\0\s[124]*Está mirando la pantalla con atención.\e"
-			"\0\s[128]¡Miro, \w3miro!\e"
+			"\0\s[128]¡Mira eso, \w3mira eso!\e"
 			"\0\s[128]¡Cuidado!\e"
 			"\0\s[128]¡Vamos, \w3vamos, \w3vamos!\e"
 			"\0\s[126]*Te mira de reojo.\e"
 			"\0\s[126]*Está mirando tu cara mientras juegas.\e"
 			"\0\s[124]*Preguntas a Leo si se está aburriendo. \w8\w4\n\n[half]\s[123]No, \w3no, \w3continua.\e"
-			"\0\s[124]*Preguntas a Leo si se está aburriendo. \w8\w4\n\n[half]\s[123]¿Qué? \w8\w3¡Este juego mola! \w8\w4¡Vamos, \w3sigue!\e"
+			"\0\s[124]*Preguntas a Leo si se está aburriendo. \w8\w4\n\n[half]\s[123]¿Qué? \w8\w3¡Este juego está genial! \w8\w4¡Vamos, \w3sigue!\e"
 			"\0\s[123]¿Así es cómo han cambiando los videojuegos?\e"
 			"\0\s[124]*Está metido en el juego.\e"
 			"\0\s[123]Ojalá pudiera jugar a esto\w3.\w3.\w3.\e"
@@ -599,17 +599,17 @@ RandomTalk : nonoverlap
 			"\0\s[124]*Está relajado.\e"
 			"\0\s[123]¡Buah!\e"
 			"\0\s[123]No te olvides de guardar.\e"
-			"\0\s[123]Ooh, \w3\s[128]¡mira eso!\e"
+			"\0\s[123]Oooh, \w3\s[128]¡mira eso!\e"
 			"\0\s[123]%(username), \w3\s[128]¡ahí!\e"
-			"\0\s[123]O\w2o\w2h\w3.\w3.\w3.\e"
-			"\0\s[123]Oh, \w3eso ha molado.\e"
+			"\0\s[123]O\w2o\w2o\w2h\w3.\w3.\w3.\e"
+			"\0\s[123]Oh, \w3eso ha estado genial.\e"
 			"\0\s[127]¡Buena esa!\e"
 			"\0\s[123]Interesante\w3.\w3.\w3.\e"
-			"\0\s[123]Oh, \w3¿vale?\w3.\w3.\e"
+			"\0\s[123]Oh, \w3¿vale?\w3.\w3.\w3.\e"
 			"\0\s[124]*Se pregunta qué está pasando.\e"
 			"\0\s[124]*Está metido en sus pensamientos.\e"
 			"\0\s[124]*Está metido en el juego.\e"
-			"\0\s[127]*Disfruta pasar el tiempo contigo.\e"
+			"\0\s[127]*Disfruta pasar el rato contigo.\e"
 			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[123]Los controles de este juego son un poco raros.\e"
 			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[125]Me gustaría poder jugar\w3.\w3.\w3. \w8\w4\s[127]Pero me gusta ver cómo juegas, \w3asi que por favor, \w3continua.\e"
 			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[123]¡Me gusta este juego! \w8\w4\s[126]¿No habrá, \w3por casualidad, \w3una versión que funcione en un brazo robot?\e"
@@ -619,10 +619,10 @@ RandomTalk : nonoverlap
 			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[123]A Abril le gustaría esto\w3.\w3.\w3.\e"
 			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[123]A papá le gustaría esto\w3.\w3.\w3.\e"
 			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[123]A Casey le gustaría esto\w3.\w3.\w3.\e"
-			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[123]A Rafa se le daría genial esto\w3.\w3.\w3.\e"
-			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[123]A Donnie se le daría genial esto\w3.\w3.\w3.\e"
-			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[123]A Mikey se le daría genial esto\w3.\w3.\w3.\e"
-			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[123]A Abril se le daría genial esto\w3.\w3.\w3.\e"
+			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[123]A Rafa se le daría genial\w3.\w3.\w3.\e"
+			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[123]A Donnie se le daría genial\w3.\w3.\w3.\e"
+			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[123]A Mikey se le daría genial\w3.\w3.\w3.\e"
+			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[123]A Abril se le daría genial\w3.\w3.\w3.\e"
 			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[123]¡En lo divertido que es esto!\e"
 			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[125]Tu gusto en videojuegos\w3.\w3.\w3.\e"
 			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[125]Tu manera de jugar\w3.\w3.\w3.\e"
@@ -633,13 +633,13 @@ RandomTalk : nonoverlap
 			"\0\s[124]*Está mirando la pantalla con atención.\e"
 			"\0\s[128]¡Mira, \w3mira!\e"
 			"\0\s[126]*Te mira de reojo.\e"
-			"\0\s[126]\w8\w8\w8\s[124]\w8\w4*Le preguntas si quiere algo.\n\n[half]\w8\w4\s[126]¿Oh? \w8\w4No, \w3no, \w3\s[127]Solo quería ver cómo reaccionabas a esta escena.\e"
-			"\0\s[123]Yyy... \w3la trama se complica\w3.\w3\w3.\e"
+			"\0\s[126]\w8\w8\w8\s[124]\w8\w4*Le preguntas si quiere algo.\n\n[half]\w8\w4\s[126]¿Eh? \w8\w4No, \w3no, \w3\s[127]solo quería ver cómo reaccionabas a esta escena.\e"
+			"\0\s[123]Y... \w3la trama se complica\w3.\w3.\w3.\e"
 			"\0\s[124]*Preguntas a Leo si se está aburriendo. \w8\w4\n\n[half]\s[123]No, \w3no, \w3sigamos.\e"
-			"\0\s[124]*Preguntas a Leo si se está aburriendo. \w8\w4\n\n[half]\s[123]Tío, \w3estoy \w2INMERSO \w2en la película.\e"
+			"\0\s[124]*Preguntas a Leo si se está aburriendo. \w8\w4\n\n[half]\s[123]Buddy, \w3estoy \w2INMERSO \w2en la película.\e"
 			"\0\s[124]*Está disfrutando la película.\e"
 			"\0\s[124]*Está absorto en la trama.\e"
-			"\0\s[124]*Está pensando en la última escena.\e"
+			"\0\s[124]*Está pensando en la escena anterior.\e"
 			"\0\s[124]*Se pregunta qué pasará después.\e"
 			"\0\s[126]¿Cómo se llamaba esta peli?\e"
 			"\0\s[124]*Está pensando en el protagonista.\e"
@@ -647,26 +647,26 @@ RandomTalk : nonoverlap
 			"\0\s[124]*Está relajado.\e"
 			"\0\s[123]¡Buah!\e"
 			"\0\s[123]Rebobina, \w3rebobin- \w8\w8\w5¡Oh!\e"
-			"\0\s[123]Ooh, \w3\s[128]¡mira eso!\e"
-			"\0\s[123]O\w2o\w2h\w3.\w3.\w3.\e"
-			"\0\s[123]Oh, \w3eso ha molado.\e"
+			"\0\s[123]Oooh, \w3\s[128]¡mira eso!\e"
+			"\0\s[123]O\w2o\w2o\w2h\w3.\w3.\w3.\e"
+			"\0\s[123]Oh, \w3eso ha estado genial.\e"
 			"\0\s[123]Interesante\w3.\w3.\w3.\e"
-			"\0\s[123]Oh, \w3¿vale?\w3.\w3.\e"
+			"\0\s[123]Oh, \w3¿vale?\w3.\w3.\w3.\e"
 			"\0\s[124]*Se pregunta qué está pasando.\e"
 			"\0\s[124]*Está metido en sus pensamientos.\e"
 			"\0\s[124]*Está metido en la película.\e"
-			"\0\s[127]*Disfruta pasar el tiempo contigo.\e"
+			"\0\s[127]*Disfruta pasar el rato contigo.\e"
 			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[123]¡Ss\w1sss\w1sss\w1hhh\w2hhh! \w8\w4¡Estoy viendo la película!\e"
 			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[123]Esta es un poco aburrida\w3.\w3.\w3. \w8\w4\s[126]Pero no pasa nada. \w8\w4\s[123]Me gustan las noches de chill viendo películas.\e"
 			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[123]¡Esta película es una pasada! \w8\w4\s[127]Gracias por enseñármela.\e"
 			"\0\s[127]Gracias por enseñarme esta película. \w8\w4\s[123]Echo de menos ver la tele así\w3.\w3.\w3.\e"
 			"\0\s[127]Gracias por enseñarme esta película. \w8\w4\s[123]Ojalá pudiera enseñársela a Casey\w3.\w3.\w3.\e"
-			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[123]A Rafa le gustaría esto\w3.\w3.\w3.\e"
-			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[123]A Donnie le gustaría esto\w3.\w3.\w3.\e"
-			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[123]A Mikey le gustaría esto\w3.\w3.\w3.\e"
-			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[123]A Abril le gustaría esto\w3.\w3.\w3.\e"
-			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[123]A papá le gustaría esto\w3.\w3.\w3.\e"
-			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[123]A Casey le gustaría esto\w3.\w3.\w3.\e"
+			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[123]A Rafa le gustaría\w3.\w3.\w3.\e"
+			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[123]A Donnie le gustaría\w3.\w3.\w3.\e"
+			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[123]A Mikey le gustaría\w3.\w3.\w3.\e"
+			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[123]A Abril le gustaría\w3.\w3.\w3.\e"
+			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[123]A papá le gustaría\w3.\w3.\w3.\e"
+			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[123]A Casey le gustaría\w3.\w3.\w3.\e"
 			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[123]¡Me lo estoy pasando genial!\e"
 			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[125]Tu gusto cinematográfico\w3.\w3.\w3.\e"
 		}
@@ -675,9 +675,9 @@ RandomTalk : nonoverlap
 			//"\0\s[124].\e"
 			"\0\s[124]*Está mirando la pantalla con atención.\e"
 			"\0\s[128]¡Mira, \w3mira!\e"
-			"\0\s[123]Yyy... \w3la trama se complica\w3.\w3\w3.\e"
+			"\0\s[123]Y... \w3la trama se complica\w3.\w3.\w3.\e"
 			"\0\s[126]*Te mira de reojo.\e"
-			"\0\s[126]\w8\w8\w8\s[124]\w8\w4*Le preguntas si quiere algo.\n\n[half]\w8\w4\s[126]¿Oh? \w8\w4No, \w3no, \w3\s[127]Solo quería ver tu reacción.\e"
+			"\0\s[126]\w8\w8\w8\s[124]\w8\w4*Le preguntas si quiere algo.\n\n[half]\w8\w4\s[126]¿Oh? \w8\w4No, \w3no, \w3\s[127]solo quería ver tu reacción.\e"
 			"\0\s[124]*Preguntas a Leo si se está aburriendo. \w8\w4\n\n[half]\s[123]No, \w3no, \w3sigamos.\e"
 			"\0\s[124]*Le gusta mirar la pantalla.\e"
 			"\0\s[124]*Está inmerso.\e"
@@ -685,20 +685,20 @@ RandomTalk : nonoverlap
 			"\0\s[124]*Está relajado.\e"
 			"\0\s[123]¡Buah!\e"
 			"\0\s[123]Rebobina, \w3rebobin- \w8\w8\w5¡Oh!\e"
-			"\0\s[123]Ooh, \w3\s[128]¡mira eso!\e"
+			"\0\s[123]Oooh, \w3\s[128]¡mira eso!\e"
 			"\0\s[124]*Está pensando en el último vídeo que habéis visto.\e"
-			"\0\s[123]O\w2o\w2h\w3.\w3.\w3.\e"
-			"\0\s[123]Oh, \w3eso ha molado.\e"
+			"\0\s[123]O\w2o\w2o\w2h\w3.\w3.\w3.\e"
+			"\0\s[123]Oh, \w3eso ha estado genial.\e"
 			"\0\s[123]Interesante\w3.\w3.\w3.\e"
 			"\0\s[123]Qué educativo\w3.\w3.\w3.\e"
 			"\0\s[124]*Se pregunta qué está pasando.\e"
-			"\0\s[124]*Está esperando con ansias al próximo vídeo.\e"
+			"\0\s[124]*Está esperando con ansias el próximo vídeo.\e"
 			"\0\s[124]*Está metido en sus pensamientos.\e"
 			"\0\s[124]*Está metido en el vídeo.\e"
-			"\0\s[127]*Disfruta pasar el tiempo contigo.\e"
+			"\0\s[127]*Disfruta pasar el rato contigo.\e"
 			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[123]¡Ss\w1sss\w1sss\w1hhh\w2hhh! \w8\w4¡Estoy viendo el vídeo!\e"
 			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[123]Este es un poco aburrido\w3.\w3.\w3. \w8\w4\s[126]Pero no pasa nada. \w8\w4\s[123]Siempre es mejor que mirar los mismos videocasetes una y otra vez.\e"
-			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[123]¡Esta película es una pasada! \w8\w4\s[127]Gracias por enseñármela.\e"
+			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[123]¡Esto es una pasada! \w8\w4\s[127]Gracias por enseñármelo.\e"
 			"\0\s[127]Gracias por enseñarme tantas cosas. \w8\w4\s[123]Esto sí que es un buen descanso.\e"
 			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[123]A Rafa le gustaría esto\w3.\w3.\w3.\e"
 			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[123]A Donnie le gustaría esto\w3.\w3.\w3.\e"
@@ -715,19 +715,19 @@ RandomTalk : nonoverlap
 			"\0\s[128]Una erra\w1ta\w1a\w1a\w1a\w1a\w1a.\e"
 			"\0\s[126]*Te mira de reojo.\e"
 			"\0\s[126]\w8\w8\w8\s[124]\w8\w4*Le preguntas si quiere algo.\n\n[half]\w8\w4\s[126]¿Oh? \w8\w4No, \w3solo miraba la cara que pones mientras piensas.\e"
-			"\0\s[124]*Preguntas a Leo si se está aburriendo. \w8\w4\n\n[half]\s[123]No, \w3no, \w3me gusta leer lo que escribes. \w8\w4Me gusta imaginarme que esto es un comic, \w3pero tengo que imaginarme las imágenes en mi cabeza.\e"
+			"\0\s[124]*Preguntas a Leo si se está aburriendo. \w8\w4\n\n[half]\s[123]No, \w3no, \w3me gusta leer lo que escribes. \w8\w4Me gusta imaginarme que esto es un comic, \w3pero tengo que imaginarme las imágenes en la cabeza.\e"
 			"\0\s[124]*Preguntas a Leo si se está aburriendo. \w8\w4\n\n[half]\s[123]No, \w3esto es como meditar.\e"
-			"\0\s[124]*Disfruta mirando cómo escribes.\e"
+			"\0\s[124]*Disfruta mirar como escribes.\e"
 			"\0\s[124]*Está mirando la página.\e"
 			"\0\s[124]*Está leyendo la última frase de nuevo.\e"
 			"\0\s[124]*Se pregunta si habrá un giro de los acontecimientos.\e"
-			"\0\s[124]*Se está imaginando cómo será el final.\e"
+			"\0\s[124]*Se está imaginando como será el final.\e"
 			"\0\s[124]*Está pensando en la página anterior.\e"
 			"\0\s[124]*Piensa en lo que estás escribiendo.\e"
 			"\0\s[126]¿Qué estás escribiendo?\e"
 			"\0\s[123]Esta fuente es un poco aburrida.\e"
 			"\0\s[123]¿Puedes hacer la fuente un poco más grande, \w3por favor?\e"
-			"\0\s[127]¡No te olvides de tomarte un respiro!\e"
+			"\0\s[127]¡No te olvides de tomarte un descanso!\e"
 			"\0\s[124]*Está relajado.\e"
 			"\0\s[123]Hum\w3.\w3.\w3.\e"
 			"\0\s[123]Lo estás haciendo fenomenal.\e"
@@ -736,9 +736,9 @@ RandomTalk : nonoverlap
 			"\0\s[124]*Se pregunta si le dejarás leer todo una vez esté terminado.\e"
 			"\0\s[124]*Está metido en sus pensamientos.\e"
 			"\0\s[124]*Está metido en el texto.\e"
-			"\0\s[127]*Disfruta pasar el tiempo contigo.\e"
+			"\0\s[127]*Disfruta pasar el rato contigo.\e"
 			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[126]El ritmo es bueno, \w3sigue así.\e"
-			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[126]Editar esto va a ser un fastidio\w3.\w3.\w3. \w8\w4\s[127]Para ti.\e"
+			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[126]Editar esto va a ser un fastidio\w3.\w3.\w3. \w8\w4\s[127]para ti.\e"
 			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[123]El número de palabras\w3.\w3.\w3.\e"
 			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[123]Esto es relajante.\e"
 			"\0\s[124]*Preguntas a Leo en qué está pensando.\w8\w4\n\n[half]\s[126]Solo estoy admirando tu habilidad para escribir.\e"
@@ -762,9 +762,9 @@ RandomTalk : nonoverlap
 		//You can also put in multiple ifs checking for the same thing to vary the responses. In this case, it's checking to see if they're wearing another shell. You don't need to use elseifs for this! Just an if is fine.
 		if nowshell == "Chin Stripes"
 		{
-			"\0\s[34]Te gustan las bananas de mi barbilla, \w3¿eh? \w8\w4\s[53]¿Me hacen ver más viejo?\e"
+			"\0\s[34]Te gustan las bananas de mi barbilla, \w3¿eh? \w8\w4\s[53]¿Me hacen más mayor?\e"
 		
-			"\0\s[2]\i[5]*Le oyes murmurar algo.\s[2]\n\n[half]\f[sub,true]...necesito más vendajes\w4.\w4.\w4.\f[sub,false]\e"
+			"\0\s[2]\i[5]*Le oyes murmurar.\s[2]\n\n[half]\f[sub,true]... Necesito más vendajes\w4.\w4.\w4.\f[sub,false]\e"
 		
 			"\0\s[12]\i[5]*Se rasca la barbilla.\s[12]\e"
 		
@@ -776,11 +776,11 @@ RandomTalk : nonoverlap
 		
 			"\0\s[15]Tengo que vaciarme los bolsillos\w3.\w3.\w3.\e"
 		
-			"\0\s[2]\i[5]*Le oyes murmurar algo.\s[2]\n\n[half]\f[sub,true]...necesito más vendajes\w4.\w4.\w4.\f[sub,false]\e"
+			"\0\s[2]\i[5]*Le oyes murmurar.\s[2]\n\n[half]\f[sub,true]... Necesito más vendajes\w4.\w4.\w4.\f[sub,false]\e"
 		}
 		if nowshell == "Taileo"
 		{
-			"\0\s[34]¿Por qué sigues mirando mi cola?\w8\w4.\e"
+			"\0\s[34]¿Por qué sigues mirándome la cola?\w8\w4\e"
 		
 			//"\0\s[15]I need to clean up my pockets\w3.\w3.\w3.\e"
 		
@@ -789,15 +789,15 @@ RandomTalk : nonoverlap
 			{
 				"\0\s[23]\i[5]*Contonea la cola.\e"
 				"\0\s[52]\i[5]*Menea la cola.\s[52]\e"
-				"\0\s[96]\i[5]*Mueve la cola contento.\s[96]\e"
+				"\0\s[96]\i[5]*Mueve la cola alegremente.\s[96]\e"
 			}
 		}
 	
 		if bigmood >= 0 && raphchain == 0 && donchain == 0 && splinterchain == 0 && pizzagot == 1
 		{
-			"\0\s[0]\i[5]*Él huele a la pizza que le has dado.\s[0]\e"
+			"\0\s[0]\i[5]*Leo huele a la pizza que le has dado.\s[0]\e"
 		
-			"\0\s[23]Gracias otra vez por la pizza. \w8\w4\s[0]Te prometo que nos lo comeremos todo.\n\w8\w4\s[19]Sí, \w3incluso la caja.\e"
+			"\0\s[23]Gracias otra vez por la pizza. \w8\w4\s[0]Te prometo que nos lo comeremos todo.\n\n[half]\w8\w4\s[19]Sí, \w3incluso la caja.\e"
 		
 			"\0\s[35]\i[5]*Está pensando en la pizza que le has dado.\s[35]\e"
 			
@@ -806,9 +806,9 @@ RandomTalk : nonoverlap
 	
 		if bigmood >= 0 && raphchain == 0 && donchain == 0 && splinterchain == 0 && supgot == 1
 		{
-			"\0\s[119]\i[6]*Está comprobando que la bolsa que le has dado sigue ahí.\e"
+			"\0\s[119]\i[6]*Está comprobando si la bolsa que le has dado sigue ahí.\e"
 		
-			"\0\s[19]Gracias por los suministros. \w8\w3\s[0]Tienen un valor incalculable para nosotros, \w3\s[23]cada pequeña cosa cuenta.\e"
+			"\0\s[19]Gracias por los suministros. \w8\w3\s[0]Tienen un valor incalculable para nosotros, \w3\s[23]cada cosita cuenta.\e"
 		
 			"\0\s[2]\i[5]*Se pregunta que le has puesto en la bolsa de suministros que le has dado.\s[2]\e"
 		
@@ -817,13 +817,13 @@ RandomTalk : nonoverlap
 	
 		if bigmood >= 0 && raphchain == 0 && donchain == 0 && splinterchain == 0 && supgot == 1 && pizzagot == 1
 		{
-			"\0\s[119]\i[6]*Está comprobando que las cosas que le has dado siguen ahí.\e"
+			"\0\s[119]\i[6]*Está comprobando si las cosas que le has dado siguen ahí.\e"
 		
-			"\0\s[74]No tienes por qué darme nada mientras estoy aquí, \w3\s[72]lo sabes, ¿verdad? \w8\w4\s[79]Pero\w3.\w3.\w3. \w3\s[97]gracias.\e"
+			"\0\s[74]No tienes por qué darme nada mientras estoy aquí, \w3\s[72]lo sabes, ¿verdad?\n\n[half]\w8\w4\s[79]Pero\w3.\w3.\w3. \w3\s[97]te lo agradezco.\e"
 		
-			"\0\s[14]\i[5]*Se pregunta cómo le has podido dar cosas si está dentro de tu ordenador.\s[14]\e"
+			"\0\s[14]\i[5]*Se pregunta cómo le has podido dar las cosas si está dentro de tu ordenador.\s[14]\e"
 		
-			"\0\s[0]\i[5]\i[6]*Está imaginándose cómo reaccionará la gente de la Resistencia cuando lleve las cosas que le has dado.\e"
+			"\0\s[0]\i[5]\i[6]*Se está imaginando cómo reaccionará la gente de la Resistencia cuando lleve las cosas que le has dado.\e"
 		}
 			
 		//Pets stuff
@@ -835,31 +835,31 @@ RandomTalk : nonoverlap
 		
 			"\0\s[2]\i[5]*Se pregunta cuándo le volverás a acariciar.\s[2]\e"
 		
-			"\0\s[56]\i[5]*Se está preguntando si le acariciarás de nuevo.\s[56]\e"
+			"\0\s[56]\i[5]*Se pregunta si le acariciarás de nuevo.\s[56]\e"
 		}
 		//More pets
 		if petadd > 100 && bigmood > 0 && raphchain == 0 && donchain == 0 && splinterchain == 0
 		{
-			"\0\s[50]\i[5]*Le oyes murmurar algo. \n\n[half]\f[sub,true]\s[50]\w8\w6.\w3.\w3.\w3.\w3Más \w4ca\w3ri\w3cias?\w3.\w3.\w3.\w3.\f[sub,false]\e"
+			"\0\s[50]\i[5]*Le oyes murmurar. \n\n[half]\f[sub,true]\s[50]\w8\w6.\w3.\w3.\w3 ¿Más \w4ca\w3ri\w3cias?\w3.\w3.\w3.\f[sub,false]\e"
 		}
 		//500 PETS!!!
 		if petadd >= 500 && bigmood > 0 && raphchain == 0 && donchain == 0 && splinterchain == 0
 		{
-			"\0\s[0]No me puedo creer que me hayas acariciado, \w3como unas, \w3quinientas veces. \w8\w4De verdad. \w8\w4\s[19]Madre mía. \w8\w4\s[57]¿Supongo que \w3gracias? \w8\w4\s[19]Ven aquí, \w3te voy a acariciar la cabeza también. \w8\w4\s[23]Buen trabajo.\e"
+			"\0\s[0]No me puedo creer que me hayas acariciado, \w3como unas, \w3quinientas veces. \w8\w4De verdad. \w8\w4\s[19]Madre mía. \n\n[half]\w8\w4\s[57]¿Supongo que \w3debo darte las gracias? \w8\w4\s[19]Ven aquí, \w3yo también te voy a acariciar la cabeza. \n\n[half]\w8\w4\s[23]Bien hecho.\e"
 		}
 		
-		"\0\s[2]\i[5]*Está tarareando una melodía. \w6\w6\s[2]\f[sub,true]\n\n[half]...dabudi dabudai\w3.\w3.\w3.\f[sub,false]"
+		"\0\s[2]\i[5]*Está tarareando una melodía. \w6\w6\s[2]\f[sub,true]\n\n[half]... Dabudi dabudai\w3.\w3.\w3.\f[sub,false]"
 	
 		"\0\s[2]\i[5]*Está pensando en algo. \w6\w6\s[30]\i[5]En ti, \w3¿puede?\w8\w8\w6\s[2]\e"
 
-		"\0\s[0]Le dije a Cass que hoy entrenaríamos juntos\w3.\w3.\w3. \w8\w4\s[35]Espero que no se enfade demasiado.\e"
+		"\0\s[0]Le dije a Cass que hoy entrenaríamos juntos\w3.\w3.\w3.\n\w8\w4\s[35]Espero que no se enfade demasiado.\e"
 		
 		//"\0\s[0].\e"
 		if month >= 12 && raphchain == 0 && donchain == 0 && splinterchain == 0
 		{
 			//"\0\s[0]This is dialogue for December.\w8\1\s[18]A cold month?\e"
 		
-			"\0\s[0]Diciembre, \w3¿eh? \w8\w4\i[6]Con razón he estado somnoliento últimamente...\e"
+			"\0\s[0]Diciembre, \w3¿eh? \w8\w4\i[6]Con razón me he sentido somnoliento últimamente\w3.\w3.\w3.\e"
 		}
 	
 		//So you can use these to check for any number of situations. I think this feature is really neat, so I'm going to set up some quick default responses for the months, days, and time of day. If you don't want to do these, you can just delete this whole set of ifs down to the //--Double Envelopes section below.
@@ -869,7 +869,7 @@ RandomTalk : nonoverlap
 		{
 			//"\0\s[0]This is dialogue for January.\w8\1\s[10]Yup.\e"
 		
-			"\0\s[0]Feliz año nuevo. \w8\w2Que los aliens nunca ataquen tu dimensión.\e"
+			"\0\s[0]Feliz año nuevo. \w8\w2Qué los aliens nunca ataquen tu dimensión.\e"
 		}
 		if month == 2 && raphchain == 0 && donchain == 0 && splinterchain == 0
 		{
@@ -881,7 +881,7 @@ RandomTalk : nonoverlap
 		{
 			//"\0\s[0]This is dialogue for March.\w8\1\s[10]Yup.\e"
 		
-			"\0\s[0]Conque marzo, \w3¿no es así? \w8La primavera no\w3.\w3.\w3. \w6es muy diferente de otras estaciones donde yo vivo.\e"
+			"\0\s[0]Conque estamos en marzo, \w3¿cierto? \n\w8Donde yo vivo, la primavera no\w3.\w3.\w3. \w6es muy diferente de las otras estaciones.\e"
 		}
 		if month == 4 && raphchain == 0 && donchain == 0 && splinterchain == 0
 		{
@@ -905,7 +905,7 @@ RandomTalk : nonoverlap
 		{
 		//"\0\s[0]This is dialogue for July.\w8\1\s[10]Yup.\e"
 		
-			"\0\s[0]Ah, \w3julio, \w3mi mes favorito. \w8\w2\s[17]Bueno, solía serlo. \w8\w2Ahora todos los meses se sienten más o menos igual. \w8\w8\s[19]Aún así, \w3julio está bastante bien.\e"
+			"\0\s[0]Ah, \w3julio, \w3mi mes favorito.\n\n[half]\w8\w2\s[17]Bueno, solía serlo. \w8\w2Ahora todos los meses se sienten más o menos igual. \w8\w8\s[19]Aún así, \w3julio está bastante bien.\e"
 		}
 		if month == 8 && raphchain == 0 && donchain == 0 && splinterchain == 0
 		{
@@ -925,7 +925,7 @@ RandomTalk : nonoverlap
 		{
 			//"\0\s[0]This is dialogue for October.\w8\1\s[10]Yup.\e"
 		
-			"\0\s[19]Octubre mola. \w8\w2Halloween siempre ha sido una pasada. \w8\w2Espero que lo disfrutes.\e"
+			"\0\s[19]Octubre está genial. \w8\w2Halloween siempre ha sido una pasada. \w8\w2Espero que lo disfrutes.\e"
 		
 			"\0\s[20]¿Buscando un disfraz para Halloween? \w8\w2\s[19]Podría sugerir el de un apuesto maestro tortuga ninja.\e"
 		}
@@ -934,7 +934,7 @@ RandomTalk : nonoverlap
 			//"\0\s[0]This is dialogue for November.\w8\1\s[10]Yup.\e"
 		
 			//its about my birthday LMAO listen month dialogue was hard to come up with
-			"\0\s[0]Hay alguien que cumple años en noviembre\w3.\w3.\w3. \w8\w2\s[30]Feliz cumpleaños, \w3colega\w3.\w3.\w3.\e"
+			"\0\s[0]Hay alguien que cumple años en noviembre\w3.\w3.\w3. \n\n[half]\w8\w2\s[30]Feliz cumpleaños, \w3colega\w3.\w3.\w3.\e"
 		}
 		//These ifs check what day of the week it is.
 		if weekday == 1 && raphchain == 0 && donchain == 0 && splinterchain == 0
@@ -949,13 +949,13 @@ RandomTalk : nonoverlap
 		{
 			//"\0\s[0]This is dialogue for Tuesday.\w8\1\s[10]Yup.\e"
 		
-			"\0\s[0]Hoy es martes, \w3¿cierto? \w8\w3\s[19]Es mi turno de patrullar.\e"
+			"\0\s[0]Hoy es martes, \w3¿cierto? \w8\w3\s[19]Es mi turno de salir a patrullar.\e"
 		}
 		if weekday == 3 && raphchain == 0 && donchain == 0 && splinterchain == 0
 		{
 			//"\0\s[0]This is dialogue for Wednesday.\w8\1\s[10]Yup.\e"
 		
-			"\0\s[100]Espero no perderme mi entrenamiento de los miércoles\w3.\w3.\w3.\e"
+			"\0\s[100]Espero no perderme el entrenamiento de los miércoles\w3.\w3.\w3.\e"
 		}
 		if weekday == 4 && raphchain == 0 && donchain == 0 && splinterchain == 0
 		{
@@ -969,13 +969,13 @@ RandomTalk : nonoverlap
 		
 			"\0\s[0]Es viernes y ya sabes lo que significa, \w3¿no es así? \w8\s[24]\i[6]\w3Noche de karaoke, \s[25]all evening 'till midnight!\e"
 		
-			"\0\s[0]Ya solo falta el fin de semana, \w3¿verdad, \w3compadre? \w8\w3\s[23]Espero que puedes descansar un poco.\e"
+			"\0\s[0]Ya solo falta el fin de semana, \w3¿verdad, \w3buddy? \w8\w3\s[23]Espero que puedes descansar un poco.\e"
 		}
 		if weekday == 6 && raphchain == 0 && donchain == 0 && splinterchain == 0
 		{
 			//"\0\s[0]This is dialogue for Saturday.\w8\1\s[10]Yup.\e"
 		
-			"\0\s[0]Sábado\w3.\w3.\w3. \w8\w4día de descanso. \w8\w3También conocido como: El día en el que tengo más horas de sueño. \w8\w6Dos horas enteritas.\i[6]\e"
+			"\0\s[0]Sábado\w3.\w3.\w3. \w8\w4día de descanso. \w8\w3También conocido como\n«el día en el que tengo más horas de sueño.» \n\n[half]\w8\w6Dos horas enteritas.\i[6]\e"
 		}
 		if weekday == 7 && raphchain == 0 && donchain == 0 && splinterchain == 0
 		{
@@ -986,13 +986,13 @@ RandomTalk : nonoverlap
 		
 		if timeslot == "earlymorning" && raphchain == 0 && donchain == 0 && splinterchain == 0
 		{
-			"\0\s[22]Dios, \w3qué temprano\w3.\w3.\w3. \w8\w4\s[0]Bueno, \w4\s[19]como se suele decir, \w4\s[23]el que madruga, \w3rata que captura.\e"
+			"\0\s[22]Dios, \w3qué temprano\w3.\w3.\w3. \n\w8\w4\s[0]Bueno, \w4\s[19]como se suele decir, \w4\s[23]el que madruga, \w3rata que captura.\e"
 		
-			"\0\s[27]¿Por qué estás despiert%(spaform('o','a','e')) tán temprano, \w3%(username)? \w8\w3\s[26]¿Es una emergencia? \w8\w3¿Necesitas ayuda?\e"
+			"\0\s[27]¿Por qué estás despiert%(spaform('o','a','e')) tan temprano, \w3%(username)? \n\n[half]\w8\w3\s[26]¿Es una emergencia? \w8\w3¿Necesitas ayuda?\e"
 		}
 		if timeslot == "morning" && raphchain == 0 && donchain == 0 && splinterchain == 0
 		{
-			"\0\s[0]¿List%(spaform('o','a','e')) para un día productivo? \w8\w4\s[23]No te preocupes, \w4yo tampoco."
+			"\0\s[0]¿List%(spaform('o','a','e')) para un día productivo? \n\n[half]\w8\w4\s[23]No te preocupes, \w4yo tampoco."
 		
 			//"\0\s[0]This is more dialogue for the morning.\w8\1\s[10]That it is.\e"
 		}
@@ -1000,7 +1000,7 @@ RandomTalk : nonoverlap
 		{
 			"\0\s[20]¿Ya has almorzado?\e"
 		
-			"\0\s[18]¿Hoy es mi turno de poder almorzar?\w3.\w3.\e"
+			"\0\s[18]¿Hoy es mi turno de poder almorzar?\w3.\w3.\w3.\e"
 		}
 		if timeslot == "afternoon" && raphchain == 0 && donchain == 0 && splinterchain == 0
 		{
@@ -1018,28 +1018,28 @@ RandomTalk : nonoverlap
 		{
 			"\0\s[0]Se está haciendo tarde, \w3¿no crees?\e"
 		
-			"\0\s[100]Está oscureciendo \w8\w3Mantente alerta, \w3compadre.\e"
+			"\0\s[100]Está oscureciendo. \w8\w3Mantente alerta, \w3buddy.\e"
 		}
 		if timeslot == "midnight" && raphchain == 0 && donchain == 0 && splinterchain == 0
 		{
-			"\0\s[0]Son pasadas las doce. \w8\w4\s[19]De donde soy, \w3a estas horas ya deberías de estar de vuelta en la Resistencia, \w3al menos que estés en una misión\w3.\w3.\w3. \w8\w4\s[57]O atrapado en el ordenador de alguien.\e"
+			"\0\s[0]Son pasadas las doce. \n\w8\w4\s[19]De donde soy yo, \w3a estas horas ya deberías de estar de vuelta en la Resistencia, \w3a no ser que estés en una misión\w3.\w3.\w3. \n\n[half]\w8\w4\s[57]O atrapado en el ordenador de alguien.\e"
 		
 			"\0\s[100]Empieza el toque de queda.\e"
 		
 			"\0\s[2]It's midnight curfew.\e"
 		}
 		
-		"\0\s[23]Gracias por tratarme como lo haces. \w8\w3\s[0]Incluso en la guerra, \s[2]hay humanos que nos miran nosotros los mutantes \w4con mala cara.\e"
+		"\0\s[23]Gracias por tratarme como lo haces. \w8\w3\s[0]Incluso en la guerra, \s[2]hay humanos que nos miran a nosotros, los mutantes, \w4de mala cara.\e"
 		
 		"\0\s[23]Gracias por pasar el rato conmigo. \w8\w5\s[22]Es un buen descanso de lo que está pasando en casa.\e"
 	
-		"\0\s[0]¡No te olvides de hacer pausas y descansar! \n\n[half]\i[5]\w8*Le preguntas si \s[26]\i[5]él hace pausas. \0\s[26]\n\n[half]\w8¡No estamos hablando de mí! \w8\w6\0\s[0]Además, \w6\s[19]técnicamente hablando, \w6\s[20]ahora mismo estoy haciendo una pausa.\e"
+		"\0\s[0]¡No te olvides de hacer pausas y descansar! \n\n[half]\i[5]\w8*Le preguntas si \s[26]\i[5]él hace pausas. \0\s[26]\n\n[half]\w8¡No estamos hablando sobre mí! \w8\w6\0\s[0]Además, \w6\s[19]técnicamente, \w6\s[20]ahora mismo estoy haciendo una pausa.\e"
 		
-		"\0\s[100]Nunca puedes bajar la guardia\w5.\w5.\w5. \w8\s[20]Pero este lugar es bastante relajante.\e"
+		"\0\s[100]Nunca puedes bajar la guardia\w5.\w5.\w5.\n\w8\s[20]Pero este lugar es bastante acogedor.\e"
 		
-		"\0\s[0]Tú no invitas a otras tortugas cuando no estoy aquí, \w5¿verdad?\e"
+		"\0\s[0]Tú no invitas a otras tortugas cuando no estoy aquí,\n\w5¿verdad?\e"
 	
-		"\0\s[23]Espero que tu día esté yendo bien. \s[0]Es el infierno en la Tierra de donde vengo.\e"
+		"\0\s[23]Espero que estés teniendo un buen día. \s[0]Es el infierno en la Tierra donde vengo.\e"
 	
 		"\0\s[0]Si hace buen tiempo, \w3deberías de salir a la calle. \w8\w4\s[21]Disfrutar del mundo\w3.\w3.\w3.\e"
 		
@@ -1047,16 +1047,16 @@ RandomTalk : nonoverlap
 		
 		"\0\s[0]\i[6]\i[5]*Está silbando una melodía.\e"
 	
-		"\0\s[0]\i[6]\i[5]*Parece estar tranquilo.\e"
+		"\0\s[0]\i[6]\i[5]*Parece tranquilo.\e"
 		
-		"\0\s[0]Sabes una cosa, \s[19]la verdad es que me gusta este sitio. \w8\w4Se podría decir que, \s[24]\i[6]es como si me hubiera \s[25]caído del cielo.\e"
+		"\0\s[0]Sabes una cosa, \s[19]la verdad es que me gusta este sitio. \w8\w4Se podría decir que,\s[24]\i[6] me gusta pasarme \s[25]por aquí.\e"
 		
 		"\0\s[85]\i[5]*Está mirando la foto de su familia\w3.\w3.\w3.\s[85]\e"
 			
 		//Great mood Leo
 		if bigmood > 120 && raphchain == 0 && donchain == 0 && splinterchain == 0
 		{
-			"\0\s[95]\i[5]\i[6]*Puedes ver como el cansancio que tenía acumulado sobre sus hombros desaparece\w3.\w3.\w3.\e"
+			"\0\s[95]\i[5]\i[6]*Puedes ver como el cansancio que tenía acumulado desaparece de sus hombros\w3.\w3.\w3.\e"
 		
 			"\0\s[52]\i[5]*Parece estar bastante animado.\s[52]\e"
 		}
@@ -1080,7 +1080,7 @@ RandomTalk : nonoverlap
 		
 			"\0\s[86]\i[5]*Su mente parece estar repleta de recuerdos\w3.\w3.\w3.\s[86]\e"
 		
-			"\0\s[84]\i[5]*Parece estar triste\w3.\w3.\w3.\s[84]\e"
+			"\0\s[84]\i[5]*Parece triste\w3.\w3.\w3.\s[84]\e"
 		}
 	
 	}
@@ -1320,10 +1320,10 @@ sadchaingogogo
 	sadchainstart = 1
 	"\0\s[81]\i[5]*Parece afligido.\s[81]\e"
 	
-	"\0\s[81]\i[5]*Está mirando a la nada.\s[81]\e"
+	"\0\s[81]\i[5]*Tiene la mirada perdida.\s[81]\e"
 	
 	{
-		"\0\s[81]\i[5]*Lleva un rato metido en sus pensamientos\w3.\w3.\w3. \w8\w4¿Deberías de preguntar en qué está pensando?\s[81]\n\n"
+		"\0\s[81]\i[5]*Lleva un rato metido en sus pensamientos\w3.\w3.\w3. \w8\w4¿Quizás deberías de preguntar en qué está pensando?\s[81]\n\n"
 		--
 		"\![*]\q[Preguntar si está bien,areuokmyman]\n/
 		\![*]\q[Dejar que se calme,lethimchill]\e:chain=end"
@@ -1340,15 +1340,15 @@ Select.areuokmyman
 	//helpedwithiccups = 1
 	if raphded == 0 && raphpoint >= 5
 	{
-		"\s[81]\i[5]*Le preguntas si todo va bien. \n\n[half]\w8\w4\s[0]\i[7]\w2¿Qué?\w8\s[23] ¡Estoy perfectamente, \w3colega! \w8\w4Todo va como la seda. \w8\w8\w8\w8\s[74]\w8\w8\w8\w8\s[75]\w8\w8\w8\w8\w8\w4Es solo que estoy\w3.\w3.\w3 \w8\w8\w8\s[77]Pensando sobre ciertas cosas.\e:chain=raphreveal1"
+		"\s[81]\i[5]*Le preguntas si va todo bien. \n\n[half]\w8\w4\s[0]\i[7]\w2¿Qué?\w8\s[23] ¡Oh, estoy perfectamente, \w3amig%(spaform('o','a','e'))! \w8\w4Todo va como la seda. \n\n[half]\w8\w8\w8\w8\s[74]\w8\w8\w8\w8\s[75]\w8\w8\w8\w8\w8\w4Es solo que\w3.\w3.\w3. \w8\w8\w8\s[77]estoy pensando en algunas cosas.\e:chain=raphreveal1"
 	}
 	if donded == 0 && donpoint >= 5
 	{
-		"\s[81]\i[5]*Le preguntas si todo va bien. \n\n[half]\w8\w4\s[0]\i[7]\w2¿Qué?\w8\s[23] ¡Estoy perfectamente, \w3colega! \w8\w4Todo va como la seda. \w8\w8\w8\w8\s[74]\w8\w8\w8\w8\s[75]\w8\w8\w8\w8\w8\w4Es solo que estoy\w3.\w3.\w3 \w8\w8\w8\s[77]Pensando sobre ciertas cosas.\e:chain=donreveal1"
+		"\s[81]\i[5]*Le preguntas si va todo bien. \n\n[half]\w8\w4\s[0]\i[7]\w2¿Qué?\w8\s[23] ¡Oh, estoy perfectamente, \w3amig%(spaform('o','a','e'))! \w8\w4Todo va como la seda. \n\n[half]\w8\w8\w8\w8\s[74]\w8\w8\w8\w8\s[75]\w8\w8\w8\w8\w8\w4Es solo que\w3.\w3.\w3. \w8\w8\w8\s[77]estoy pensando en algunas cosas.\e:chain=donreveal1"
 	}
 	if dadded == 0 && splinterpoint >= 5
 	{
-		"\s[81]\i[5]*Le preguntas si todo va bien. \n\n[half]\w8\w4\s[0]\i[7]\w2¿Qué?\w8\s[23] ¡Estoy perfectamente, \w3colega! \w8\w4Todo va como la seda. \w8\w8\w8\w8\s[74]\w8\w8\w8\w8\s[75]\w8\w8\w8\w8\w8\w4Es solo que estoy\w3.\w3.\w3 \w8\w8\w8\s[77]Pensando sobre ciertas cosas.\e:chain=splinterreveal1"
+		"\s[81]\i[5]*Le preguntas si va todo bien. \n\n[half]\w8\w4\s[0]\i[7]\w2¿Qué?\w8\s[23] ¡Oh, estoy perfectamente, \w3amig%(spaform('o','a','e'))! \w8\w4Todo va como la seda. \n\n[half]\w8\w8\w8\w8\s[74]\w8\w8\w8\w8\s[75]\w8\w8\w8\w8\w8\w4Es solo que\w3.\w3.\w3. \w8\w8\w8\s[77]estoy pensando en algunas cosas.\e:chain=splinterreveal1"
 	}
 }
 
@@ -1357,7 +1357,7 @@ Select.lethimchill
 	sadchainstart = 0
 	bigmood = -50
 	
-	"\s[81]\i[5]*Decides darle algo de tiempo. \w8\w8\w4Se pondrá bien.\s[81]\e:chain=end"
+	"\s[81]\i[5]*Decides darle algo de espacio. \w8\w8\w4Se pondrá bien.\s[81]\e:chain=end"
 }
 
 //RAPHAEL
@@ -1372,11 +1372,11 @@ raphreveal1
 raphreveal2
 {{CHAIN
 	raphchain = 2
-	"\0\s[90]\w8\w8\w8\w8\w8\w8\w4*Está mirando la foto fijamente. \w8\w4Te preguntas si está bien.\s[87]\e"
+	"\0\s[90]\w8\w8\w8\w8\w8\w8\w4*No deja de mirar la foto. \w8\w4Te preguntas si está bien.\s[87]\e"
 	
 	"\0\s[87]\i[5]*Se le ve bastante angustiado.\s[87]\e"
 	{
-		"\![enter,passivemode]\0\s[87]Q\w1u\w1i\w1e\w1r\w1e\w1s\w5.\w5.\w5. \w8\w8\w2¿Q\w1u\w1i\w1e\w1r\w1e\w1s\w1 \w1s\w1a\w1b\w1e\w1r\w1 \w1q\w1u\w1é\w1 \w1l\w1e\w1 \w1p\w1a\w1s\w1ó\w1 \w1a\w1 \w1R\w1a\w1f\w1a\w5.\w5.\w5.?\n\n"
+		"\![enter,passivemode]\0\s[87]¿Q\w1u\w1i\w1e\w1r\w1e\w1s\w5.\w5.\w5. \w8\w8\w2q\w1u\w1i\w1e\w1r\w1e\w1s\w1 \w1s\w1a\w1b\w1e\w1r\w1 \w1q\w1u\w1é\w1 \w1l\w1e\w1 \w1p\w1a\w1s\w1ó\w1 \w1a\w1 \w1R\w1a\w1f\w1a?\w5.\w5.\w5.\n\n"
 		--
 		"\![*]\q[Sí,raphreveal3]\n/
 		\![*]\q[No,raphnono]\e:chain=end"
@@ -1385,7 +1385,7 @@ raphreveal2
 
 Select.raphreveal3
 {
-	"\![leave,passivemode]\s[87]\i[5]*Le dices que te gustaría saber lo qué ocurrió si a él le parece bien. \n\n[half]\w8\w8\s[88]Buf\w5.\w5.\w5. \w8\w5B\w1u\w1e\w1n\w1o,\w1 \w1y\w1a\w1 \w1q\w1u\w1e\w1 \w1e\w1s\w1t\w1a\w1m\w1o\w1s \w1a\w1s\w1í\w5.\w5.\w5. \w1h\w1a\w1b\w1r\w1á\w1 \w1q\w1u\w1e\w1 \w1h\w1a\w1b\w1l\w1a\w1r\w1 \w1d\w1e\w1 \w1e\w1l\w1l\w1o.\e:chain=raphreveal4"
+	"\![leave,passivemode]\s[87]\i[5]*Le dices que te gustaría saber lo que ocurrió si él quiere contártelo. \n\n[half]\w8\w8\s[88]Bufff\w5.\w5.\w5. \w8\w5B\w1u\w1e\w1n\w1o,\w1 \w1y\w1a\w1 \w1q\w1u\w1e\w1 \w1e\w1s\w1t\w1a\w1m\w1o\w1s \w1a\w1s\w1í\w5.\w5.\w5. \w1h\w1a\w1b\w1r\w1á\w1 \w1q\w1u\w1e\w1 \w1h\w1a\w1b\w1l\w1a\w1r\w1 \w1d\w1e\w1 \w1e\w1l\w1l\w1o.\e:chain=raphreveal4"
 }
 
 Select.raphnono
@@ -1401,7 +1401,7 @@ raphreveal4
 {{CHAIN
 	bigmood = -800
 	//"\0\s[87]*Raph's like super dead idk what you expect me to say amigo you think i write good\e"
-	"\![enter,passivemode]\0\s[87]Era\w3.\w3.\w3. una misión de reconocimiento. \w8\w8\i[6]Solo era entrar, \w5rastrear todo el lugar, \w5y salir, \w7nada nuevo. \w8\w8Ya habíamos hecho muchas así en los últimos años. \w8\w8Solo quería quitármelo de encima. \w8\w8Teníamos cosas más importantes que hacer. \x\s[87]P\w1e\w1r\w1o\w4.\w4.\w4. \w8\w4fue una emboscada. \w8\w8Caí de lleno en la trampa, \w6y Rafa tuvo que sacarme de ahí. \w8.\w8.\w8.\w8.\w8.\w8Al principio todo iba bien. \w8\w8\i[6]¡Estábamos ganando, \w6les estábamos dando una paliza! \w8\w8Pero entonces\w4.\w4.\w4. \w8el edificio en el que estábamos se derrumbó.\x\s[87]Yo- \w4mi brazo quedó atrapado. \w8\w8No podía sacarlo. \w8\w8Rafa estaba devolviendo sus ataques, \w3y yo quería salir, \w3le dije que me sacara, \w3y él- \w5Yo-\w8\w8\w8\w8\w8\w8\w8\s[87]\i[7]\w8\i[8]\w8\n\w1Y\w1o\w1 \w1v\w1i\w1 \w1c\w1o\w1m\w1o\w1 \w1e\w1s\w1a\w1s\w1 \w1c\w1o\w1s\w1a\w1s\w1 \w1l\w1o\w1 \w1m\w1a\w1t\w1a\w1b\w1a\w1n\w1. \n\w8\w8\w8\w8\w8\f[sub,true]Si solo\w2.\w2.\w2.\w2.\w2.\w2.\w2.\w2. Si solo no le hubiera distraido, \w2 si no hubiera sido tan insensato, \w2si no la hubiera liado, \w2si solo lo hubiera hecho antes,\w2 Rafa\w5.\w5.\w5.\w5.\w5.\w5.\w5.\w5.\w5.\f[sub,false]\w8\w8\w8\w8\w8\w8\w8\n\n[half]Me amputé el brazo, \w4acabé con el resto, \i[6]\w6pero Rafa\w6.\w6.\w6. \w8\w8\w8Era demasiado tarde.\x\w8\w8\w8\w8\w8\s[88]\i[8]\w2J\w2e\w4.\w4.\w4. \w8\w8ha pasado tanto tiempo, \w4y todavía no me puedo creer que el grandullón ya no esté. \w8\w8\s[88]\i[7]Hizo lo que siempre había hecho\w5.\w5.\w5. \w8\w4proteger a su familia.\n\n"
+	"\![enter,passivemode]\0\s[87]Solo era\w3.\w3.\w3. una misión de reconocimiento. \n\w8\w8\i[6]Entrar, \w5rastrear todo el lugar, \w5y salir. \w7Nada nuevo. \n\w8\w8Ya habíamos hecho muchas misiones así en los últimos años. \n\n[half]\w8\w8Solo quería quitármelo de encima. \w8\w8Teníamos cosas más importantes que hacer. \x\s[87]P\w1e\w1r\w1o\w4.\w4.\w4. \w8\w4fue una emboscada. \n\w8\w8Caí de lleno en la trampa, \w6y Rafa tuvo que venir a rescatarme. \n\n[half]\w8.\w8.\w8.\w8.\w8.\w8\n\n[half]Al principio todo iba bien. \w8\w8\i[6]¡Estábamos ganando, \w6les estábamos dando una paliza! \w8\w8Pero entonces\w4.\w4.\w4. \w8el edificio en el que estábamos se derrumbó.\x\s[87]Yo... \w4Mi brazo había quedado atrapado. \w8\w8No podía sacarlo. \w8\w8Rafa estaba devolviéndoles los ataques \w3y yo quería salir. \w3Le dije que me sacara, \w3y él- \w5Yo-\n[half]\w8\w8\w8\w8\w8\w8\w8\s[87]\i[7]\w8\i[8]\w8\n\w1Y\w1o\w1 \w1t\w1u\w1v\w1e\w1 \w1q\w1u\w1e\w1 \w1v\w1e\w1r\w1 \w1c\w1o\w1m\w1o\w1 \w1e\w1s\w1a\w1s\w1 \w1c\w1o\w1s\w1a\w1s\w1 \w1m\w1a\w1t\w1a\w1b\w1a\w1n\w1 \w1a\w1 \w1m\w1i\w1 \w1h\w1e\w1r\w1m\w1a\w1n\w1o\w1. \n\w8\w8\w8\w8\w8\f[sub,true]Si solo\w2.\w2.\w2.\w2.\w2.\w2.\w2.\w2. Si solo no le hubiera distraido, \w2 si no hubiera sido tan insensato, \w2si no la hubiera liado, \w2si solo lo hubiera hecho antes,\w2 Rafa\w5.\w5.\w5.\w5.\w5.\w5.\w5.\w5.\w5.\f[sub,false]\w8\w8\w8\w8\w8\w8\w8\n\n[half]Me amputé el brazo \w4y acabé con el resto, \i[6]\w6pero Rafa\w6.\w6.\w6. \w8\w8\w8Era demasiado tarde.\x\w8\w8\w8\w8\w8\s[88]\i[8]\w2J\w2e\w4.\w4.\w4. \w8\w8ha pasado tanto tiempo, \w4y todavía no me puedo creer que el grandullón ya no esté. \n\n[half]\w8\w8\s[88]\i[7]Hizo lo que siempre había hecho\w5.\w5.\w5. \w8\w4proteger a su familia.\n\n"
 	--
 	"\![*]\q[Fue un héroe,raphhero]\n/
 	\![*]\q[Estaría muy orgulloso de ti,raphproud]\n/
@@ -1414,7 +1414,7 @@ Select.raphhero
 	raphded = 1
 	raphchain = 3
 	
-	"\i[5]*Le dices que Rafael fue un héroe. \n\n[half]\w8\w8\w8\s[88]Siempre. \w8\w8Siempre lo fue. \w8\w8Si no hubiera sido por él, \w6ninguno de nosotros seríamos héroes. \n\w8\w6\s[87]Gracias por escucharme. \w8\w4No recuerdo la última vez que hablé de esto, \w4si es que alguna vez lo hice\w5.\w5.\w5. \w8\w4\s[88]Seguramente debería de hacerlo más a menudo.\w8\w8\w6\n\n[half]\i[5]*Le puedes oír suspirar. \w8\w8\i[6]Lo más probable es que necesite pasar un rato a solas.\![leave,passivemode]\e:chain=end"
+	"\i[5]*Le dices que Rafael fue un héroe. \n\n[half]\w8\w8\w8\s[88]Siempre, \w8\w8siempre lo fue. \w8\w8Si no hubiera sido por él, \w6ninguno de nosotros seríamos héroes. \n\n[half]\w8\w6\s[87]Gracias por escucharme. \w8\w4No recuerdo la última vez que hablé de esto, \w4si es que alguna vez lo hice\w5.\w5.\w5. \w8\w4\s[88]Seguramente debería de hacerlo más a menudo.\w8\w8\w6\n\n[half]\i[5]*Oyes como suspira. \w8\w8\i[6]Seguramente necesite pasar un rato a solas.\![leave,passivemode]\e:chain=end"
 }
 
 Select.raphproud
@@ -1422,7 +1422,7 @@ Select.raphproud
 	raphded = 1
 	raphchain = 3
 	
-	"\i[5]*Le dices que Rafael estaría orgulloso de él. \w8\w8\n\n[half]\s[87]\i[6]Je, \w4¿eso crees\w3.\w3.\w3.\w3? \w8\w8\w8\w6\s[88]\i[6]No, \w8\s[88]probablemente tengas razón. \w8\w8Es \w1Rafa \w1de quién estámos hablando. \w8\w8\s[87]\i[6]No estoy seguro ni de que fuera capaz de reconocerme si me viera hoy\w4.\w4.\w4. \n\w8\w6\s[87]Gracias por escucharme. \w8\w4No recuerdo la última vez que hablé de esto, \w4si es que alguna vez lo hice\w5.\w5.\w5. \w8\w4\s[88]Seguramente debería de hacerlo más a menudo.\w8\w8\w6\n\n[half]\i[5]*Le puedes oír suspirar. \w8\w8\i[6]Lo más probable es que necesite pasar un rato a solas.\![leave,passivemode]\e:chain=end"
+	"\i[5]*Le dices que Rafael estaría orgulloso de él. \w8\w8\n\n[half]\s[87]\i[6]Je, \w4¿eso crees?\w3.\w3.\w3. \n\n[half]\w8\w8\w8\w6\s[88]\i[6]No, \w8\s[88]probablemente tengas razón. \w8\w8Es \w1Rafa \w1de quien estamos hablando. \w8\w8\s[87]\i[6]No estoy seguro de que fuera capaz de reconocerme si me viera ahora\w4.\w4.\w4. \n\n[half]\w8\w6\s[87]Gracias por escucharme. \w8\w4No recuerdo la última vez que hablé de esto, \w4si es que alguna vez lo hice\w5.\w5.\w5. \w8\w4\s[88]Seguramente debería de hacerlo más a menudo.\w8\w8\w6\n\n[half]\i[5]*Oyes como suspira. \w8\w8\i[6]Seguramente necesite pasar un rato a solas.\![leave,passivemode]\e:chain=end"
 }
 
 Select.raphsorry
@@ -1430,7 +1430,7 @@ Select.raphsorry
 	raphded = 1
 	raphchain = 3
 	
-	"\i[5]*Le dices que lo sientes. \w8\w8\w6\n\n[half]\s[88]¿Por qué te disculpas? \w8\w8\s[87]Debería ser yo quien se disculpara\i[6]\w6.\w6.\w6. \w8\w6\s[87]pero no creo que Rafa quisiera que me disculpara por él, \w6o que siguiera sintiéndome mal conmigo mismo. \w8\w8\8\s[88]Después de todo,\w5 Rafa siempre fue de los que destrozaban todo y preguntaban después\w4.\w4.\w4. \n\w8\w6\s[87]Gracias por escucharme. \w8\w4No recuerdo la última vez que hablé de esto, \w4si es que alguna vez lo hice\w5.\w5.\w5. \w8\w4\s[88]Seguramente debería de hacerlo más.\w8\w8\w6\n\n[half]\i[5]*Le puedes oír suspirar. \w8\w8\i[6]Lo más probable es que necesite pasar un rato a solas.\![leave,passivemode]\e:chain=end"
+	"\i[5]*Le dices que lo sientes. \w8\w8\w6\n\n[half]\s[88]¿Por qué te disculpas? \w8\w8\s[87]Debería ser yo quien se disculpara\i[6]\w6.\w6.\w6. \w8\w6\s[87]Pero no creo que Rafa quisiera que me disculpara por él, \w6o que siguiera sintiéndome mal conmigo mismo. \n\w8\w8\8\s[88]Después de todo,\w5 Rafa siempre fue de los que destrozan todo y preguntan después\w4.\w4.\w4.\n\n[half]\w8\w6\s[87]Gracias por escucharme. \w8\w4No recuerdo la última vez que hablé de esto, \w4si es que alguna vez lo hice\w5.\w5.\w5. \w8\w4\s[88]Seguramente debería de hacerlo más.\w8\w8\w6\n\n[half]\i[5]*Oyes como suspira. \w8\w8\i[6]Seguramente necesite pasar un rato a solas.\![leave,passivemode]\e:chain=end"
 }
 
 Select.raphsaynothing
@@ -1438,7 +1438,7 @@ Select.raphsaynothing
 	raphded = 1
 	raphchain = 3
 	
-	"\w5.\w5.\w5.\w5.\w5.\s[87]\w5.\w5.\w5.\w5.\w8\w8\w6Sé que está contando conmigo. \w8\w4Todos los días. \w8\w4\s[88]Después de todo, \w6si estuviera enfadado conmigo, \w6me atormentaría el resto de mi vida, \w8¿verdad que sí?\w5.\w5.\w5.\w5. \w5\i[6]j\w1e\w5.\w5.\w5. \n\w8\w6\s[87]Gracias por escucharme. \w8\w4No recuerdo la última vez que hablé de esto, \w4si es que alguna vez lo hice\w5.\w5.\w5. \w8\w4\s[88]Seguramente debería de hacerlo más a menudo.\w8\w8\w6\n\n[half]\i[5]*Le puedes oír suspirar. \w8\w8\i[6]Lo más probable es que necesite pasar un rato a solas.\![leave,passivemode]\e:chain=end"
+	"\w5.\w5.\w5.\w5.\w5.\s[87]\w5.\w5.\w5.\w5.\w8\w8\w6 Sé que cuenta conmigo. \w8\w4Todos los días.\n\w8\w4\s[88]Después de todo, \w6si estuviera enfadado conmigo, \w6me atormentaría el resto de mi vida, \w8¿verdad que sí?\w5.\w5.\w5.\n\w5\i[6]J\w1e\w5.\w5.\w5.\n\n[half]\w8\w6\s[87]Gracias por escucharme. \w8\w4No recuerdo la última vez que hablé de esto, \w4si es que alguna vez lo hice\w5.\w5.\w5. \w8\w4\s[88]Seguramente debería de hacerlo más a menudo.\w8\w8\w6\n\n[half]\i[5]*Oyes como suspira. \w8\w8\i[6]Seguramente necesite pasar un rato a solas.\![leave,passivemode]\e:chain=end"
 }
 
 
@@ -1455,11 +1455,11 @@ donreveal1
 donreveal2
 {{CHAIN
 	donchain = 2
-	"\0\s[90]\w8\w8\w8\w8\w8\w8\w4*Está mirando la foto fijamente. \w8\w4Te preguntas si está bien.\s[87]\e"
+	"\0\s[90]\w8\w8\w8\w8\w8\w8\w4*No deja de mirar la foto. \w8\w4Te preguntas si está bien.\s[87]\e"
 	
 	"\0\s[89]\i[5]*Se le ve bastante angustiado.\s[89]\e"
 	{
-		"\![enter,passivemode]\0\s[87]Q\w1u\w1i\w1e\w1r\w1e\w1s\w5.\w5.\w5. \w8\w8\w2¿Q\w1u\w1i\w1e\w1r\w1e\w1s\w1 \w1s\w1a\w1b\w1e\w1r\w1 \w1q\w1u\w1é\w1 \w1l\w1e\w1 \w1p\w1a\w1s\w1ó\w1 \w1a\w1 \w1D\w1o\w1n\w1n\w1i\w1e\w5.\w5.\w5.?\n\n"
+		"\![enter,passivemode]\0\s[87]¿Q\w1u\w1i\w1e\w1r\w1e\w1s\w5.\w5.\w5. \w8\w8\w2q\w1u\w1i\w1e\w1r\w1e\w1s\w1 \w1s\w1a\w1b\w1e\w1r\w1 \w1q\w1u\w1é\w1 \w1l\w1e\w1 \w1p\w1a\w1s\w1ó\w1 \w1a\w1 \w1D\w1o\w1n\w1n\w1i\w1e?\w5.\w5.\w5.\n\n"
 		--
 		"\![*]\q[Sí,donreveal3]\n/
 		\![*]\q[No,donnono]\e:chain=end"
@@ -1468,7 +1468,7 @@ donreveal2
 
 Select.donreveal3
 {
-	"\![leave,passivemode]\s[87]\i[5]*Le dices que te gustaría saber lo qué ocurrió si a él le parece bien. \n\n[half]\w8\w8\s[88]J\w2-j\w1e\w5.\w5.\w5. \w8\w8e\w1s\w1t\w1á\w1 \w1b\w1i\w1e\w1n\w5.\w5.\w5.\e:chain=donreveal4"
+	"\![leave,passivemode]\s[87]\i[5]*Le dices que te gustaría saber lo que ocurrió si él quiere contártelo. \n\n[half]\w8\w8\s[88]J-\w2j\w1e\w5.\w5.\w5. \w8\w8E\w1s\w1t\w1á\w1 \w1b\w1i\w1e\w1n\w5.\w5.\w5.\e:chain=donreveal4"
 }
 
 Select.donnono
@@ -1477,14 +1477,14 @@ Select.donnono
 	donchain = 0
 	bigmood = -250
 	
-	"\![leave,passivemode]\s[87]\i[5]*Le dices que te lo puede contar en otro momento, \w3cuando se sienta mejor. \n\n[half]\w8\w4\s[87]V\w1a\w1l\w1e\w3.\w3.\w3 \w8\w8e\w1s\w1t\w1á\w1 \w1b\w1i\w1e\w1n\w5.\w5.\w5. \w8\w8v\w1a\w1l\w1e\w5.\w5.\w5. \w6\w6\w6\s[88]Perdona. \w8\w8\w8\w8\s[84]Supongo que,\w6 me he abrumado con los recuerdos.\e:chain=end"
+	"\![leave,passivemode]\s[87]\i[5]*Le dices que te lo puede contar en otro momento, \w3cuando se sienta mejor. \n\n[half]\w8\w4\s[87]V\w1a\w1l\w1e\w3.\w3.\w3. \w8\w8E\w1s\w1t\w1á\w1 \w1b\w1i\w1e\w1n\w5.\w5.\w5. \w8\w8V\w1a\w1l\w1e\w5.\w5.\w5. \n\n[half]\w6\w6\w6\s[88]Perdona. \w8\w8\w8\w8\s[84]Supongo que,\w6 los recuerdos me han abrumado.\e:chain=end"
 }
 
 donreveal4
 {{CHAIN
 	bigmood = -800
 	//"\0\s[87]*Originally i had another don death in plan. sorry donnie\e"
-	"\![enter,passivemode]\0\s[87]Donnie hizo tanto por la Resistencia, \w4pero aún así insistía en que quería hacer más. \w8\w8\s[88]Quería que lucháramos juntos, \w4codo\w1 con\w1 codo\w5.\w5.\w5. \w8\w8\s[87]Pero\w5.\w5.\w5. \w8\w8\w4\i[6]Me opuse. \w8\w8Era\w6 demasiado frágil \w6y demasiado valioso, \w5y yo\w5.\w5.\w5. \w8\w8\s[87]Le prohibí salir de la base. \w8\w4Estaba tan enfadado, \w4pero me mantuve firme\w4 - le dije que se quedaba in situ. \w8\w8Pero a Donnie\w5.\w5.\w5.\w5.\w5.\w5.\w5. \w8\w4\i[6]siempre le gustó retorcer las normas. \w8\w8\s[87]Se escabullía cuando yo no estaba, \w5a veces en solitario, \w5y\w5.\w5.\w5. \w8\w4por supuesto se metió en problemas. \w8\w8Pero no importaba las veces que le gritase, \w4él solo se ponía más cabezota. \w8\w6\s[87]\i[7]Y\w1 \w1\i[8]e\w1n\w1t\w1o\w1n\w1c\w1e\w1s\w6.\w6.\w6.\w6.\w6.\w6.\w6.\x\s[87]\i[7]Ese día había vuelto a la base tras viajar a otro campamento de la Resistencia, \w5solo para ser recibido por el sonido ensordecedor que las sirenas del código rojo. \w8\w8Mikey y yo irrumpímos en el laboratorio de Donnie, \w5queríamos preguntarle qué estaba pasando, \w5pero\w5.\w5.\w5. \w8\w8\w8\w8\w8\i[6]él no estaba.\n\w8\w8\w8Él fue quién activó el código rojo.\x\s[87]\i[8]Había sido capturado. \w8\w8Por los Krang. \w8\w8Había conseguido llamarnos mientras ellos se lo llevaban a rastras al interior de una de sus bases\w5.\w5.\w5. \w8\w8Se suponía que tenía que decirnos sus coordenadas, \w5\i[6]p\w1e\w1r\w1o\w1 \w1é\w1l\w6.\w6.\w6.\w6.\w6.\w6.\w6.\w6.\w6.\w6.\w8\w8\w8\nLos Krang pueden meterse en tu cabeza. \w8\w8Leerte la mente, \w5ver tus recuerdos. \w8\w8Y si ellos le hacían eso a Donnie, \w5sería el fin de la Resistencia. \w8\w8\s[87]\i[8]Él lo sabía todo, \w4estaba a cargo de todas nuestras defensas, \w4sabía todos los secretos\w6.\w6.\w6. \w8\w8Por lo que, \w6él \w2sencillamente\w5.\w5.\w5.\w5. \w8\w5nos \w2reveló \w2todas \w2sus \w2contraseñas\w5.\w5.\w5.\w5.\w5.\w5. \w8\w5dónde \w2estaban \w2las \w2piezas \w2de \w2repuesto \w2de \w2Shelldon\w5.\w5.\w5.\w5.\w5.\w5.\w5.\w5.\w5. \w5\i[6]y nos dijo adiós. \w8\w8\w8\w8\w8\w8\w8\w8\w8\w8\w8\w8Se llevó a toda la base con él.\x\s[87]\i[7]Nosotros\w5.\w5.\w5. \w8\w8vimos como se desconectaba. \w8\w8Mikey quería ir a donde él estaba, \w5intentar encontrarle, \w5pero yo\w5.\w5.\w5. \w8\w8Sabía que era demasiado tarde. \n\w8\w8\i[6]Donnie\w5.\w5.\w5. \w8\w8siempre se saltaba el protocolo y siempre hizo las cosas a su manera. \w8\w8Hasta sus últimos momentos. \w8\w8Si solo no le hubiera forzado, \w6quizás él\w6.\w6.\w6.\w6.\w6.\w6.\n\n"
+	"\![enter,passivemode]\0\s[87]Donnie hizo tanto por la Resistencia, \w4pero aún así insistía en que quería hacer más.\n\w8\w8\s[88]Quería que lucháramos juntos, \w4codo\w1 con\w1 codo,\w8\w8\s[87] pero\w5.\w5.\w5.\w8\w8\w4\i[6]me negué.\n\w8\w8Era\w6 demasiado frágil,\w6 demasiado valioso, \w5y yo\w5.\w5.\w5. \w8\w8\s[87]le prohibí salir de la base.\n\n[half]\w8\w4Él se enfadó tanto, \w4pero me mantuve firme,\w4 le dije que se quedaba in situ. \w8\w8Pero a Donnie\w5.\w5.\w5.\w5\w5\w5\w5 \w8\w4\i[6]siempre le gustó retorcer las normas.\n\n[half]\w8\w8\s[87]Se escabullía cuando yo no estaba, \w5a veces en solitario\w5.\w5.\w5. \w8\w4y por supuesto se metia en problemas. \w8\w8Pero no importaba las veces que le gritara, \w4él solo se ponía más cabezota. \w8\w6\s[87]\i[7]Y\w1 \w1\i[8]e\w1n\w1t\w1o\w1n\w1c\w1e\w1s\w6.\w6.\w6. \w6\w6\w6\w6\x\s[87]\i[7]Ese día había vuelto a la base tras viajar a otro campamento de la Resistencia, \w5solo para ser recibido por el sonido ensordecedor de las sirenas anunciando el código rojo.\n\w8\w8Mikey y yo irrumpímos en el laboratorio de Donnie, \w5queríamos preguntarle qué estaba pasando, \w5pero\w5.\w5.\w5.\n\w8\w8\w8\w8\w8\i[6]no estaba.\n\n[half]\w8\w8\w8Él fue quién había activado el código rojo.\x\s[87]\i[8]Había sido capturado. \w8\w8Por los Krang.\n\w8\w8Había conseguido llamarnos mientras ellos se lo llevaban a rastras al interior de una de sus bases\w5.\w5.\w5.\n\w8\w8Se suponía que tenía que decirnos sus coordenadas, \w5\i[6]p\w1e\w1r\w1o\w1 \w1é\w1l\w6.\w6.\w6.\n\n[half]\w6.\w6.\w6.\w6.\w6.\w6.\w6.\w8\w8\w8\n\n[half]Los Krang pueden meterse en tu cabeza. \w8\w8Leerte la mente, \w5ver tus recuerdos. \w8\w8Y si ellos le hacían eso a Donnie, \w5sería el fin de la Resistencia.\n\w8\w8\s[87]\i[8]Él lo sabía todo, \w4estaba a cargo de todas nuestras defensas, \w4sabía todos los secretos\w6.\w6.\w6.\n\w8\w8Por lo que, \w6él \w2simplemente\w5.\w5.\w5. \w8\w5nos \w2reveló \w2todas \w2sus \w2contraseñas\w5.\w5.\w5. \w5\w5\w5\w8\w5dónde \w2estaban \w2las \w2piezas \w2de \w2repuesto \w2de \w2Shelldon\w5.\w5.\w5.\n\n[half]\w5.\w5.\w5.\w5.\w5.\w5.\n\n[half]\w5\i[6]Y nos dijo adiós.\n\n[half]\w8\w8\w8\w8\w8\w8\w8\w8\w8\w8\w8\w8Se llevó a toda la base con él.\x\s[87]\i[7]Nosotros\w5.\w5.\w5. \w8\w8vimos la despedida.\n\w8\w8Mikey quería ir donde estaba, \w5intentar encontrarle, \w5pero yo\w5.\w5.\w5. \w8\w8sabía que era demasiado tarde.\n\n[half]\w8\w8\i[6]Donnie\w5.\w5.\w5. \w8\w8siempre se saltaba el protocolo y siempre hacia las cosas a su manera. \w8\w8Hasta en sus últimos momentos.\n\n[half]\w8\w8Si solo no le hubiera forzado, \w6quizás él\w6.\w6.\w6.\w6\w6\w6\n\n"
 	--
 	"\![*]\q[Fue un héroe,donhero]\n/
 	\![*]\q[No fue culpa tuya,donfault]\n/
@@ -1497,28 +1497,28 @@ Select.donhero
 	donded = 1
 	donchain = 3
 	
-	"\i[5]*Le dices que Donatello fue un héroe. \n\n[half]\w8\w8\w8\i[6]\w6.\w6.\w6.\w8\w5 Hizo lo que creía que era lo correcto. \w8\w8Consiguió proteger la Resistencia, \w6a pesar de que eso le costara la vida. \n\w8\w8Él\w5.\w5.\w5. \w8\w5\s[88]él se fue a lo grande, \w5sin duda al estilo Donnie.\n\w8\w8\w8\w6\s[87]Gracias por escucharme. \w8\w4Sé que esto ha sido bastante intenso, \w5pero\w5.\w5.\w5. \w8\w8\s[88]te agradezco que me hayas escuchado.\w8\w8\w6\n\n[half]\i[5]*Le puedes oír suspirar. \w8\w8\i[6]Lo más probable es que necesite pasar un rato a solas.\![leave,passivemode]\e:chain=end"
+	"\i[5]*Le dices que Donatello fue un héroe. \n\n[half]\w8\w8\w8\i[6]\w6.\w6.\w6.\w8\w5 Hizo lo que creía que era lo correcto. \w8\w8Consiguió proteger la Resistencia, \w6a pesar de que eso le costara la vida. \n\w8\w8Él\w5.\w5.\w5. \w8\w5\s[88]se fue a lo grande, \w5sin duda al estilo Donnie.\n\n[half]\w8\w8\w8\w6\s[87]Gracias por escucharme. \w8\w4Sé que esto ha sido bastante fuerte, \w5pero\w5.\w5.\w5. \w8\w8\s[88]te agradezco que me hayas escuchado.\w8\w8\w6\n\n[half]\i[5]*Oyes como suspira. \w8\w8\i[6]Seguramente necesite pasar un rato a solas.\![leave,passivemode]\e:chain=end"
 }
 Select.donfault
 {
 	donded = 1
 	donchain = 3
 	
-	"\i[5]*Le dices que no fue culpa suya. \w8\w8\n\n[half]\s[87]\i[6]Yo\w8.\w8.\w8. \w8\w8\s[87]le dije que no hiciera nada por este mismo motivo. \w8\w8\i[6]Para que no pasara lo que acabó pasando. \w8\w8Pero, \w5\s[87]si no hubiera hecho eso, \w6él nunca habría salido fuera solo \w6\i[6]y siempre hubiera tenido un equipo que le protegiera a su lado\w8.\w8.\w8. \w8\w8Yo\w8.\w8.\w8. \w8\w8\s[87]no sé.\n\w8\w8\w8\w6.\w6.\w6.\w6en cualquier caso, \w6él ya se ha ido.\n\w8\w8\w8\w6\s[87]Gracias por escucharme. \w8\w4Sé que esto ha sido bastante intenso, \w5pero\w5.\w5.\w5. \w8\w8\s[88]te agradezco que me hayas escuchado.\w8\w8\w6\n\n[half]\i[5]*Le puedes oír suspirar. \w8\w8\i[6]Lo más probable es que necesite pasar un rato a solas.\![leave,passivemode]\e:chain=end"
+	"\i[5]*Le dices que no fue culpa suya. \w8\w8\n\n[half]\s[87]\i[6]Yo\w8.\w8.\w8. \w8\w8\s[87]le dije que no hiciera nada por este mismo motivo. \w8\w8\i[6]Para que no pasara lo que acabó pasando.\n\n[half]\w8\w8Pero, \w5\s[87]si no hubiera hecho eso, \w6él nunca habría salido fuera solo \w6\i[6]y siempre hubiera tenido un equipo que le protegiera a su lado\w8.\w8.\w8. \w8\w8Yo\w8.\w8.\w8. \w8\w8\s[87]no sé.\n\w8\w8\w8\w6.\w6.\w6.\w6 En cualquier caso, \w6él ya no está.\n\n[half]\w8\w8\w8\w6\s[87]Gracias por escucharme. \w8\w4Sé que esto ha sido bastante fuerte, \w5pero\w5.\w5.\w5. \w8\w8\s[88]te agradezco que me hayas escuchado.\w8\w8\w6\n\n[half]\i[5]*Oyes como suspira. \w8\w8\i[6]Seguramente necesite pasar un rato a solas.\![leave,passivemode]\e:chain=end"
 }
 Select.donsorry
 {
 	donded = 1
 	donchain = 3
 	
-	"\i[5]*Le dices que lo sientes. \w8\w8\w6\n\n[half]\s[87]\i[6]No\w6.\w6.\w6. \w8\w8\s[87]te preocupes. \w8\w8Donnie hizo lo que creía que era lo correcto. \w8\w8Probablemente yo haría lo mismo, \w6en su lugar\w6.\w6.\w6. \w8\w8\i[6]Pero no puedo permitir que eso suceda. \w8\w8\s[87]No después de todo lo que ha tenido que sacrificar Donnie para ganar esta lucha.\n\w8\w8\w8\w6\s[87]Gracias por escucharme. \w8\w4Sé que esto ha sido bastante intenso, \w5pero\w5.\w5.\w5. \w8\w8\s[88]te agradezco que me hayas escuchado.\w8\w8\w6\n\n[half]\i[5]*Le puedes oír suspirar. \w8\w8\i[6]Lo más probable es que necesite pasar un rato a solas.\![leave,passivemode]\e:chain=end"
+	"\i[5]*Le dices que lo sientes. \w8\w8\w6\n\n[half]\s[87]\i[6]No\w6.\w6.\w6. \w8\w8\s[87]te preocupes. \w8\w8Donnie hizo lo que creía que era lo correcto. \w8\w8Probablemente haría lo mismo, \w6en su lugar\w6.\w6.\w6.\n\n[half]\w8\w8\i[6]Pero no puedo permitir que eso suceda. \w8\w8\s[87]No después de todo lo que ha tenido que sacrificar Donnie para ganar esta batalla.\n\n[half]\w8\w8\w8\w6\s[87]Gracias por escucharme. \w8\w4Sé que esto ha sido bastante fuerte, \w5pero\w5.\w5.\w5. \w8\w8\s[88]te agradezco que me hayas escuchado.\w8\w8\w6\n\n[half]\i[5]*Oyes como suspira. \w8\w8\i[6]Seguramente necesite pasar un rato a solas.\![leave,passivemode]\e:chain=end"
 }
 Select.donsaynothing
 {
 	donded = 1
 	donchain = 3
 	
-	"\w5.\w5.\w5.\w5.\w5.\s[87]\w5.\w5.\w5.\w5.\w8\w8\w6Todavía no me puedo creer que se haya ido. \w8\w8\i[6]Cada rincón de la base tiene tecnología suya, \w6puedes sentir su influencia, \w6y se siente como si él todavía estuviera sentado en su laboratorio, \w6trabajando en nuevos inventos\w5.\w5.\w5.\n\w8\w8\w8\w6\s[87]Gracias por escucharme. \w8\w4Sé que esto ha sido bastante intenso, \w5pero\w5.\w5.\w5. \w8\w8\s[88]te agradezco que me hayas escuchado.\w8\w8\w6\n\n[half]\i[5]*Le puedes oír suspirar. \w8\w8\i[6]Lo más probable es que necesite pasar un rato a solas.\![leave,passivemode]\e:chain=end"
+	"\w5.\w5.\w5.\w5.\w5.\s[87]\w5.\w5.\w5.\w5.\w8\w8\w6\n\n[half]Todavía no me puedo creer que se haya ido. \w8\w8\i[6]Cada rincón de la base tiene su tecnología, \w6puedes sentir su influencia, \w6y se siente como si todavía estuviera sentado en su laboratorio, \w6trabajando en nuevos inventos\w5.\w5.\w5.\n\n[half]\w8\w8\w8\w6\s[87]Gracias por escucharme. \w8\w4Sé que esto ha sido bastante fuerte, \w5pero\w5.\w5.\w5. \w8\w8\s[88]te agradezco que me hayas escuchado.\w8\w8\w6\n\n[half]\i[5]*Oyes como suspira. \w8\w8\i[6]Seguramente necesite pasar un rato a solas.\![leave,passivemode]\e:chain=end"
 }
 
 
@@ -1535,11 +1535,11 @@ splinterreveal1
 splinterreveal2
 {{CHAIN
 	splinterchain = 2
-	"\0\s[90]\w8\w8\w8\w8\w8\w8\w4*Está mirando la foto fijamente. \w8\w4Te preguntas si está bien.\s[87]\e"
+	"\0\s[90]\w8\w8\w8\w8\w8\w8\w4*No deja de mirar la foto. \w8\w4Te preguntas si está bien.\s[87]\e"
 	
 	"\0\s[89]\i[5]*Parece estar metido en sus pensamientos.\s[89]\e"
 	{
-		"\![enter,passivemode]\0\s[87]Q\w1u\w1i\w1e\w1r\w1e\w1s\w5.\w5.\w5. \w8\w8\w2¿Q\w1u\w1i\w1e\w1r\w1e\w1s\w1 \w1s\w1a\w1b\w1e\w1r\w1 \w1q\w1u\w1é\w1 \w1l\w1e\w1 \w1p\w1a\w1s\w1ó\w1 \w1a\w1 \w1s\w1u\w1 \w1p\w1a\w1d\w1r\w1ew5.\w5.\w5.?\n\n"
+		"\![enter,passivemode]\0\s[87]¿Q\w1u\w1i\w1e\w1r\w1e\w1s\w5.\w5.\w5. \w8\w8\w2q\w1u\w1i\w1e\w1r\w1e\w1s\w1 \w1s\w1a\w1b\w1e\w1r\w1 \w1q\w1u\w1é\w1 \w1l\w1e\w1 \w1p\w1a\w1s\w1ó\w1 \w1a\w1 \w1s\w1u\w1 \w1p\w1a\w1d\w1r\w1e?w5.\w5.\w5.\n\n"
 		--
 		"\![*]\q[Sí,splinterreveal3]\n/
 		\![*]\q[No,splinternono]\e:chain=end"
@@ -1548,7 +1548,7 @@ splinterreveal2
 
 Select.splinterreveal3
 {
-	"\![leave,passivemode]\s[87]\i[5]*Le dices que te gustaría saber lo qué ocurrió si a él le parece bien. \n\n[half]\w8\w8\w8\w8\s[87]De ecuerdo. \w8\w8Pero no\w3.\w3.\w3. \w8\w8no es una bonita historia.\e:chain=splinterreveal4"
+	"\![leave,passivemode]\s[87]\i[5]*Le dices que te gustaría saber lo que ocurrió si él quiere contártelo. \n\n[half]\w8\w8\w8\w8\s[87]De acuerdo. \w8\w8Pero no\w3.\w3.\w3. \w8\w8no es una bonita historia.\e:chain=splinterreveal4"
 }
 
 Select.splinternono
@@ -1564,7 +1564,7 @@ splinterreveal4
 {{CHAIN
 	bigmood = -800
 	//i didnt come up with anything that interesting for splinter sorry rat dad
-	"\![enter,passivemode]\0\s[87]Papá murió\w6.\w6.\w6. \w8\w8poco después de que comenzara la invasión.\n\w8\w8Habíamos estado reuniendo aliados en la guarida, \w5después de que nuestros intentos de derribar el Technodrome nosotros solos fallaran. \w8\w8Pero, \w4 mientras estábamos reagrupándonos y tratando nuestras heridas\w6.\w6.\w6. \w8\w8\i[6]Los Krang nos encontraron. \w8\w8\w8\w8\w8\w8No estábamos en condiciones para luchar, \w4\s[87]pero lo intentamos. \w8\w8\s[87]De \w2verdad \w2que \w2lo \w2intentamos. \w8\w8\i[6]Hasta que papá nos dijo que nos largáramos. \w8\w8Él\w8.\w8.\w8. \w8\w6nos consiguió tiempo para escapar. \w8\w8\w8\w8\w8\w8Yo\w6.\w6.\w6. \w8\w8\s[87]yo no quería dejarle, \w6\i[6]pero Mikey estaba \w2 en muy \w6mal estado, \w6y el caparazón de batalla de Donnie estaba destrozado, \w6no pudimos\w6.\w6.\w6. hacer nada.\s[89]\n\n"
+	"\![enter,passivemode]\0\s[87]Papá murió\w6.\w6.\w6. \w8\w8poco después de que empezara la invasión.\n\w8\w8Habíamos estado reuniendo aliados en la guarida, \w5después de que nuestros intentos de derribar el Technodrome solos fallaran.\n\w8\w8Pero, \w4mientras estábamos reagrupándonos y tratando nuestras heridas\w6.\w6.\w6. \w8\w8\i[6]Los Krang nos encontraron.\n\n[half]\w8\w8\w8\w8\w8\w8No estábamos en condiciones para luchar, \w4\s[87]pero lo intentamos. \w8\w8\s[87]De \w2verdad \w2que \w2lo \w2intentamos. \w8\w8\i[6]Hasta que papá nos dijo que nos largáramos. \w8\w8Él\w8.\w8.\w8. \w8\w6nos consiguió tiempo para escapar.\n\n[half]\w8\w8\w8\w8\w8\w8Yo\w6.\w6.\w6. \w8\w8\s[87]yo no quería dejarle, \w6\i[6]pero Mikey estaba\w2 en muy \w6mal estado, \w6y el caparazón de batalla de Donnie estaba destrozado.\n\w6No pudimos\w6.\w6.\w6. hacer nada.\s[89]\n\n"
 	--
 	"\![*]\q[Él te quería de corazón,splinterlove]\n/
 	\![*]\q[Estaría tan orgulloso de ti,splinterproud]\n/
@@ -1577,28 +1577,28 @@ Select.splinterlove
 	dadded = 1
 	splinterchain = 3
 	
-	"\i[5]*Le dices que Splinter le quería de corazón. \n\n[half]\w8\w8\w8\s[88]J\w1e\w3.\w3.\w3. \w8\w8Sí. \w8\w8Lo sé. \w8\w8Pero gracias. \w8\w8\i[6]Papá no era perfecto, \w5pero\w6.\w6.\w6. \w8\w6\s[88]fue un buen padre.\n\w8\w6\s[88]Gracias por escucharme. \w8\w4\s[87]Ha pasado tanto tiempo, \w5pero aun así, \w5yo todavía\w4.\w4.\w4. \w8\w4le echo de menos.\w8\w8\w6\n\n[half]\i[5]*Le puedes oír suspirar. \w8\w8\i[6]Lo más probable es que necesite pasar un rato a solas.\![leave,passivemode]\e:chain=end"
+	"\i[5]*Le dices que Splinter le quería de corazón. \n\n[half]\w8\w8\w8\s[88]J\w1e\w3.\w3.\w3. \w8\w8Sí, \w8\w8lo sé. \w8\w8Pero gracias. \w8\w8\i[6]Papá no era perfecto, \w5pero\w6.\w6.\w6.\w8\w6\s[88]fue un buen padre.\n\n[half]\w8\w6\s[88]Gracias por escucharme. \w8\w4\s[87]Ha pasado tanto tiempo, \w5pero aun así, \w5yo todavía\w4.\w4.\w4. \w8\w4le echo de menos.\w8\w8\w6\n\n[half]\i[5]*Oyes como suspira. \w8\w8\i[6]Seguramente necesite pasar un rato a solas.\![leave,passivemode]\e:chain=end"
 }
 Select.splinterproud
 {
 	dadded = 1
 	splinterchain = 3
 	
-	"\i[5]*Le dices que Splinter estaría orgulloso de él. \w8\w8\n\n[half]\s[87]\i[6]É\w1l\w5.\w5.\w5. \w8\s[88]\w4j\w1e. \w8\w8\i[6]Puede ser. \w8\w8\s[88]Puede que no haya sido su favorito, \w6pero sé que le importaba. \w8\w8\s[88]Gracias, \w5y gracias por escucharme. \w8\w4\s[87]Ha pasado tanto tiempo, \w5pero aun así, \w5yo todavía\w4.\w4.\w4. \w8\w4le echo de menos.\w8\w8\w6\n\n[half]\i[5]*Le puedes oír suspirar. \w8\w8\i[6]Lo más probable es que necesite pasar un rato a solas.\![leave,passivemode]\e:chain=end"
+	"\i[5]*Le dices que Splinter estaría orgulloso de él. \w8\w8\n\n[half]\s[87]\i[6]É\w1l\w5.\w5.\w5. \w8\s[88]\w4J\w1e, \w8\w8\i[6]puede ser. \w8\w8\s[88]Puede que no haya sido su favorito, \w6pero sé que le importaba.\n\n[half]\w8\w8\s[88]Gracias, \w5y gracias por escucharme. \w8\w4\s[87]Ha pasado tanto tiempo, \w5pero aun así, \w5yo todavía\w4.\w4.\w4. \w8\w4le echo de menos.\w8\w8\w6\n\n[half]\i[5]*Oyes como suspira. \w8\w8\i[6]Seguramente necesite pasar un rato a solas.\![leave,passivemode]\e:chain=end"
 }
 Select.splintersorry
 {
 	dadded = 1
 	splinterchain = 3
 	
-	"\i[5]*Le dices que lo sientes. \w8\w8\w6\n\n[half]\s[88]No tienes por qué. \w8\w8\s[87]\Papá\w6.\w6.\w6. \w8\w8\w8\s[88]papá tuvo una buena vida. \w8\w8Creo, \w6\i[6]jaja\w4.\w4.\w4.\n\w8\w6\s[88]Gracias por escucharme. \w8\w4\s[87]Ha pasado tanto tiempo, \w5pero aun así, \w5yo todavía\w4.\w4.\w4. \w8\w4le echo de menos.\w8\w8\w6\n\n[half]\i[5]*Le puedes oír suspirar. \w8\w8\i[6]Lo más probable es que necesite pasar un rato a solas.\![leave,passivemode]\e:chain=end"
+	"\i[5]*Le dices que lo sientes. \w8\w8\w6\n\n[half]\s[88]No tienes por qué. \w8\w8\s[87]\Papá\w6.\w6.\w6. \w8\w8\w8\s[88]papá tuvo una buena vida. \w8\w8Creo, \w6\i[6]ja,\w6 ja\w4.\w4.\w4.\n\n[half]\w8\w6\s[88]Gracias por escucharme. \w8\w4\s[87]Ha pasado tanto tiempo, \w5pero aun así, \w5yo todavía\w4.\w4.\w4. \w8\w4le echo de menos.\w8\w8\w6\n\n[half]\i[5]*Oyes como suspira. \w8\w8\i[6]Seguramente necesite pasar un rato a solas.\![leave,passivemode]\e:chain=end"
 }
 Select.splintersaynothing
 {
 	dadded = 1
 	splinterchain = 3
 	
-	"\w5.\w5.\w5.\w5.\w5.\s[87]\w5.\w5.\w5.\w5.\w8\w8\w6 Y eso es todo. \w8\w8Esa es la historia. \w8\w8Papá\w6.\w6.\w6. \w8\w8\s[88]Realmente desearía poder hablar con él, \w6sobre\w5.\w5.\w5. \w8\w4cosas. \w8\w8Cosas aburridas de adultos, \w6ja\w2ja\w6.\w6.\w6.\n\w8\w6\s[88]\w3.\w3.\w3.\w8\w4gracias por escucharme. \w8\w4\s[87]Ha pasado tanto tiempo, \w5pero aun así, \w5yo todavía\w4.\w4.\w4. \w8\w4le echo de menos.\w8\w8\w6\n\n[half]\i[5]*Le puedes oír suspirar. \w8\w8\i[6]Lo más probable es que necesite pasar un rato a solas.\![leave,passivemode]\e:chain=end"
+	"\w5.\w5.\w5.\w5.\w5.\s[87]\w5.\w5.\w5.\w5.\w8\w8\w6\n\n[half]Y eso es todo. \w8\w8Esa es la historia. \w8\w8Papá\w6.\w6.\w6. \w8\w8\s[88]Realmente desearía poder hablar con él, \w6sobre\w5.\w5.\w5. \w8\w4cosas. \w8\w8Cosas aburridas de adultos, \w6ja, \w2ja\w6.\w6.\w6.\n\n[half]\w8\w6\s[88]\w3.\w3.\w3.\w8\w4 Gracias por escucharme. \w8\w4\s[87]Ha pasado tanto tiempo, \w5pero aun así, \w5yo todavía\w4.\w4.\w4. \w8\w4le echo de menos.\w8\w8\w6\n\n[half]\i[5]*Oyes como suspira. \w8\w8\i[6]Seguramente necesite pasar un rato a solas.\![leave,passivemode]\e:chain=end"
 }	
 //You can make chains as long or as shot as you want! Just make sure to end the chain when you're done.
 
@@ -1658,17 +1658,38 @@ OnMinuteChange //This is what will trigger time-based dialogue for your Ghost.
 		}
 		elseif raphchain > 0 && timecheckarooni == 1  && leowatch == 0|| donchain > 0 && timecheckarooni == 1  && leowatch == 0|| splinterchain > 0 && timecheckarooni == 1 && leowatch == 0
 		{
-			"\0\i[5]*Son las %(hour12) en punto, \w4pero está demasiado abstraído como para darse cuenta.\e"
-			//%(hour12) stores the time. This is a general top of the hour notification. I personally like this because it helps me keep track of time when I've been working on something, so when a ghost is all "Hey it's 3 o clock" I can be like woah really when did that happen. If you think this is annoying though, you can just delete this bit of dialogue to leave this else statement blank, or leave "" in here instead.
+			if hour == 1 || hour == 13
+			{
+				"\0\i[5]*Son la %(hour12) en punto, \w4pero está demasiado abstraído como para darse cuenta.\e"
+			}
+			else
+			{
+				"\0\i[5]*Son las %(hour12) en punto, \w4pero está demasiado abstraído como para darse cuenta.\e"
+			}
+				//%(hour12) stores the time. This is a general top of the hour notification. I personally like this because it helps me keep track of time when I've been working on something, so when a ghost is all "Hey it's 3 o clock" I can be like woah really when did that happen. If you think this is annoying though, you can just delete this bit of dialogue to leave this else statement blank, or leave "" in here instead.
 		}
 		elseif timecheckarooni == 1 && leowatch == 0
 		{
-			"\0\s[37]Son las %(hour12) en punto.\e"
-			//%(hour12) stores the time. This is a general top of the hour notification. I personally like this because it helps me keep track of time when I've been working on something, so when a ghost is all "Hey it's 3 o clock" I can be like woah really when did that happen. If you think this is annoying though, you can just delete this bit of dialogue to leave this else statement blank, or leave "" in here instead.
+			if hour == 1 || hour == 13
+			{
+				"\0\s[37]Son la %(hour12) en punto.\e"
+			}
+			else
+			{
+				"\0\s[37]Son las %(hour12) en punto.\e"
+			}
+				//%(hour12) stores the time. This is a general top of the hour notification. I personally like this because it helps me keep track of time when I've been working on something, so when a ghost is all "Hey it's 3 o clock" I can be like woah really when did that happen. If you think this is annoying though, you can just delete this bit of dialogue to leave this else statement blank, or leave "" in here instead.
 		}
 		elseif timecheckarooni == 1 && leowatch == 1
 		{
-			"\0\s[124]*Son las %(hour12) en punto.\e"
+			if hour == 1 || hour == 13
+			{
+				"\0\s[124]*Son la %(hour12) en punto.\e"
+			}
+			else
+			{
+				"\0\s[124]*Son las %(hour12) en punto.\e"
+			}
 			//%(hour12) stores the time. This is a general top of the hour notification. I personally like this because it helps me keep track of time when I've been working on something, so when a ghost is all "Hey it's 3 o clock" I can be like woah really when did that happen. If you think this is annoying though, you can just delete this bit of dialogue to leave this else statement blank, or leave "" in here instead.
 		}
 	}
@@ -1683,6 +1704,7 @@ OnMinuteChange //This is what will trigger time-based dialogue for your Ghost.
 		//"\0\s[0]It's 7:30 on Sunday.\e"
 		//Replace with what's appropriate.
 	}
+	
 	//If you're not interested in these more specific checks, you can delete those last two elseifs and just leave the one for minute==0, or clear them all out as mentioned above, although leave in the HourCheck and mikireflag bits.
 	
 	//Don't touch this part.
@@ -1751,7 +1773,7 @@ EndMikireTalk
  {
 	 if raphchain == 0 && donchain == 0 && splinterchain == 0
 	 {
-		"\0\s[0]Estoy de vuelta, \w2uf. \w8\w3\s[16]Ya pensaba que me porta-cortaba ahí mismo."
+		"\0\s[0]Ya estoy aquí, \w2uf... \w8\w3\s[16]Ya pensaba que me porta-cortaba ahí mismo."
 	 }
 	 else
 	 {

@@ -57,7 +57,7 @@ MouseMoveSakura
 					bigmood -= 1
 					"\0\s[39]\i[6]\w5¡Pero qué-! \w8\w4\s[26]¿A qué ha venido eso?\n\n[half]/
 					\w5\_q\![*]\q[Déjame acariciarte,choicepet1]\n/
-					\![*]\q[¿Nada...?,choicepet2]\e"
+					\![*]\q[¿Nada?...,choicepet2]\e"
 				}
 				elseif petadd <= 20 && bigmood >= -60 && raphchain == 0 && donchain == 0 && splinterchain == 0 && leowatch == 0
 				{
@@ -70,11 +70,11 @@ MouseMoveSakura
 						"\0\s[2]Por favor \f[italic,true]para\f[italic,false].\e"
 						"\0\s[100]Déjalo ya.\e"
 						"\0\s[100]¿Puedes parar?\e"
-						"\0\s[100]Espacio vital, \w4por favor.\e"
+						"\0\s[100]Espacio personal, \w4por favor.\e"
 						"\0\s[100]No me toques.\e"
 						"\0\s[27]\w4.\w4.\w4.\e"
 						"\0\s[62]\w4.\w4.\w4.\e"
-						"\0\s[2]\i[5]*Parece que está demasiado irritado para caricias.\s[2]\e"
+						"\0\s[2]\i[5]*Parece estar demasiado irritado para caricias.\s[2]\e"
 					}
 					else
 					{
@@ -88,17 +88,17 @@ MouseMoveSakura
 						"\0\s[50]¿Acaricias a todos los desconocidos que están cañón?\e"
 						"\0\s[100]\i[5]*Suspira.\s[100]\e"
 						"\0\s[46]Vale, \w6vale, \w6ya está bien.\e"
-						"\0\s[42]Eres bastante cariños%(spaform('o','a','e')), ¿no es cierto?\e"
-						"\0\s[46]¿No te da vergüenza hacer esto\w3.\w3.\w3.?\e"
-						"\0\s[44]Eh, eh, eh. \w4Cuidado con donde pones los dedos.\e"
-						"\0\s[48]¿Es que no respetas a tus superiores?\e"
-						"\0\s[48]¿Es que no sabes respetar a los mayores?\e"
-						"\0\s[40]\i[6]\w5Ay- \w8\s[47]Ya vale...\e"
+						"\0\s[42]Ya estoy viendo que eres una persona cariñosa.\e"
+						"\0\s[46]¿No te da vergüenza hacer esto?\w3.\w3.\w3.\e"
+						"\0\s[44]Eh,\w5 eh,\w5 eh. \w4Mira donde pones los dedos.\e"
+						"\0\s[48]¿Es qué no respetas a tus superiores?\e"
+						"\0\s[48]¿Es qué no sabes respetar a los mayores?\e"
+						"\0\s[40]\i[6]\w5¡Ay! \w8\s[47]Ya vale...\e"
 						"\0\s[26]¿Eh?\e"
-						"\0\s[39]\i[6]\w5A-\e"
-						"\0\s[39]\i[6]\w5Oh-\e"
-						"\0\s[40]\i[6]\w5Aj-\e"
-						"\0\s[43]\i[6]\w5Em-\e"
+						"\0\s[39]\i[6]\w5¡Ah!\e"
+						"\0\s[39]\i[6]\w5¡Oh!\e"
+						"\0\s[40]\i[6]\w5¡Aj!\e"
+						"\0\s[43]\i[6]\w5Em...\e"
 					}
 					
 					
@@ -120,11 +120,11 @@ MouseMoveSakura
 						//bigmood -=1
 						"\0\s[2]Por favor \f[italic,true]para\f[italic,false].\e"
 						"\0\s[100]Ya basta.\e"
-						"\0\s[100]De verdad que no estoy de humor para esto, \w3chic%(spaform('o','a','e')).\e"
+						"\0\s[100]El horno no está para bollos, \w3amig%(spaform('o','a','e')).\e"
 						"\0\s[73]Ya es suficiente.\e"
 						"\0\s[27]\w4.\w4.\w4.\e"
 						"\0\s[62]\w4.\w4.\w4.\e"
-						"\0\s[100]Espacio vital, \w4por favor.\e"
+						"\0\s[100]Espacio personal, \w4por favor.\e"
 						"\0\s[2]\i[5]*Parece que está demasiado irritado para caricias.\s[2]\e"
 					}
 					else
@@ -136,23 +136,23 @@ MouseMoveSakura
 						"\0\s[42]\i[5]...\e"
 						"\0\s[48]\i[5]...\e"
 						"\0\s[49]\i[5]...\e"
-						"\0\s[45]Sabes que no soy un niño, ¿verdad\w2.\w2.\w2.?\e"
+						"\0\s[45]Sabes que no soy un niño, ¿verdad?\w2.\w2.\w2.\e"
 						"\0\s[46]\i[5]\i[6]*Hace señas para que retires la mano.\0\s[46]\e"
-						"\0\s[56]\i[5]*Te pareció verle sonrojado.\e"
+						"\0\s[56]\i[5]*Parece que se ha sonrojado.\e"
 						"\0\s[47]Ya vale, \w4ya vale\w2.\w2.\w2.\e"
 						"\0\s[47]Va\w1a\w1a\w1a\w1m\w1o\w1o\w1o\w1o\w1o\w1s\w2.\w2.\w2.\e"
 						"\0\s[50]\i[5]*Acaricias al abuelete. \w8\w4Él suspira.\e"
 						"\0\s[46]Vale, \w6vale, \w6ya está bien.\e"
 						"\0\s[49]Igual esto no está tan mal\w2.\w2.\w2.\e"
 						"\0\s[45]%(username), por favor\w3.\w3.\w3.\e"
-						"\0\s[46]Me estás aplastando las arrugas\w2.\w2.\w2.\e"
+						"\0\s[46]Me estás apretando las arrugas\w2.\w2.\w2.\e"
 						"\0\s[0]Si estás buscando pelo, \w3aquí no lo vas a encontrar.\e"
-						"\0\s[0]¿Así es cómo se hacen amigos en tu dimensión\w2.\w2.\w2.?\e"
+						"\0\s[0]¿Así es cómo hacéis amigos en tu dimensión?\w2.\w2.\w2.\e"
 						"\0\s[2]Mi papá era menos cariñoso que tú\w3.\w3.\w3.\e"
 						"\0\s[49]\i[5]*No dice nada, pero parece que lo aprecia.\e"
-						"\0\s[100]Tienes una manera un tanto extraña de darme tu apoyo.\e"
-						"\0\s[0]Gracias, ¿supongo...?\e"
-						"\0\s[2]\w8\w8\w8\w8No tienes por qué hacer esto. Lo sabes, ¿verdad\w4.\w4.\w4.?\e"
+						"\0\s[100]Tienes una manera un tanto extraña de demostrarme tu apoyo.\e"
+						"\0\s[0]Gracias,\w6 ¿supongo?...\e"
+						"\0\s[2]\w8\w8\w8\w8No tienes por qué hacer esto. Lo sabes, ¿verdad?\w4.\w4.\w4.\e"
 						"\0\s[20]No puedes resistir tocar la grandeza, ¿verdad?\e"
 						"\0\s[18]¿Caricia? \w3¿Coricia? \w3¿Caricia? \w3¿Coricia? \w3¿Caricia? \w3¿Caricia?\w3¿Caricia?\e"
 						"\0\s[20]Te cobraría por esto si pudiera darle uso al dinero\w3.\w3.\w3.\e"
@@ -161,8 +161,8 @@ MouseMoveSakura
 						"\0\s[100]¿Todavía seguimos con esto?\e"
 						"\0\s[17]¿Otra vez?\e"
 						"\0\s[20]¿Más?\e"
-						"\0\s[40]\i[6]\w5Oh-\e"
-						"\0\s[39]\i[6]\w5E-\e"
+						"\0\s[40]\i[6]\w5¡Oh!\e"
+						"\0\s[39]\i[6]\w5¡Eh!\e"
 						"\0\s[26]\i[6]\w5¿Oh?\e"
 						"\0\s[26]\i[6]\w5¿Ah?\e"
 						"\0\s[26]\i[6]\w5¿Hum?\e"
@@ -180,7 +180,7 @@ MouseMoveSakura
 						"\0\s[100]Para ya.\e"
 						"\0\s[100]¿Puedes parar?\e"
 						"\0\s[100]No me toques.\e"
-						"\0\s[100]Espacio vital, \w3por favor\e"
+						"\0\s[100]Espacio personal, \w3por favor\e"
 						"\0\s[27]\w4.\w4.\w4.\e"
 						"\0\s[62]\w4.\w4.\w4.\e"
 						"\0\s[2]\i[5]*Parece que está demasiado irritado para caricias.\s[2]\e"
@@ -195,7 +195,7 @@ MouseMoveSakura
 						"\0\s[79]\w4.\w4.\w4.\e"
 						"\0\s[75]\w4.\w4.\w4.\e"
 						"\0\s[75]\i[5]*Parece estar demasiado abstraído para caricias.\s[75]\e"
-						"\0\s[2]\i[5]*No ha sentido tu mano.\s[2]\e"
+						"\0\s[2]\i[5]*No siente tu mano.\s[2]\e"
 						"\0\s[2]\i[5]*Parece estar demasiado triste para caricias.\s[2]\e"
 					}
 				
@@ -206,7 +206,7 @@ MouseMoveSakura
 						petadd += 1
 						happycount += 1
 						"\0\s[84]\i[5]*No reacciona.\s[84]\e"
-						"\0\s[84]\i[5]*No ha sentido tus caricias.\s[84]\e"
+						"\0\s[84]\i[5]*No siente tus caricias.\s[84]\e"
 						"\0\s[84]\i[5]*Está demasiado abstraído para caricias.\s[84]\e"
 						"\0\s[84]\i[5]*Está demasiado metido en sus pensamientos como para notar tus caricias.\s[84]\e"
 					}
@@ -215,11 +215,11 @@ MouseMoveSakura
 						petadd += 1
 						happycount += 1
 						"\0\s[87]\i[5]*No reacciona.\s[87]\e"
-						"\0\s[87]\i[5]*No ha sentido tus caricias.\s[87]\e"
-						"\0\s[87]\i[5]*Le acaricias la cabeza pero no lo siente.\s[87]\e"
+						"\0\s[87]\i[5]*No siente tus caricias.\s[87]\e"
+						"\0\s[87]\i[5]*Acaricias su cabeza pero no lo siente.\s[87]\e"
 						"\0\s[87]\i[5]*Está demasiado abstraído para caricias.\s[87]\e"
 						"\0\s[87]\i[5]*Está demasiado metido en sus pensamientos como para notar tus caricias.\s[87]\e"
-						"\0\s[87]\i[5]*Intentas animarle, \w4pero no lo nota.\s[87]\e"
+						"\0\s[87]\i[5]*Intentas animarle, \w4pero no se da cuenta.\s[87]\e"
 					}
 					if raphchain == 3 && leowatch == 0 || donchain == 3 && leowatch == 0 || splinterchain == 3 && leowatch == 0
 					{
@@ -228,12 +228,12 @@ MouseMoveSakura
 						bigmood += 1
 						"\0\s[2]\i[5]*No reacciona.\s[2]\e"
 						"\0\s[30]Gracias, \w4gracias\w3.\w3.\w3.\e"
-						"\0\s[2]\i[5]*No nota tus caricias.\s[2]\e"
-						"\0\s[2]\i[5]*Le acaricias la cabeza pero no lo siente.\s[2]\e"
+						"\0\s[2]\i[5]*No siente tus caricias.\s[2]\e"
+						"\0\s[2]\i[5]*Acaricias su cabeza pero no lo siente.\s[2]\e"
 						"\0\s[82]\i[5]*Está demasiado metido en sus pensamientos como para notar tus caricias.\s[82]\e"
 						"\0\s[95]Estoy bien, \w5%(username), \w5de verdad. \w8\w5Gracias.\e"
 						"\0\s[82]\i[5]*Hace un ruido en agradecimiento, \w3pero no hay más reacción.\s[82]\e"
-						"\0\s[82]\i[5]*Parece que tiene la cabeza en otro sitio.\s[82]\e"
+						"\0\s[82]\i[5]*Parece tener la cabeza en otro lugar.\s[82]\e"
 						"\0\s[23]Estoy bien, \w4lo prometo.\e"
 						"\0\s[48]\i[5]*Suspira.\s[48]\e"
 					}
@@ -249,9 +249,9 @@ MouseMoveSakura
 					{
 						petadd += 1
 						happycount += 1
-						"\0\s[125]*Simplemente te mira con atención.\e"
+						"\0\s[125]*Te mira fijamente.\e"
 						"\0\s[125]¿Eh?\e"
-						"\0\s[125]*Te clava la mirada.\e"
+						"\0\s[125]*Te fulmina con la mirada.\e"
 						"\0\s[124]*Suspira.\e"
 						"\0\s[124]*Está distraido mirando la pantalla.\e"
 						"\0\s[124]*Está distraido con sus pensamientos.\e"
@@ -268,10 +268,10 @@ MouseMoveSakura
 						"\0\s[125]Sé que estás ahí\w3.\w3.\w3.\e"
 						"\0\s[125]%(username)\w3.\w3.\w3.\e"
 						"\0\s[125]Venga, \w8déjalo ya.\e"
-						"\0\s[125]\i[6]No me he sentado para que puedas acariciarme más fácilmente\w3.\w3.\w3."
+						"\0\s[125]\i[6]No me he sentado para que me puedas acariciar más fácilmente\w3.\w3.\w3."
 						"\0\s[123]*Le puedes oír refunfuñar.\e"
-						"\0\s[125]\i[6]*Te clava la mirada.\e"
-						"\0\s[124]*Le puedes oír suspirar.\e"
+						"\0\s[125]\i[6]*Te fulmina con la mirada.\e"
+						"\0\s[124]*Le oyes suspirar.\e"
 						"\0\s[125]\i[6]Y\w1a\w1a\w1a \w1ba\w1a\w1asta\w3.\w3.\w3.\e"
 						"\0\s[126]¿Ah?\e"
 						"\0\s[126]¿Oh?\e"
@@ -282,33 +282,33 @@ MouseMoveSakura
 						petadd += 1
 						happycount += 1
 						bigmood += 1
-						"\0\s[125]\i[6]*Farfulla por un momento.\e"
+						"\0\s[125]\i[6]*Refunfuña un momento.\e"
 						"\0\s[125]\i[6]*Parece que le da vergüenza.\e"
 						"\0\s[123]\i[6]*Suspira.\e"
 						"\0\s[125]...\e"
 						"\0\s[123]...\e"
 						"\0\s[123]\i[6]...\e"
 						"\0\s[125]\i[6]...\e"
-						"\0\s[124]\i[6]*Te pareció verle sonrojado.\e"
+						"\0\s[124]\i[6]*Parece que se ha sonrojado.\e"
 						"\0\s[125]Ya vale, \w4ya vale\w2.\w2.\w2.\e"
 						"\0\s[125]\i[6]No me distraigas.\e"
 						"\0\s[125]\i[6]%(username), por favor\w3.\w3.\w3.\e"
 						"\0\s[123]¡Venga, \w3que estoy mirando cosas!\e"
 						"\0\s[124]*No dice nada, pero parece que le gusta.\e"
-						"\0\s[125]\i[6]No me he sentado para que puedas acariciarme más fácilmente\w3.\w3.\w3.\e"
+						"\0\s[125]\i[6]No me he sentado para que me puedas acariciar más fácilmente\w3.\w3.\w3.\e"
 						"\0\s[123]%(username), \w3los ojos en la pantalla.\e"
 						"\0\s[125]¿Otra vez?\e"
 						"\0\s[126]¿Ah?\e"
 						"\0\s[126]¿Hum?\e"
 						"\0\s[126]¿Oh?\e"
-						"\0\s[125]Escucha\w3.\w3.\w3.\e"
+						"\0\s[125]Mira\w3.\w3.\w3.\e"
 					}
 					else //>100 pets
 					{
 						petadd += 1
 						happycount += 1
 						bigmood += 1
-						"\0\s[127]\i[6]*Se apoya en tu mano por las caricias.\e"
+						"\0\s[127]\i[6]*Se apoya en tu mano a causa de las caricias.\e"
 						"\0\s[123]\i[6]*Hace un ruido en agradecimiento.\e"
 						"\0\s[125]\i[6]*Parece que le da vergüenza.\e"
 						"\0\s[123]...\e"
@@ -321,21 +321,21 @@ MouseMoveSakura
 						"\0\s[123]*Ya vale, \w4ya vale\w2.\w2.\w2.\e"
 						"\0\s[127]*Parece disfrutar de las caricias.\e"
 						"\0\s[124]\i[6]*Le acaricias disimuladamente mientras está sentado.\e"
-						"\0\s[123]\i[6]Entendido, \w6me ha quedado claro, \w6pero volvamos a la pantalla.\e"
+						"\0\s[123]\i[6]Está bien, \w6ya me ha quedado claro, \w6pero volvamos a la pantalla.\e"
 						"\0\s[124]\i[6]Mmm\w4.\w4.\w4.\e"
 						"\0\s[127]Je\w3.\w3.\w3.\e"
 						"\0\s[126]¿Más?\e"
-						"\0\s[124]*No dice nada, pero parece apreciarlo.\e"
-						"\0\s[124]*No se da la vuelta, pero parece apreciarlo.\e"
+						"\0\s[124]*No dice nada, pero parece que lo aprecia.\e"
+						"\0\s[124]*No se da la vuelta, pero parece que lo aprecia.\e"
 						"\0\s[127]Gracias, \w3gracias\w3.\w3.\w3.\e"
-						"\0\s[127]\i[6]*Parece que está feliz.\e"
+						"\0\s[127]\i[6]*Parece contento.\e"
 						"\0\s[127]\i[6]*Está disfrutando de las caricias.\e"
 						"\0\s[126]¿Ah?\e"
 						"\0\s[126]¿Hum?\e"
 						"\0\s[126]¿Oh?\e"
 						"\0\s[123]%(username), \w3los ojos en la pantalla.\e"
-						"\0\s[125]\i[6]No me he sentado para que puedas acariciarme más fácilmente\w3.\w3.\w3.\e"
-						"\0\s[123]No me distraigas.\w2.\w2.\w2.\e"
+						"\0\s[125]\i[6]No me he sentado para que me puedas acariciar más fácilmente\w3.\w3.\w3.\e"
+						"\0\s[123]No me distraigas\w2.\w2.\w2.\e"
 						"\0\s[124]*Se siente un poco más relajado.\e"
 					}
 				}
@@ -346,18 +346,18 @@ MouseMoveSakura
 					bigmood += 1
 					if bigmood < -15 && bigmood > -60
 					{
-						"\0\s[2]¿Estás intentando animarme? \w8\w3Demasiado tarde.\e"
+						"\0\s[2]¿Estás intentando darme ánimos? \w8\w3Demasiado tarde.\e"
 						"\0\s[100]Basta.\e"
-						"\0\s[100]De verdad que no estoy de humor para esto, \w3colega.\e"
+						"\0\s[100]El horno no está para bollos, \w3amig%(spaform('o','a','e')).\e"
 						"\0\s[73]Ya es suficiente.\e"
 						"\0\s[27]\w4.\w4.\w4.\e"
 						"\0\s[62]\w4.\w4.\w4.\e"
-						"\0\s[81]¿Intentas tranquilizarme? \w8\w4No lo veo, \w3amig%(spaform('o','a','e')).\e"
+						"\0\s[81]¿Intentas calmarme? \w8\w4No lo veo, \w3amig%(spaform('o','a','e')).\e"
 						"\0\s[2]\i[5]*Parece estar demasiado irritado para caricias.\s[2]\e"
 					}
 					else
 					{
-						"\0\s[23]\i[5]*Se apoya en tu mano por las caricias.\e"
+						"\0\s[23]\i[5]*Se apoya en tu mano a causa de las caricias.\e"
 						"\0\s[0]\i[6]\i[5]*Hace un ruido en agradecimiento.\e"
 						"\0\s[49]\i[5]*Parece que le da vergüenza.\e"
 						"\0\s[0]\i[6]\i[5]*Suspira satisfecho.\e"
@@ -366,7 +366,7 @@ MouseMoveSakura
 						"\0\s[49]\i[5]...\e"
 						"\0\s[23]\i[5]...\e"
 						"\0\s[95]\i[6]...\e"
-						"\0\s[47]Me siento como si fuera Casey\w2.\w2.\w2.\e"
+						"\0\s[47]Siento como si fuera Casey\w2.\w2.\w2.\e"
 						"\0\s[45]\i[5]\i[6]*Murmura por lo bajo.\s[45]\e"
 						"\0\s[43]\i[5]*Se está poniendo colorado.\e"
 						"\0\s[43]\i[5]*Te parece oír un suave gorjeo.\e"
@@ -375,7 +375,7 @@ MouseMoveSakura
 						"\0\s[2]\i[5]*Acaricias al abuelete. \w8\w4\s[30]\i[5]Él sonríe.\s[30]\e"
 						"\0\s[47]Vale, \w6vale, \w6ya está bien.\e"
 						"\0\s[0]\i[6]Mmm\w4.\w4.\w4.\e"
-						"\0\s[23]Si que te gusta mimarme. ¿Eh, %(username)?\e"
+						"\0\s[23]Sí que te gusta mimarme, ¿eh, %(username)?\e"
 						"\0\s[20]¿Estás intentando alisarme las arrugas?\e"
 						"\0\s[0]\i[5]*Acaricias a Leo. \w8\w4Todavía no hay pelo.\s[0]\e"
 						"\0\s[19]¿Acaricias a todos tus amigos?\e"
@@ -383,19 +383,19 @@ MouseMoveSakura
 						"\0\s[96]Está bien, \w3está bien, \w3una más.\e"
 						"\0\s[95]¿Ya estás otra vez?\e"
 						"\0\s[47]A Mikey le encantarías\w3.\w3.\w3.\e"
-						"\0\s[49]\i[5]*No dice nada, pero parece apreciarlo.\e"
+						"\0\s[49]\i[5]*No dice nada, pero parece que lo aprecia.\e"
 						"\0\s[20]Gracias, \w3gracias\w3.\w3.\w3.\e"
-						"\0\s[23]\i[5]*Parece que está feliz.\e"
-						"\0\s[2]No tienes por qué hacer esto. Lo sabes, ¿verdad\w4.\w4.\w4.? \w8\w6\s[30]Pero te lo agradezco.\e"
+						"\0\s[23]\i[5]*Parece contento.\e"
+						"\0\s[2]No tienes por qué hacer esto. Lo sabes, ¿verdad?\w4.\w4.\w4. \w8\w6\s[30]Pero te lo agradezco.\e"
 						"\0\s[0]\i[6]Lo sé, \w3lo sé, \w3soy genial.\e"
 						"\0\s[18]¿Caricia? \w3¿Coricia? \w3¿Caricia? \w3¿Coricia? \w3¿Caricia? \w3¿Caricia?\w3¿Caricia? \w3¿Caricia? \w3¿Caricia? \w3¿Coricia?\e"
-						"\0\s[0]Te cobraría por esto si pudiera darle uso al dinero\w3.\w3.\w3. \n\w8\w4\s[23]Es broma. \w8\w4\s[20]Acaríciame cuando quieras, \w2para ti es gratis.\e"
-						"\0\s[0]No hay que te detenga, \w5¿eh? \w8\w4\s[19]Admirable.\e"
+						"\0\s[0]Te cobraría por esto si pudiera darle uso al dinero\w3.\w3.\w3. \n\n[half]\w8\w4\s[23]Es broma. \w8\w4\s[20]Acaríciame cuando quieras, \w2para ti es gratis.\e"
+						"\0\s[0]No hay quien te detenga, \w5¿eh? \w8\w4\s[19]Impresionante.\e"
 						"\0\s[0]\i[6]Todavía quieres seguir, \w3¿eh?\e"
 						"\0\s[22]Je\w3.\w3.\w3.\e"
-						"\0\s[0]\i[6]\i[5]*Parece estar relajado.\e"
+						"\0\s[0]\i[6]\i[5]*Parece relajado.\e"
 						"\0\s[0]¿Más caricias? \w8\w4Me apunto.\e"
-						"\0\s[40]\i[6]\w5Oh-\e"
+						"\0\s[40]\i[6]\w5¡Oh!\e"
 						"\0\s[26]\i[6]\w5¿Hum?\e"
 					}
 				}
@@ -532,12 +532,12 @@ MouseDoubleClickKero
  
  Select.choicepet1
 {
-	"\0\s[26]\i[5]*Le dices que solo quieres acariciarle.\n\n[half]\w8\w4\s[27]¿Acariciarme? \w8\w4\¿Qué te crees que soy?\w4 ¿Un niño? \w8\w8\s[46]Pues te diré que soy el Líder de una de las últimas Resistencias de la humanidad, mutantes y yokai. \w4Para que lo sepas\w2.\w2.\w2. \w8\w4\s[27]¡Así que \w6no se toca! \w8\w4Al menos que quieras que te corte la mano con mis reflejos.\e"
+	"\0\s[26]\i[5]*Le dices que solo quieres acariciarle.\n\n[half]\w8\w4\s[27]¿Acariciarme? \w8\w4\¿Qué te crees que soy?\w4 ¿Un niño? \n\w8\w8\s[46]Pues te diré que soy el líder de una de las últimas resistencias de la humanidad, mutantes y yokai; \w4que lo sepas\w2.\w2.\w2. \n\n[half]\w8\w4\s[27]¡Así que \w6no se toca! \w8\w4Al menos que quieras que te corte la mano con mis reflejos.\e"
 }
 
  Select.choicepet2
 {
-	"\0\s[26]\i[5]*Le dices que no ha sido nada.\n\n[half]\w8\w4\s[44]Estoy bastante seguro de que he sentido algo en la cabeza, dedos largos. \w8\w4\s[27]Casi te corto el brazo entero. \w6Y créeme, \w6perder el brazo no es cosa de risa. \w8\w4Mantenlo en cuenta.\e"
+	"\0\s[26]\i[5]*Le dices que no ha sido nada.\n\n[half]\w8\w4\s[44]Estoy bastante seguro de que he sentido algo en la cabeza, handsy. \n\n[half]\w8\w4\s[27]Casi te corto el brazo entero. \w6Y créeme, \w6perder el brazo no es cosa de risa. \w8\w4Tenlo presente.\e"
 }
 
 

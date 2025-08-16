@@ -860,7 +860,7 @@ Select.choicenoodle
 	}
 	else
 	{
-		"\0\s[0]Sí. \w8Noodle. \s[100]\w8Bien."
+		"\0\s[0]Sí. \w8Noodle. \s[100]\w8Genial."
 	}
 }
 
@@ -872,7 +872,7 @@ Select.choicewaffle
 	}
 	else
 	{
-		"\0\s[0]Sí. \w8Waffle. \s[100]\w8Bien."
+		"\0\s[0]Sí. \w8Waffle. \s[100]\w8Genial."
 	}
 }
 
@@ -884,7 +884,7 @@ Select.choicesoupy
 	}
 	else
 	{
-		"\0\s[0]Sí. \w8Tallarín. \s[100]\w8Bien."
+		"\0\s[0]Sí. \w8Tallarín. \s[100]\w8Genial."
 	}
 }
 Select.choicecracker
@@ -895,7 +895,7 @@ Select.choicecracker
 	}
 	else
 	{
-		"\0\s[0]Sí. \w8Cracker. \s[100]\w8Bien."
+		"\0\s[0]Sí. \w8Cracker. \s[100]\w8Genial."
 	}
 }
 
@@ -919,7 +919,7 @@ Select.choicefuckyeah
 
 Select.choicefamilyfriendly
 {
-	"\0\s[20]Oh, está bien, ¿qué va a ser?\![open,inputbox,OnNameTeach,-1]\e"
+	"\0\s[20]Oh, está bien. ¿Entonces qué va a ser?\![open,inputbox,OnNameTeach,-1]\e"
 }
 
 
@@ -983,7 +983,7 @@ NameDone
 		firstboot = 0 //this turns the flag off
 		
 		//This dialogue will display the first time the user puts in their name. You might want to add some closing thoughts to the introduction your ghost had in OnFirstBoot, or directions about how to use the ghost, or something like that. It's up to you!
-		"\![enter,passivemode]\0\s[0]Bueno, hola %(username). \w8\w4\s[23]Sé que acabamos de conocernos, \w5y no quiero ser maleducado, \w5\s[17]pero\w3.\w3.\w3. \w8\w6\s[16]¿Dónde \w5\f[sub,true]s\f[sub,false]DEMONIOS \w4estoy?\n\n[half] \w8\w5\w4\s[16]\i[5]*Le dices a Leonardo que \s[26]\i[5]en estos momentos se encuentra dentro de tu ordenador.\n\n[half]\s[26]\w8\w4A\w3h\w3.\w3.\w3. \w8\w4\s[17]En otras circunstancias, me habría costado creer en algo como esto, \w5pero, \w5\s[18]teniendo en cuenta que de donde soy yo estamos en guerra con aliens que han venido desde otra dimensión, \w3\s[0]acabar metido en la dimensión de un ordenador no me resulta demasiado raro.\w8\w5\n\s[23]No tienes cosas carnosas \w8y con apariencia de tentáculo en tus carpetas, ¿verdad?\w8\w8\w8\w8\w8\s[27]      \f[sub,true]Lo averiguaré.\f[sub,false]\w8\w8\w4\x\s[0]\i[5]*Explicas que \s[26]\i[5]sabes sobre él y sobre su mundo.\n\n[half]\w8\w6.\w4.\w4. \s[26]\w8A ver si me ha quedado claro- \s[17]\w6sabes sobre mí, \w4mis amigos, \w4mi familia, \w4pero sobre todo sobre mis años de juventud con una alarmante, \w4casi siendo acosadora exactitud?\n\s[27]\i[5]\w5.\w5.\w5.\w5.\w5.\w5.\w5.\w5.\w5.\w5. \s[0]De acuerdo.\n\w8\w8\w8¿Qué? \w8\s[19]Mis embarazosos años de adolescencia no significan nada en un mundo apocalíptico. \w8\w4\s[20]¡Tu chantaje no sirve para nada! \w8\w4Y, \w3\s[19]te diré más, \w3¡ya le he echado un ojeada a tus archivos!\n\w8\w4\s[23]No querrás que me vaya de la lengua y cuente lo de \w6\f[italic,true]esa\f[italic,false] \w6carpeta, \w3¿verdad que no~?\w8\w4\x\s[23]\i[5].\w5.\w5.\s[0]Je. \w8\s[22]Ha pasado tiempo desde la última vez que he estado en un lugar tan\w3.\w3.\w3. \w8Tranquilo.\n\w8\w8\s[17]Aunque seguramente debería de volver ya a mi mundo. \w8\w3Tengo,\n\w3em, \w3\s[100]responsabilidades.\w3.\w3. \w8No quiero estar fuera demasiado rato.\w8\w8\w8\w6\c\s[36]\w5.\w5.\w5.\w5.\w5.\w5.\w5.\w5.\w5.\w5.\w5.\w5.\w5.\w5.\w5.\w5.\w5.\w5.\w5.\w5.\w5.\w5.\n\s[35]\w3.\w3.\w3. Des\w3pu\w3é\w3s de que mi energía mística se haya cargado. \w8\w3J\w3a\w3j\w3a\w3.\w3.\w3. \w8\w5\s[0]Espero que no te moleste la compañía de una apuesta tortuga mutante líder por un ratito\w2.\w2.\w2.\n\n[half]\i[5]*Parece que puedes hacer doble click sobre su cuerpo para abrir el menú, botón secundario sobre él para abrir el menú de SSP, o pulsar Ctrl para adelantar el texto. \w5También puedes mover el ratón sobre su cabeza para acariciarle.\s[0]\![leave,passivemode]\e"
+		"\![enter,passivemode]\0\s[0]Bueno, encantado %(username). \w8\w4\s[23]Sé que acabamos de conocernos, \w5y no quiero sonar maleducado, \w5\s[17]pero\w3.\w3.\w3. \n\n[half]\w8\w6\s[16]¿Dónde \w5\f[italic,true]CAPARAZONES\f[italic,false]\w4 estoy? \n\n[half]\w8\w5\w4\s[16]\i[5]*Le dices que \s[26]\i[5]en estos momentos se encuentra dentro de tu ordenador.\n\n[half]\s[26]\w8\w4A\w3h\w3.\w3.\w3. \w8\w4\s[17]En otras circunstancias, me hubiera costado creer en algo como esto, \w5pero, \w5\s[18]teniendo en cuenta que de donde soy estamos en guerra contra alienígenas que han venido desde otra dimensión, \w3\s[0]acabar metido en una sobre un ordenador no me resulta demasiado extraño. \w8\w5\n\n[half]\s[23]No tienes cosas de apariencia carnosa \w8y con forma de tentáculo entre tus archivos, ¿verdad?      \w8\w8\w8\w8\w8\s[27]\f[sub,true]Lo averiguaré.\f[sub,false]\n.\w8\w8\w4\x\s[0]\i[5]*Le explicas que \s[26]\i[5]sabes sobre él y sobre su mundo.\n\n[half]\w8\w6.\w4.\w4. \s[26]\w8A ver si me ha quedado claro: \n\s[17]\w6Sabes sobre mí, \w4mis amigos, \w4mi familia, \w4pero sobre todo sobre mis años de juventud con una alarmante, \n\w4¿casi siendo acosadora exactitud?\n\n[half]\s[27]\i[5]\w5.\w5.\w5.\w5.\w5.\w5.\w5.\w5.\w5.\w5. \s[0]De acuerdo.\n\n[half]\w8\w8\w8¿Qué? \w8\s[19]Mis vergonzosos años de la adolescencia no significan nada en un mundo apocalíptico. \w8\w4\s[20]¡Tu chantaje no sirve para nada! \n\n[half]\w8\w4Y, \w3\s[19]te diré más, \w3¡ya le he echado un ojeada a tus archivos! \w8\w4\s[23]No querrás que me vaya de la lengua y cuente lo de \w6\f[italic,true]esa\f[italic,false] \w6carpeta, \w3¿verdad que no~?\w8\w4\x\s[23]\i[5].\w5.\w5.\s[0]Je. \n\n[half]\w8\s[22]Ha pasado tiempo desde la última vez que he estado en un lugar tan\w3.\w3.\w3. \w8tranquilo.\n\w8\w8\s[17]Aunque seguramente debería de volver ya a mi mundo. \w8\w3Tengo,\w3 em,\w3 \s[100]responsabilidades.\w3.\w3. \n\w8No quiero estar fuera demasiado tiempo.\w8\w8\w8\w6\c\s[36]\w5.\w5.\w5.\w5.\w5.\w5.\w5.\w5.\w5.\w5.\w5.\w5.\w5.\w5.\w5.\w5.\w5.\w5.\w5.\w5.\w5.\w5.\n\n[half]\s[35]\w3.\w3.\w3. Des\w3pu\w3é\w3s de que mi energía mística se haya cargado. \w8\w3J\w3a, \w3j\w3a\w3.\w3.\w3.\n\w8\w5\s[0]Espero que no te moleste la compañía de una apuesta tortuga líder mutante por un ratito\w2.\w2.\w2.\n\n[half]\i[5]*Parece que puedes hacer doble click sobre su cuerpo para abrir el menú, botón secundario sobre él para abrir el menú SSP, o pulsar Ctrl. para avanzar el texto. \n\w5También puedes mover el ratón sobre su cabeza para acariciarle.\s[0]\![leave,passivemode]\e"
 	}
 	else
 	{
